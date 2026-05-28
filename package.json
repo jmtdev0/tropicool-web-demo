@@ -1,0 +1,26 @@
+{
+  "name": "tropicool-neon-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Unofficial public demo for a refreshed Tropicool website.",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "scrape:menu": "node scripts/scrape-tropicool-menu.mjs"
+  },
+  "dependencies": {
+    "@astrojs/svelte": "^8.1.2",
+    "@lucide/svelte": "^1.17.0",
+    "@tailwindcss/vite": "^4.1.12",
+    "astro": "^6.4.2",
+    "gsap": "^3.13.0",
+    "svelte": "^5.43.6",
+    "tailwindcss": "^4.1.12"
+  },
+  "devDependencies": {
+    "playwright": "^1.60.0",
+    "typescript": "^5.9.2"
+  }
+}

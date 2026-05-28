@@ -1,0 +1,3368 @@
+{
+  "generatedAt": "2026-05-28T16:01:35.461Z",
+  "source": "https://www.tropicoolrestaurante.com/menus",
+  "menus": [
+    {
+      "id": "carta",
+      "name": "Carta",
+      "sourceName": "CARTA",
+      "description": "Toda nuestra carta es 100% plant based, utilizando únicamente ingredientes de origen vegetal. Los ingredientes entre comillas son alternativas vegetales que simulan la animal. *Los productos marcados sin gluten, no contienen gluten en ninguno de sus ingredientes, pero pueden contener trazas por contaminación cruzada en su elaboración.",
+      "sourceUrl": "https://www.tropicoolrestaurante.com/menus?menu=men%C3%BA-de-cena-1",
+      "sections": [
+        {
+          "id": "carta-entrantes",
+          "name": "ENTRANTES",
+          "description": "En Tropicool queremos que disfrutes y vivas una experiencia con nosotros. ¿Qué mejor que compartir para conseguirlo?",
+          "items": [
+            {
+              "id": "carta-entrantes-nachos",
+              "name": "NACHOS",
+              "description": "Nachos con \"chorizo\", frijoles, salsa \"cheddar\" casera, guacamole y pico de gallo. (Contiene gluten, soja y frutos secos).",
+              "price": "13,50 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Frutos secos",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+              "imageAlt": "NACHOS",
+              "sourceMenu": "carta",
+              "sourceSection": "ENTRANTES"
+            },
+            {
+              "id": "carta-entrantes-fingers-de-pollo",
+              "name": "FINGERS DE \"POLLO\"",
+              "description": "Fingers de \"pollo\" crujiente con salsa de mostaza y agave. (Contiene soja y mostaza)",
+              "price": "",
+              "variants": [
+                {
+                  "name": "Media ración (4uds)",
+                  "price": "4,90 €"
+                },
+                {
+                  "name": "Ración (8uds)",
+                  "price": "9 €"
+                }
+              ],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+              "imageAlt": "FINGERS DE \"POLLO\"",
+              "sourceMenu": "carta",
+              "sourceSection": "ENTRANTES"
+            },
+            {
+              "id": "carta-entrantes-falafel",
+              "name": "FALAFEL",
+              "description": "Falafel casero con salsa de yogur, \"mayonesa\" y tahina. Aliñados con salsa Dukkah, elaborada con especias de sésamo tostado, menta y cilantro. (Contiene Soja, frutos secos)",
+              "price": "12 €",
+              "variants": [],
+              "labels": [
+                "Frutos secos",
+                "Soja",
+                "Sin gluten",
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_d797042422de437399307212511e706f~mv2.jpg",
+              "imageAlt": "FALAFEL",
+              "sourceMenu": "carta",
+              "sourceSection": "ENTRANTES"
+            },
+            {
+              "id": "carta-entrantes-brochetas-sahara",
+              "name": "BROCHETAS SAHARA",
+              "description": "Brochetas ahumadas. Acompañadas de boniato frito. (Contiene soja, sésamo y mostaza).",
+              "price": "13,50 €",
+              "variants": [],
+              "labels": [
+                "Soja",
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_4692009ecf7647f2908b0b505359eeac~mv2.jpg",
+              "imageAlt": "BROCHETAS SAHARA",
+              "sourceMenu": "carta",
+              "sourceSection": "ENTRANTES"
+            },
+            {
+              "id": "carta-entrantes-edamame",
+              "name": "EDAMAME",
+              "description": "Edamames en su vaina, salteados con reducción de soja y sriracha y polvo de lima. (Contiene soja)",
+              "price": "4,90 €",
+              "variants": [],
+              "labels": [
+                "Suave",
+                "Vegano",
+                "Sin gluten",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+              "imageAlt": "EDAMAME",
+              "sourceMenu": "carta",
+              "sourceSection": "ENTRANTES"
+            },
+            {
+              "id": "carta-entrantes-karaage",
+              "name": "KARAAGE",
+              "description": "El karaage es una técnica culinaria japonesa que consiste en marinar y freír diversos ingredientes, de forma parecida a la tempura. Nuestra versión consiste en \"pollo\" marinado en sake, ajo y jengibre y aliñado con furikake (mezcla de especias y algas). (Contiene soja, sésamo y mostaza en la salsa ).",
+              "price": "13 €",
+              "variants": [],
+              "labels": [
+                "Soja",
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_62d9ca5dbae347afa93ac76417afdf20~mv2.jpg",
+              "imageAlt": "KARAAGE",
+              "sourceMenu": "carta",
+              "sourceSection": "ENTRANTES"
+            },
+            {
+              "id": "carta-entrantes-tequenos",
+              "name": "TEQUEÑOS",
+              "description": "Ni el origen de esta receta ni su denominación están del todo claras, pero se atribuye a Venezuela su creación. Allí se manejan tres hipótesis, la más conocida y difundida es que son originarios de la ciudad de Los Teques. Tequeños de \"queso\" llanero típico venezolano. Acompañados con salsa tártara (\"mayonesa\", cebolla y cilantro). (Contiene gluten, soja, sésamo y mostaza y sulfitos en la salsa).",
+              "price": "",
+              "variants": [
+                {
+                  "name": "Media ración 4uds",
+                  "price": "8 €"
+                },
+                {
+                  "name": "Ración",
+                  "price": "14,9 €"
+                }
+              ],
+              "labels": [
+                "Soja",
+                "Trigo",
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+              "imageAlt": "TEQUEÑOS",
+              "sourceMenu": "carta",
+              "sourceSection": "ENTRANTES"
+            }
+          ]
+        },
+        {
+          "id": "carta-street-food",
+          "name": "STREET FOOD",
+          "description": "Nuestra selección de comida callejera típica de diversas partes del mundo; siempre con un toque Tropicool.",
+          "items": [
+            {
+              "id": "carta-street-food-sandwich-el-cubanito",
+              "name": "SÁNDWICH \"EL CUBANITO\"",
+              "description": "Sándwich de pulled \"pork\" marinado, entre tres capas de pan brioche. Con \"bacon\", queso cheddar, pepinillos agridulces, mezclum de lechuga y nuestra salsa \"mostanesa\". Acompañado de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja y mostaza).",
+              "price": "14,50 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Trigo"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_fd4968382a244c3c83379cecc833ce11~mv2.jpg",
+              "imageAlt": "SÁNDWICH \"EL CUBANITO\"",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-burger-latina",
+              "name": "BURGER LATINA",
+              "description": "Con \"bacon\", salsa de jalapeños, guacamole y cebolla roja, lechuga y tomate. AÑADE EXTRA \"QUESO\" POR +1€. Acompañada de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja y sulfitos)",
+              "price": "13,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+              "imageAlt": "BURGER LATINA",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-burger-oriental",
+              "name": "BURGER ORIENTAL",
+              "description": "Con seta shitake y mayonesa de kimchi. AÑADE EXTRA \"QUESO\" POR +1€. AÑADE EXTRA \"BACON\" POR +1€. Acompañada de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja y sulfitos)",
+              "price": "13,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_0d7fc1342ff147558ae0a69626009ddd~mv2.jpg",
+              "imageAlt": "BURGER ORIENTAL",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-bocadillo-de-kanda",
+              "name": "BOCADILLO DE \"KANDA\"",
+              "description": "Bocadillo de albóndigas de estilo africano, con salsa de tomate casera y \"queso\" fundido. Acompañado de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja)",
+              "price": "11,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_992809afc265498385586c13fd68a204~mv2.jpg",
+              "imageAlt": "BOCADILLO DE \"KANDA\"",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-tacos",
+              "name": "TACOS",
+              "description": "3uds de tacos de \"chorizo\" al pastor con salsa verde o \"cochinita\" pibil con seta shitake, Fusion japo-mexicana!, ¡¡No te los pierdas !! (Contiene gluten, soja)",
+              "price": "14 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Frutos secos",
+                "Picante",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_b5a4bcfc669d4c6babce61fe51b089ca~mv2.jpg",
+              "imageAlt": "TACOS",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-crispy-burrito-falafel",
+              "name": "CRISPY BURRITO FALAFEL",
+              "description": "Burrito de falafel con cebolla encurtida, lechuga, tomate y salsa de yogurt. Envuelto en tortilla de espinacas. Acompañado de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (contiene gluten, soja y sésamo)",
+              "price": "13,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Trigo"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_d86966e246494e1aac942114d036f6de~mv2.jpeg",
+              "imageAlt": "CRISPY BURRITO FALAFEL",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-pad-thai",
+              "name": "PAD THAI",
+              "description": "Tallarines de arroz salteados con verduras, \"pollo\", \"huevo\" y salsa de cacahuetes al más puro estilo de las calles de Bangkok. * Ligeramente picante (Contiene frutos secos y soja)",
+              "price": "14,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Frutos secos",
+                "Soja",
+                "Sin gluten",
+                "Suave"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+              "imageAlt": "PAD THAI",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-nasi-goreng",
+              "name": "NASI GORENG",
+              "description": "El nasi goreng es un plato típico de la cocina indonesia y malaya, con base de arroz y verduras salteadas al wok. Vegetales al wok con arroz ( nasi) con \"pollo\" y \"huevo\". *Ligeramente picante. (opción sin picante )(Contiene soja, sésamo y sulfitos).",
+              "price": "14,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Sin gluten",
+                "Suave"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+              "imageAlt": "NASI GORENG",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-shawarma",
+              "name": "SHAWARMA",
+              "description": "El Shawarma o Shaggar es un plato originario de la gastronomía callejera de Medio Oriente, muy popular especialmente en Egipto y los países del Levante, la península arábiga, entre otros. En nuestra cocina se prepara con \"carne\", y se acompaña de hummus. (Contiene gluten, soja, sésamo y sulfitos en la salsa ).",
+              "price": "14,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_03c5c1f923504d16a775ce9a825bbc8d~mv2.jpg",
+              "imageAlt": "SHAWARMA",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            },
+            {
+              "id": "carta-street-food-poke-bowl-pollo",
+              "name": "POKE BOWL POLLO",
+              "description": "Poke bowl de \"pollo\", con arroz, piña, aguacate, cebolla roja, tomates secos, hummus y salsa rosa. (Contiene sésamo, soja y sulfitos)",
+              "price": "14,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sésamo",
+                "Soja",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+              "imageAlt": "POKE BOWL POLLO",
+              "sourceMenu": "carta",
+              "sourceSection": "STREET FOOD"
+            }
+          ]
+        },
+        {
+          "id": "carta-menu-infantil",
+          "name": "MENU INFANTIL",
+          "description": "Un menú elaborado para l@s peques",
+          "items": [
+            {
+              "id": "carta-menu-infantil-menu-infantil",
+              "name": "MENU INFANTIL",
+              "description": "Fingers de \"pollo\" con bastones de boniato fritos y arroz jazmín con salsa de tomate casera. Incluye bebida y postre. (Contiene gluten y soja).",
+              "price": "13,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Soja"
+              ],
+              "image": "",
+              "imageAlt": "MENU INFANTIL",
+              "sourceMenu": "carta",
+              "sourceSection": "MENU INFANTIL"
+            }
+          ]
+        },
+        {
+          "id": "carta-postres",
+          "name": "POSTRES",
+          "description": "Para terminar, un dulce con un toque \"tropicool\".",
+          "items": [
+            {
+              "id": "carta-postres-torrija-de-pina-colada",
+              "name": "TORRIJA DE PIÑA COLADA",
+              "description": "Torrija de piña colada con helado de mango-maracuyá. (Contiene gluten)",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+              "imageAlt": "TORRIJA DE PIÑA COLADA",
+              "sourceMenu": "carta",
+              "sourceSection": "POSTRES"
+            },
+            {
+              "id": "carta-postres-torrija-de-mango",
+              "name": "TORRIJA DE MANGO",
+              "description": "Torrija de mango con helado de chocolate. (Contiene gluten)",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+              "imageAlt": "TORRIJA DE MANGO",
+              "sourceMenu": "carta",
+              "sourceSection": "POSTRES"
+            },
+            {
+              "id": "carta-postres-tarta-de-choco",
+              "name": "TARTA DE CHOCO",
+              "description": "Tarta de choco con base de galleta y cubierta con mermelada de naranja asada con chili .",
+              "price": "6 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+              "imageAlt": "TARTA DE CHOCO",
+              "sourceMenu": "carta",
+              "sourceSection": "POSTRES"
+            },
+            {
+              "id": "carta-postres-tarta-de-queso-y-acai",
+              "name": "TARTA DE \"QUESO\" Y AÇAI",
+              "description": "Cogemos la clásica tarta de queso y le añadimos açai para darle nuestro toque Tropical. Acompañada de dulce de leche de coco.",
+              "price": "6 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+              "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
+              "sourceMenu": "carta",
+              "sourceSection": "POSTRES"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menu-del-dia",
+      "name": "Menú del día",
+      "sourceName": "MENU DEL DIA",
+      "description": "DE LUNES A JUEVES DE 13:30 A 16.30 (NO FESTIVOS) Incluye bebida y postre. Disponible take away.",
+      "sourceUrl": "https://www.tropicoolrestaurante.com/menus?menu=menu-del-dia-1",
+      "sections": [
+        {
+          "id": "menu-del-dia-menu-del-dia",
+          "name": "MENU DEL DIA",
+          "description": "",
+          "items": [
+            {
+              "id": "menu-del-dia-menu-del-dia-nasi-goreng",
+              "name": "NASI GORENG",
+              "description": "El nasi goreng es un plato típico de la cocina indonesia y malaya, con base de arroz y verduras salteadas al wok. Vegetales al wok con arroz ( nasi) con \"pollo\" y \"huevo\". *Ligeramente picante. (opción sin picante )(Contiene soja, sésamo y sulfitos).",
+              "price": "14,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Sin gluten",
+                "Suave"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+              "imageAlt": "NASI GORENG",
+              "sourceMenu": "menu-del-dia",
+              "sourceSection": "MENU DEL DIA"
+            },
+            {
+              "id": "menu-del-dia-menu-del-dia-pad-thai",
+              "name": "PAD THAI",
+              "description": "Tallarines de arroz salteados con verduras, \"pollo\", \"huevo\" y salsa de cacahuetes al más puro estilo de las calles de Bangkok. * Ligeramente picante (Contiene frutos secos y soja)",
+              "price": "14,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Frutos secos",
+                "Soja",
+                "Sin gluten",
+                "Suave"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+              "imageAlt": "PAD THAI",
+              "sourceMenu": "menu-del-dia",
+              "sourceSection": "MENU DEL DIA"
+            },
+            {
+              "id": "menu-del-dia-menu-del-dia-poke-bowl-pollo",
+              "name": "POKE BOWL POLLO",
+              "description": "Poke bowl de \"pollo\", con arroz, piña, aguacate, cebolla roja, tomates secos, hummus y salsa rosa. (Contiene sésamo, soja y sulfitos)",
+              "price": "14,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sésamo",
+                "Soja",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+              "imageAlt": "POKE BOWL POLLO",
+              "sourceMenu": "menu-del-dia",
+              "sourceSection": "MENU DEL DIA"
+            },
+            {
+              "id": "menu-del-dia-menu-del-dia-burger",
+              "name": "BURGER",
+              "description": "Elige entre nuestras burgers Latina u Oriental. Acompañadas de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo.",
+              "price": "14,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Frutos secos",
+                "Trigo"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+              "imageAlt": "BURGER",
+              "sourceMenu": "menu-del-dia",
+              "sourceSection": "MENU DEL DIA"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tardeo",
+      "name": "Tardeo",
+      "sourceName": "TARDEO",
+      "description": "Viernes, sábados, domingos y festivos de 16:30 a 20:00",
+      "sourceUrl": "https://www.tropicoolrestaurante.com/menus?menu=tardeo",
+      "sections": [
+        {
+          "id": "tardeo-tardeo",
+          "name": "TARDEO",
+          "description": "Y tú, para picar entre horas, ¿eres más de dulce o salado?",
+          "items": [
+            {
+              "id": "tardeo-tardeo-nachos",
+              "name": "NACHOS",
+              "description": "Nachos con \"chorizo\", frijoles, salsa \"cheddar\" casera, guacamole y pico de gallo. (Contiene gluten, soja y frutos secos).",
+              "price": "13,50 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Frutos secos",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+              "imageAlt": "NACHOS",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-fingers-de-pollo",
+              "name": "FINGERS DE \"POLLO\"",
+              "description": "Fingers de \"pollo\" crujiente con salsa de mostaza y agave. (Contiene soja y mostaza)",
+              "price": "",
+              "variants": [
+                {
+                  "name": "Media ración (4uds)",
+                  "price": "4,90 €"
+                },
+                {
+                  "name": "Ración (8uds)",
+                  "price": "9 €"
+                }
+              ],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+              "imageAlt": "FINGERS DE \"POLLO\"",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-tequenos",
+              "name": "TEQUEÑOS",
+              "description": "Ni el origen de esta receta ni su denominación están del todo claras, pero se atribuye a Venezuela su creación. Allí se manejan tres hipótesis, la más conocida y difundida es que son originarios de la ciudad de Los Teques. Tequeños de \"queso\" llanero típico venezolano. Acompañados con salsa tártara (\"mayonesa\", cebolla y cilantro). (Contiene gluten, soja, sésamo y mostaza y sulfitos en la salsa).",
+              "price": "",
+              "variants": [
+                {
+                  "name": "Media ración 4uds",
+                  "price": "8 €"
+                },
+                {
+                  "name": "Ración",
+                  "price": "14,9 €"
+                }
+              ],
+              "labels": [
+                "Soja",
+                "Trigo",
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+              "imageAlt": "TEQUEÑOS",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-tabla-de-humus-con-aceitunas-aderezadas",
+              "name": "TABLA DE HUMUS CON ACEITUNAS ADEREZADAS",
+              "description": "Nuestra tabla de aperitivos compuesta de humus con chips de yuca, y dos tipos de aceitunas con aderezo casero: sabor asiático (sake, jengibre, soja, lima, canela, sésamo y cilantro) y sabor mejicano (Achiote, limón, ajo, chiles, laurel y cebollino). (Contiene sésamo)",
+              "price": "9,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_8a872b3d808b46a081a09e6c06f53691~mv2.jpg",
+              "imageAlt": "TABLA DE HUMUS CON ACEITUNAS ADEREZADAS",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-patatas-cajun",
+              "name": "PATATAS CAJÚN",
+              "description": "Patatas gajo cajún con mostanesa sweet chili",
+              "price": "4,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_57b2538ac43245c290f686745aa16028~mv2.jpg",
+              "imageAlt": "PATATAS CAJÚN",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-sticks-de-boniato",
+              "name": "STICKS DE BONIATO",
+              "description": "Sticks de boniato frito acompañados de ketchup de remolacha.",
+              "price": "4,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_45fb51d6585244aeabf8651fd8eb420b~mv2.jpg",
+              "imageAlt": "STICKS DE BONIATO",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-edamame",
+              "name": "EDAMAME",
+              "description": "Edamames en su vaina, salteados con reducción de soja y sriracha y polvo de lima. (Contiene soja)",
+              "price": "4,90 €",
+              "variants": [],
+              "labels": [
+                "Suave",
+                "Vegano",
+                "Sin gluten",
+                "Soja"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+              "imageAlt": "EDAMAME",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-cookies",
+              "name": "COOKIES",
+              "description": "Nuestras cookies elaboradas completamente en nuestra cocina con dos variedades, chocolate y avellanas y Levain, con chips de chocolate y nueces. 2,5€ la unidad. (contiene gluten y frutos secos )",
+              "price": "2,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo",
+                "Frutos secos"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_d9ff5226fccd4686bee3a7605b83475d~mv2.jpg",
+              "imageAlt": "COOKIES",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-torrija-de-pina-colada",
+              "name": "TORRIJA DE PIÑA COLADA",
+              "description": "Torrija de piña colada con helado de mango-maracuyá. (Contiene gluten)",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+              "imageAlt": "TORRIJA DE PIÑA COLADA",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-torrija-de-mango",
+              "name": "TORRIJA DE MANGO",
+              "description": "Torrija de mango con helado de chocolate. (Contiene gluten)",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+              "imageAlt": "TORRIJA DE MANGO",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-tarta-de-queso-y-acai",
+              "name": "TARTA DE \"QUESO\" Y AÇAI",
+              "description": "Cogemos la clásica tarta de queso y le añadimos açai para darle nuestro toque Tropical. Acompañada de dulce de leche de coco.",
+              "price": "6 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Soja",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+              "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            },
+            {
+              "id": "tardeo-tardeo-tarta-de-choco",
+              "name": "TARTA DE CHOCO",
+              "description": "Tarta de choco con base de galleta y cubierta con mermelada de naranja asada con chili .",
+              "price": "6 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+              "imageAlt": "TARTA DE CHOCO",
+              "sourceMenu": "tardeo",
+              "sourceSection": "TARDEO"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bebida",
+      "name": "Bebida",
+      "sourceName": "BEBIDA",
+      "description": "",
+      "sourceUrl": "https://www.tropicoolrestaurante.com/menus?menu=sides",
+      "sections": [
+        {
+          "id": "bebida-limonadas",
+          "name": "LIMONADAS",
+          "description": "Disfruta de nuestras limonadas 100% naturales y hechas a mano. Refrescantes y con sabores muy sorprendentes. Sin alcohol",
+          "items": [
+            {
+              "id": "bebida-limonadas-black-lemonade",
+              "name": "BLACK LEMONADE",
+              "description": "Limonada 100% natural con carbón activo y azúcar de caña.",
+              "price": "5,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_8fffb49363764b4e9a02ca9e6172f7d8~mv2.jpg",
+              "imageAlt": "BLACK LEMONADE",
+              "sourceMenu": "bebida",
+              "sourceSection": "LIMONADAS"
+            },
+            {
+              "id": "bebida-limonadas-pink-lemonade",
+              "name": "PINK LEMONADE",
+              "description": "Limonada 100% natural con bayas de açai y azúcar de caña.",
+              "price": "5,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_3c73f91f924643379f5ab0dbb81f0849~mv2.jpg",
+              "imageAlt": "PINK LEMONADE",
+              "sourceMenu": "bebida",
+              "sourceSection": "LIMONADAS"
+            },
+            {
+              "id": "bebida-limonadas-green-lemonade",
+              "name": "GREEN LEMONADE",
+              "description": "Limonada 100% natural con menta y azúcar de caña.",
+              "price": "5,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_fe90c119b54849b9a55a80827500c6a1~mv2.jpg",
+              "imageAlt": "GREEN LEMONADE",
+              "sourceMenu": "bebida",
+              "sourceSection": "LIMONADAS"
+            },
+            {
+              "id": "bebida-limonadas-velvet-lemonade",
+              "name": "VELVET LEMONADE",
+              "description": "Limonada 100% natural con frambuesa y azúcar de caña.",
+              "price": "5,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_1f0569924eeb449a975a6fae579df9a0~mv2.jpg",
+              "imageAlt": "VELVET LEMONADE",
+              "sourceMenu": "bebida",
+              "sourceSection": "LIMONADAS"
+            },
+            {
+              "id": "bebida-limonadas-white-lemonade",
+              "name": "WHITE LEMONADE",
+              "description": "Limonada 100% natural con coco y azúcar de caña.",
+              "price": "5,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_7f4b2e6c627141b38793be6cf15b19af~mv2.jpg",
+              "imageAlt": "WHITE LEMONADE",
+              "sourceMenu": "bebida",
+              "sourceSection": "LIMONADAS"
+            }
+          ]
+        },
+        {
+          "id": "bebida-refrescos-zumos-y-agua",
+          "name": "REFRESCOS, ZUMOS Y AGUA",
+          "description": "",
+          "items": [
+            {
+              "id": "bebida-refrescos-zumos-y-agua-fritz-kola-original-y-sin-azucar",
+              "name": "FRITZ KOLA ORIGINAL Y SIN AZUCAR",
+              "description": "Sabor original y sin azúcar Hecha con nuez de cola real y cafeína natural.",
+              "price": "3,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "",
+              "imageAlt": "FRITZ KOLA ORIGINAL Y SIN AZUCAR",
+              "sourceMenu": "bebida",
+              "sourceSection": "REFRESCOS, ZUMOS Y AGUA"
+            },
+            {
+              "id": "bebida-refrescos-zumos-y-agua-fritz-naranja-limon",
+              "name": "FRITZ NARANJA/ LIMON",
+              "description": "Sin duda, una refresco perfecto : sabor afrutado, elaborado con limones y naranjas ecológicos. Un refresco buenísimo. Calma la sed con esta refrescante bebida de limón o naranja elaborada con ingredientes naturales y zumo de limón o naranja . Además, es sin gluten y vegano.",
+              "price": "3,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "",
+              "imageAlt": "FRITZ NARANJA/ LIMON",
+              "sourceMenu": "bebida",
+              "sourceSection": "REFRESCOS, ZUMOS Y AGUA"
+            },
+            {
+              "id": "bebida-refrescos-zumos-y-agua-zumos-linda",
+              "name": "ZUMOS LINDA",
+              "description": "MANDARINA Y ROMERO O PERA Y PIMIENTA DE SICHUAN",
+              "price": "3,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "",
+              "imageAlt": "ZUMOS LINDA",
+              "sourceMenu": "bebida",
+              "sourceSection": "REFRESCOS, ZUMOS Y AGUA"
+            },
+            {
+              "id": "bebida-refrescos-zumos-y-agua-linda-te-verde",
+              "name": "LINDA TÉ VERDE",
+              "description": "Nuestro ice té natural no contienen ingredientes artificiales, ni azúcares añadidos y tienen menos de 50 calorías a parte de estar hecho en España con agua pura de manantiales.",
+              "price": "3,5 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "",
+              "imageAlt": "LINDA TÉ VERDE",
+              "sourceMenu": "bebida",
+              "sourceSection": "REFRESCOS, ZUMOS Y AGUA"
+            },
+            {
+              "id": "bebida-refrescos-zumos-y-agua-kombucha",
+              "name": "KOMBUCHA",
+              "description": "DE FRUTOS ROJOS O LIMON Y JENGIBRE.",
+              "price": "3,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "",
+              "imageAlt": "KOMBUCHA",
+              "sourceMenu": "bebida",
+              "sourceSection": "REFRESCOS, ZUMOS Y AGUA"
+            },
+            {
+              "id": "bebida-refrescos-zumos-y-agua-agua-mineral-font-vella",
+              "name": "AGUA MINERAL FONT VELLA",
+              "description": "El agua mineral natural Font Vella lanza al mercado una identidad de marca renovada para su gama de vidrio en la que resalta, desde 1878 hasta nuestros días, su larga relación con la hostelería y su constante presencia en nuestras mesas.",
+              "price": "",
+              "variants": [
+                {
+                  "name": "1L",
+                  "price": "4 €"
+                },
+                {
+                  "name": "0.5L",
+                  "price": "2,5 €"
+                }
+              ],
+              "labels": [],
+              "image": "",
+              "imageAlt": "AGUA MINERAL FONT VELLA",
+              "sourceMenu": "bebida",
+              "sourceSection": "REFRESCOS, ZUMOS Y AGUA"
+            },
+            {
+              "id": "bebida-refrescos-zumos-y-agua-agua-con-gas-imperial",
+              "name": "AGUA CON GAS IMPERIAL",
+              "description": "Tu agua mineral natural con gas procedente de Caldes de Malavella, una ciudad termal y reconocida como el origen del agua con gas de alta calidad, a la que se le otorga propiedades minero-medicinales desde 1928, que la convierten en un agua especialmente saludable. 0,5L",
+              "price": "2,9 €",
+              "variants": [],
+              "labels": [],
+              "image": "",
+              "imageAlt": "AGUA CON GAS IMPERIAL",
+              "sourceMenu": "bebida",
+              "sourceSection": "REFRESCOS, ZUMOS Y AGUA"
+            }
+          ]
+        },
+        {
+          "id": "bebida-cervezas-y-sidra",
+          "name": "CERVEZAS Y SIDRA",
+          "description": "",
+          "items": [
+            {
+              "id": "bebida-cervezas-y-sidra-mahou-clasica",
+              "name": "MAHOU CLASICA",
+              "description": "La Mahou que siempre está ahí, como los amigos de toda la vida. Con una receta de más de 130 años de antigüedad, Mahou Clásica es la Pale Lager con la que brindar con tus amigos de siempre",
+              "price": "",
+              "variants": [
+                {
+                  "name": "CAÑA",
+                  "price": "2,5 €"
+                },
+                {
+                  "name": "JARRA",
+                  "price": "3,9 €"
+                }
+              ],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "",
+              "imageAlt": "MAHOU CLASICA",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            },
+            {
+              "id": "bebida-cervezas-y-sidra-mahou-reserva",
+              "name": "MAHOU RESERVA",
+              "description": "Cerveza de sabor único, con ingredientes especialmente seleccionados: la malta Munich proporciona matices acaramelados y los lúpulos americanos en late hopping aportan un refinado aroma. 33cl 6,3%vol",
+              "price": "3,9 €",
+              "variants": [],
+              "labels": [],
+              "image": "",
+              "imageAlt": "MAHOU RESERVA",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            },
+            {
+              "id": "bebida-cervezas-y-sidra-mahou-sin-gluten",
+              "name": "MAHOU SIN GLUTEN",
+              "description": "De color dorado brillante, nuestra cerveza sin gluten destaca por su cremosidad y consistencia, así como por su cuerpo intenso y equilibrado y su aroma afrutado.",
+              "price": "3,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "",
+              "imageAlt": "MAHOU SIN GLUTEN",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            },
+            {
+              "id": "bebida-cervezas-y-sidra-mahou-radler",
+              "name": "MAHOU RADLER",
+              "description": "Cerveza con Limón Alc: 3,20%.",
+              "price": "3,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "",
+              "imageAlt": "MAHOU RADLER",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            },
+            {
+              "id": "bebida-cervezas-y-sidra-corona",
+              "name": "CORONA",
+              "description": "Cerveza de tipo pilsner. 4,5º",
+              "price": "3,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "",
+              "imageAlt": "CORONA",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            },
+            {
+              "id": "bebida-cervezas-y-sidra-the-good-cider",
+              "name": "THE GOOD CIDER",
+              "description": "Sidra artesanal. Sabor Dry Apple o Strawberry.",
+              "price": "3,9 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "",
+              "imageAlt": "THE GOOD CIDER",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            },
+            {
+              "id": "bebida-cervezas-y-sidra-mahou-sin-alcohol",
+              "name": "MAHOU SIN ALCOHOL",
+              "description": "Una cerveza \"sin\" que está muy cerca del sabor de una \"con\". Pale Lager con un bajo nivel de amargor y un leve dulzor sin alcohol.",
+              "price": "3,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "",
+              "imageAlt": "MAHOU SIN ALCOHOL",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            },
+            {
+              "id": "bebida-cervezas-y-sidra-mahou-0-0-tostada",
+              "name": "MAHOU 0,0 TOSTADA",
+              "description": "Mahou 0,0 Tostada, elaborada para los que quieren disfrutar de una experiencia 100% cervecera cuándo y dónde sea, con un sabor tostado que hará las delicias de los paladares más exigentes.",
+              "price": "3,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Trigo"
+              ],
+              "image": "",
+              "imageAlt": "MAHOU 0,0 TOSTADA",
+              "sourceMenu": "bebida",
+              "sourceSection": "CERVEZAS Y SIDRA"
+            }
+          ]
+        },
+        {
+          "id": "bebida-sangria-vermu-vino-y-cava",
+          "name": "SANGRÍA, VERMÚ, VINO Y CAVA",
+          "description": "",
+          "items": [
+            {
+              "id": "bebida-sangria-vermu-vino-y-cava-vermut-bendito",
+              "name": "VERMUT BENDITO",
+              "description": "Vermut rojo Bendito.",
+              "price": "4,5 €",
+              "variants": [],
+              "labels": [],
+              "image": "https://static.wixstatic.com/media/c51783_eb64ba9ccf3b4c2888d5675a02e6353d~mv2.jpg",
+              "imageAlt": "VERMUT BENDITO",
+              "sourceMenu": "bebida",
+              "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
+            },
+            {
+              "id": "bebida-sangria-vermu-vino-y-cava-blanco-de-verano",
+              "name": "BLANCO DE VERANO",
+              "description": "Vino blanco con limón y hierbabuena.",
+              "price": "4,5 €",
+              "variants": [],
+              "labels": [],
+              "image": "",
+              "imageAlt": "BLANCO DE VERANO",
+              "sourceMenu": "bebida",
+              "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
+            },
+            {
+              "id": "bebida-sangria-vermu-vino-y-cava-sangria-tropicool",
+              "name": "SANGRIA TROPICOOL",
+              "description": "Sangría con fruta del trópico y elaborada con vino semi dulce blanco con toques muy frescos y tropicales.",
+              "price": "14,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_4c117be148bd4e39af2965b69eee9939~mv2.jpg",
+              "imageAlt": "SANGRIA TROPICOOL",
+              "sourceMenu": "bebida",
+              "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
+            },
+            {
+              "id": "bebida-sangria-vermu-vino-y-cava-chiquita-locura-tinto-botella",
+              "name": "CHIQUITA LOCURA (TINTO) BOTELLA",
+              "description": "Vino tinto joven elaborado de uvas tintas procedentes de suelos volcánicos en las Islas Canarias. Color rojo rubí, con un sutil ribete violáceo y capa media. En nariz se presenta intenso destacando las notas propias de la Listán negro (pimienta negra y hoja de higuera) y dotándole de complejidad el aporte de las otras variedades. En boca es agradable, con carácter y una tanicidad media. Alc: 13,5% vol. (Contiene Sulfitos)",
+              "price": "",
+              "variants": [
+                {
+                  "name": "COPA",
+                  "price": "4,5 €"
+                },
+                {
+                  "name": "BOTELLA",
+                  "price": "24 €"
+                }
+              ],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_82a0c68dfd974f2fb6d4809b0c46ae16~mv2.jpg",
+              "imageAlt": "CHIQUITA LOCURA (TINTO) BOTELLA",
+              "sourceMenu": "bebida",
+              "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
+            },
+            {
+              "id": "bebida-sangria-vermu-vino-y-cava-flor-de-chasna-blanco-afrutado-botella",
+              "name": "FLOR DE CHASNA (BLANCO AFRUTADO) BOTELLA",
+              "description": "El galardonado Flor de Chasna Blanco Afrutado es un vino joven y fresco. Su color es blanco pálido con irisaciones verdes y plateadas. En nariz tiene un aroma muy intenso que recuerda a frutas tropicales como la parchita o el melocotón y también nos recuerda a hierbas como la ruda. Los viñedos de este vino están situados a más de 1.000 metros de altitud, lo que los hace uno de los más altos de Europa, procedentes exclusivamente de los altos del municipio de la Comarca de Abona (Tenerife). Alc: 10,5% vol. (Contiene Sulfitos)",
+              "price": "",
+              "variants": [
+                {
+                  "name": "BOTELLA",
+                  "price": "24 €"
+                },
+                {
+                  "name": "COPA",
+                  "price": "4,5 €"
+                }
+              ],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_4c0fe704ae3d4df8b75c9ed88f499da8~mv2.jpg",
+              "imageAlt": "FLOR DE CHASNA (BLANCO AFRUTADO) BOTELLA",
+              "sourceMenu": "bebida",
+              "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
+            },
+            {
+              "id": "bebida-sangria-vermu-vino-y-cava-bach-extrisimo-semidulce-blanco",
+              "name": "Bach Extrísimo Semidulce Blanco",
+              "description": "Su paladar suave y ligeramente dulce marcó una época y con ella un precedente de vinos dulces de calidad. Bach Extrísimo Semidulce Blanco está elaborado con Xarel·lo y Macabeo y su vinificación es tradicional: tras el despalillado y el prensado se enfría y clarifica el mosto preparándolo para la fermentación alcohólica a temperatura controlada durante 7 o 10 días.",
+              "price": "",
+              "variants": [
+                {
+                  "name": "COPA",
+                  "price": "3 €"
+                },
+                {
+                  "name": "BOTELLA",
+                  "price": "12 €"
+                }
+              ],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_c7e15ec418054ea1816867b24607d815~mv2.webp",
+              "imageAlt": "Bach Extrísimo Semidulce Blanco",
+              "sourceMenu": "bebida",
+              "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
+            },
+            {
+              "id": "bebida-sangria-vermu-vino-y-cava-moet-chandon-rose",
+              "name": "MÖET & CHANDON ROSE",
+              "description": "SERVIDO CON HIELO Y FRESAS",
+              "price": "100 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_fef8be75a7ce4edcb08b27e478805aba~mv2.png",
+              "imageAlt": "MÖET & CHANDON ROSE",
+              "sourceMenu": "bebida",
+              "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
+            }
+          ]
+        },
+        {
+          "id": "bebida-cafe-e-infusiones",
+          "name": "CAFÉ E INFUSIONES",
+          "description": "",
+          "items": [
+            {
+              "id": "bebida-cafe-e-infusiones-cafe-solo",
+              "name": "CAFÉ SOLO",
+              "description": "Mezcla de granos de Arábica de América y Robusta Africano. Con un ligero sabor a miel y fruta Madura.",
+              "price": "2 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin lactosa",
+                "Soja"
+              ],
+              "image": "",
+              "imageAlt": "CAFÉ SOLO",
+              "sourceMenu": "bebida",
+              "sourceSection": "CAFÉ E INFUSIONES"
+            },
+            {
+              "id": "bebida-cafe-e-infusiones-cafe-con-bebida-vegetal-soja-o-avena",
+              "name": "CAFÉ CON BEBIDA VEGETAL (SOJA O AVENA)",
+              "description": "",
+              "price": "2,50 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin lactosa",
+                "Sin gluten"
+              ],
+              "image": "",
+              "imageAlt": "CAFÉ CON BEBIDA VEGETAL (SOJA O AVENA)",
+              "sourceMenu": "bebida",
+              "sourceSection": "CAFÉ E INFUSIONES"
+            },
+            {
+              "id": "bebida-cafe-e-infusiones-cafe-capuchino",
+              "name": "CAFÉ CAPUCHINO",
+              "description": "",
+              "price": "",
+              "variants": [],
+              "labels": [],
+              "image": "",
+              "imageAlt": "CAFÉ CAPUCHINO",
+              "sourceMenu": "bebida",
+              "sourceSection": "CAFÉ E INFUSIONES"
+            },
+            {
+              "id": "bebida-cafe-e-infusiones-pistaccio-latte",
+              "name": "PISTACCIO LATTE",
+              "description": "El Pistaccio latte o Café de pistacho tiene este fruto seco tan exquisito y rico en nutrientes como protagonista. Solo se puede elaborar con leche de soja",
+              "price": "3,20 €",
+              "variants": [],
+              "labels": [
+                "Soja",
+                "Frutos secos",
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_6734722fdaf746f180f3cdd6f15d1c5e~mv2.jpg",
+              "imageAlt": "PISTACCIO LATTE",
+              "sourceMenu": "bebida",
+              "sourceSection": "CAFÉ E INFUSIONES"
+            },
+            {
+              "id": "bebida-cafe-e-infusiones-infusiones",
+              "name": "INFUSIONES",
+              "description": "Una colección de tés e infusiones elaborada con una cuidada selección de fruta, flores, hierbas y tés. MASALA CHAI-- TE ROJO ROYAL -- ROOIBOS NARANAJA DULCE --- ORGANIC EARL GREY --- RELAX ---MANZANILLA --FRUTOS DEL BOSQUE -- POLEO MENTA --- GINGER LEMON ---TE VERDE GUN POWDER ---ORGANIC DIGESTIVE ---",
+              "price": "2,90 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "",
+              "imageAlt": "INFUSIONES",
+              "sourceMenu": "bebida",
+              "sourceSection": "CAFÉ E INFUSIONES"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cocteles",
+      "name": "Cócteles",
+      "sourceName": "CÓCTELES",
+      "description": "Preparamos nuestros cócteles en el momento, con las mejores frutas del trópico. Lo mejor: verte disfrutar con ellos.",
+      "sourceUrl": "https://www.tropicoolrestaurante.com/menus?menu=c%C3%B3cteles",
+      "sections": [
+        {
+          "id": "cocteles-con-alcohol",
+          "name": "CON ALCOHOL",
+          "description": "",
+          "items": [
+            {
+              "id": "cocteles-con-alcohol-palma",
+              "name": "PALMA",
+              "description": "Vodka, sirope de manzana, limón y azúcar de remolacha.",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_95c03199442c4f489111ce8b91035a7e~mv2.jpg",
+              "imageAlt": "PALMA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-bahia",
+              "name": "BAHÍA",
+              "description": "Ginebra, aperol, puré de maracuyá, pomelo.",
+              "price": "10 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_66f08d8aa5864ee6918846f82d305f49~mv2.jpg",
+              "imageAlt": "BAHÍA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-mojito-clasico",
+              "name": "MOJITO CLASICO",
+              "description": "Lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_667b09d83efa4569bbdb08f4da9051b1~mv2.jpg",
+              "imageAlt": "MOJITO CLASICO",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-mojito-de-sandia",
+              "name": "MOJITO DE SANDÍA",
+              "description": "Sandía, lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+              "imageAlt": "MOJITO DE SANDÍA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-mojito-de-fresa",
+              "name": "MOJITO DE FRESA",
+              "description": "Fresa, lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_b1a666dcfc5a48df9fb81f90dd29e8f3~mv2.jpg",
+              "imageAlt": "MOJITO DE FRESA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-mojito-de-maracuya",
+              "name": "MOJITO DE MARACUYÁ",
+              "description": "Ron blanco, puré de maracuyá, pupa de maracuyá, hierbabuena, physalis.",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+              "imageAlt": "MOJITO DE MARACUYÁ",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-mojito-sunrise",
+              "name": "MOJITO SUNRISE",
+              "description": "Mandarina, lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_d9d3bedc87884acdbddadeb9b32c0e0d~mv2.jpg",
+              "imageAlt": "MOJITO SUNRISE",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-margarita",
+              "name": "MARGARITA",
+              "description": "Tequila, limón natural, licor de naranja, sample syrup y lima",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_0c7ec13475494fa290005ba1c5690e58~mv2.jpg",
+              "imageAlt": "MARGARITA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-daikiri-mango",
+              "name": "DAIKIRI MANGO",
+              "description": "Ron Santa Teresa, puré de mango, zumo de limón natural.",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_d265e246859b4e4780fcc742a251974a~mv2.jpg",
+              "imageAlt": "DAIKIRI MANGO",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-daikiri-fresa",
+              "name": "DAIKIRI FRESA",
+              "description": "Ron Santa Teresa, puré de fresa y zumo de limón natural.",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_7e88eae264ec42efbff01ca733ad8da7~mv2.jpg",
+              "imageAlt": "DAIKIRI FRESA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-caipirinha",
+              "name": "CAIPIRINHA",
+              "description": "Cachaza, lima y azúcar de remolacha",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_f3192c16b5ae4beaa80d71ee17aa5304~mv2.jpg",
+              "imageAlt": "CAIPIRINHA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-jagerinha",
+              "name": "JAGERINHA",
+              "description": "Jägermeister, lima y azúcar de remolacha",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_30b5ef7b3ad04b9bbc8a4adda8f14525~mv2.jpg",
+              "imageAlt": "JAGERINHA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-tequila-sunrise",
+              "name": "TEQUILA SUNRISE",
+              "description": "Tequila, zumo de naranja, granadina y naranja natural",
+              "price": "10 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_1741d856f4e44e00b160ee0351a30ff6~mv2.jpg",
+              "imageAlt": "TEQUILA SUNRISE",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-sex-on-the-beach",
+              "name": "SEX ON THE BEACH",
+              "description": "Vodka, zumo de naranja, arándanos, granadina, licor de durazno y naranja natural",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_76c4ed4cedea4f62ba5daf907f5aeefc~mv2.jpg",
+              "imageAlt": "SEX ON THE BEACH",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-aperol-citrus-spritz",
+              "name": "APEROL CITRUS SPRITZ",
+              "description": "Aperol, pomelo rosa, zumo de naranja, cinzano spritz.",
+              "price": "10 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_d4c042b91da942ed9c95df8c8a1f5a60~mv2.jpg",
+              "imageAlt": "APEROL CITRUS SPRITZ",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-aperol-spritz",
+              "name": "APEROL SPRITZ",
+              "description": "Aperol, naranja, proseco y soda",
+              "price": "9 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_9caf407336314743b176467574a4ba96~mv2.jpg",
+              "imageAlt": "APEROL SPRITZ",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            },
+            {
+              "id": "cocteles-con-alcohol-pina-colada",
+              "name": "PIÑA COLADA",
+              "description": "Ron, coco, zumo de piña y piña natural",
+              "price": "10 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_5b60183651b44300a09d251afaeb8028~mv2.jpg",
+              "imageAlt": "PIÑA COLADA",
+              "sourceMenu": "cocteles",
+              "sourceSection": "CON ALCOHOL"
+            }
+          ]
+        },
+        {
+          "id": "cocteles-sin-alcohol",
+          "name": "SIN ALCOHOL",
+          "description": "",
+          "items": [
+            {
+              "id": "cocteles-sin-alcohol-mojito-clasico-sin",
+              "name": "MOJITO CLASICO SIN",
+              "description": "Lima, hierbabuena, azúcar de remolacha y soda",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "",
+              "imageAlt": "MOJITO CLASICO SIN",
+              "sourceMenu": "cocteles",
+              "sourceSection": "SIN ALCOHOL"
+            },
+            {
+              "id": "cocteles-sin-alcohol-mojito-de-sandia-sin",
+              "name": "MOJITO DE SANDÍA SIN",
+              "description": "Sandía, lima, hierbabuena, azúcar de remolacha y soda",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+              "imageAlt": "MOJITO DE SANDÍA SIN",
+              "sourceMenu": "cocteles",
+              "sourceSection": "SIN ALCOHOL"
+            },
+            {
+              "id": "cocteles-sin-alcohol-mojito-de-fresa-sin",
+              "name": "MOJITO DE FRESA SIN",
+              "description": "Fresa, frambuesa, lima, hierbabuena, azúcar de remolacha y soda",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "",
+              "imageAlt": "MOJITO DE FRESA SIN",
+              "sourceMenu": "cocteles",
+              "sourceSection": "SIN ALCOHOL"
+            },
+            {
+              "id": "cocteles-sin-alcohol-mojito-sunrise-sin",
+              "name": "MOJITO SUNRISE SIN",
+              "description": "Mandarina, lima, hierbabuena, azúcar de remolacha y soda",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "",
+              "imageAlt": "MOJITO SUNRISE SIN",
+              "sourceMenu": "cocteles",
+              "sourceSection": "SIN ALCOHOL"
+            },
+            {
+              "id": "cocteles-sin-alcohol-sex-on-the-beach-sin",
+              "name": "SEX ON THE BEACH SIN",
+              "description": "Zumo de naranja, fresa y granadina.",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "",
+              "imageAlt": "SEX ON THE BEACH SIN",
+              "sourceMenu": "cocteles",
+              "sourceSection": "SIN ALCOHOL"
+            },
+            {
+              "id": "cocteles-sin-alcohol-pina-colada-sin",
+              "name": "PIÑA COLADA SIN",
+              "description": "coco, zumo de piña y piña natural",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "",
+              "imageAlt": "PIÑA COLADA SIN",
+              "sourceMenu": "cocteles",
+              "sourceSection": "SIN ALCOHOL"
+            },
+            {
+              "id": "cocteles-sin-alcohol-mojito-de-maracuya-sin",
+              "name": "MOJITO DE MARACUYÁ SIN",
+              "description": "Puré de maracuyá, pulpa de maracuyá, hierbabuena, physalis.",
+              "price": "7 €",
+              "variants": [],
+              "labels": [
+                "Vegano"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+              "imageAlt": "MOJITO DE MARACUYÁ SIN",
+              "sourceMenu": "cocteles",
+              "sourceSection": "SIN ALCOHOL"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shishas-cachimbas",
+      "name": "Shishas - cachimbas",
+      "sourceName": "SHISHAS- CACHIMBAS",
+      "description": "La shisha o narguile tiene su origen en el imperio persa pero pronto se extendió al Mediterráneo oriental, fue un símbolo de status y lujo entre sultanes y sus mujeres. Todas nuestras shishas se desinfectan y limpian entre cliente y cliente. Las cazoletas que ofrecemos son de 15gr de carga de tabaco, por lo que el tiempo de la fumada es más largo. Las cachimbas están disponibles para consumir únicamente en terraza todo el día, o también en interior a partir de las 00:00. *Pueden contener hasta un 0,05 de nicotina, solo para mayores de 18 años",
+      "sourceUrl": "https://www.tropicoolrestaurante.com/menus?menu=shishas--cachimbas",
+      "sections": [
+        {
+          "id": "shishas-cachimbas-shishas-cahimbas",
+          "name": "SHISHAS-CAHIMBAS",
+          "description": "",
+          "items": [
+            {
+              "id": "shishas-cachimbas-shishas-cahimbas-shishas-cahimbas",
+              "name": "SHISHAS-CAHIMBAS",
+              "description": "*COSTEÑA (amarilla) Pastel de queso con lima. *AMAZONAS (verde) Limón, lima, kiwi, té verde y chicle de menta. *BANGKOK (roja) Fresa, pera espumosa y sandía. *BORA BORA (azul) Uva moscatel, bayas de açai, arándanos y grosellas negras.",
+              "price": "15 €",
+              "variants": [],
+              "labels": [
+                "Vegano",
+                "Sin gluten"
+              ],
+              "image": "https://static.wixstatic.com/media/c51783_6e5dcf06b278498f8b74ea25e7d0f472~mv2.jpg",
+              "imageAlt": "SHISHAS-CAHIMBAS",
+              "sourceMenu": "shishas-cachimbas",
+              "sourceSection": "SHISHAS-CAHIMBAS"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "carta-entrantes-nachos",
+      "name": "NACHOS",
+      "description": "Nachos con \"chorizo\", frijoles, salsa \"cheddar\" casera, guacamole y pico de gallo. (Contiene gluten, soja y frutos secos).",
+      "price": "13,50 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Frutos secos",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+      "imageAlt": "NACHOS",
+      "sourceMenu": "carta",
+      "sourceSection": "ENTRANTES",
+      "category": "Carta",
+      "section": "ENTRANTES"
+    },
+    {
+      "id": "carta-entrantes-fingers-de-pollo",
+      "name": "FINGERS DE \"POLLO\"",
+      "description": "Fingers de \"pollo\" crujiente con salsa de mostaza y agave. (Contiene soja y mostaza)",
+      "price": "",
+      "variants": [
+        {
+          "name": "Media ración (4uds)",
+          "price": "4,90 €"
+        },
+        {
+          "name": "Ración (8uds)",
+          "price": "9 €"
+        }
+      ],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+      "imageAlt": "FINGERS DE \"POLLO\"",
+      "sourceMenu": "carta",
+      "sourceSection": "ENTRANTES",
+      "category": "Carta",
+      "section": "ENTRANTES"
+    },
+    {
+      "id": "carta-entrantes-falafel",
+      "name": "FALAFEL",
+      "description": "Falafel casero con salsa de yogur, \"mayonesa\" y tahina. Aliñados con salsa Dukkah, elaborada con especias de sésamo tostado, menta y cilantro. (Contiene Soja, frutos secos)",
+      "price": "12 €",
+      "variants": [],
+      "labels": [
+        "Frutos secos",
+        "Soja",
+        "Sin gluten",
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_d797042422de437399307212511e706f~mv2.jpg",
+      "imageAlt": "FALAFEL",
+      "sourceMenu": "carta",
+      "sourceSection": "ENTRANTES",
+      "category": "Carta",
+      "section": "ENTRANTES"
+    },
+    {
+      "id": "carta-entrantes-brochetas-sahara",
+      "name": "BROCHETAS SAHARA",
+      "description": "Brochetas ahumadas. Acompañadas de boniato frito. (Contiene soja, sésamo y mostaza).",
+      "price": "13,50 €",
+      "variants": [],
+      "labels": [
+        "Soja",
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_4692009ecf7647f2908b0b505359eeac~mv2.jpg",
+      "imageAlt": "BROCHETAS SAHARA",
+      "sourceMenu": "carta",
+      "sourceSection": "ENTRANTES",
+      "category": "Carta",
+      "section": "ENTRANTES"
+    },
+    {
+      "id": "carta-entrantes-edamame",
+      "name": "EDAMAME",
+      "description": "Edamames en su vaina, salteados con reducción de soja y sriracha y polvo de lima. (Contiene soja)",
+      "price": "4,90 €",
+      "variants": [],
+      "labels": [
+        "Suave",
+        "Vegano",
+        "Sin gluten",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+      "imageAlt": "EDAMAME",
+      "sourceMenu": "carta",
+      "sourceSection": "ENTRANTES",
+      "category": "Carta",
+      "section": "ENTRANTES"
+    },
+    {
+      "id": "carta-entrantes-karaage",
+      "name": "KARAAGE",
+      "description": "El karaage es una técnica culinaria japonesa que consiste en marinar y freír diversos ingredientes, de forma parecida a la tempura. Nuestra versión consiste en \"pollo\" marinado en sake, ajo y jengibre y aliñado con furikake (mezcla de especias y algas). (Contiene soja, sésamo y mostaza en la salsa ).",
+      "price": "13 €",
+      "variants": [],
+      "labels": [
+        "Soja",
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_62d9ca5dbae347afa93ac76417afdf20~mv2.jpg",
+      "imageAlt": "KARAAGE",
+      "sourceMenu": "carta",
+      "sourceSection": "ENTRANTES",
+      "category": "Carta",
+      "section": "ENTRANTES"
+    },
+    {
+      "id": "carta-entrantes-tequenos",
+      "name": "TEQUEÑOS",
+      "description": "Ni el origen de esta receta ni su denominación están del todo claras, pero se atribuye a Venezuela su creación. Allí se manejan tres hipótesis, la más conocida y difundida es que son originarios de la ciudad de Los Teques. Tequeños de \"queso\" llanero típico venezolano. Acompañados con salsa tártara (\"mayonesa\", cebolla y cilantro). (Contiene gluten, soja, sésamo y mostaza y sulfitos en la salsa).",
+      "price": "",
+      "variants": [
+        {
+          "name": "Media ración 4uds",
+          "price": "8 €"
+        },
+        {
+          "name": "Ración",
+          "price": "14,9 €"
+        }
+      ],
+      "labels": [
+        "Soja",
+        "Trigo",
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+      "imageAlt": "TEQUEÑOS",
+      "sourceMenu": "carta",
+      "sourceSection": "ENTRANTES",
+      "category": "Carta",
+      "section": "ENTRANTES"
+    },
+    {
+      "id": "carta-street-food-sandwich-el-cubanito",
+      "name": "SÁNDWICH \"EL CUBANITO\"",
+      "description": "Sándwich de pulled \"pork\" marinado, entre tres capas de pan brioche. Con \"bacon\", queso cheddar, pepinillos agridulces, mezclum de lechuga y nuestra salsa \"mostanesa\". Acompañado de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja y mostaza).",
+      "price": "14,50 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Trigo"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_fd4968382a244c3c83379cecc833ce11~mv2.jpg",
+      "imageAlt": "SÁNDWICH \"EL CUBANITO\"",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-burger-latina",
+      "name": "BURGER LATINA",
+      "description": "Con \"bacon\", salsa de jalapeños, guacamole y cebolla roja, lechuga y tomate. AÑADE EXTRA \"QUESO\" POR +1€. Acompañada de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja y sulfitos)",
+      "price": "13,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+      "imageAlt": "BURGER LATINA",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-burger-oriental",
+      "name": "BURGER ORIENTAL",
+      "description": "Con seta shitake y mayonesa de kimchi. AÑADE EXTRA \"QUESO\" POR +1€. AÑADE EXTRA \"BACON\" POR +1€. Acompañada de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja y sulfitos)",
+      "price": "13,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_0d7fc1342ff147558ae0a69626009ddd~mv2.jpg",
+      "imageAlt": "BURGER ORIENTAL",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-bocadillo-de-kanda",
+      "name": "BOCADILLO DE \"KANDA\"",
+      "description": "Bocadillo de albóndigas de estilo africano, con salsa de tomate casera y \"queso\" fundido. Acompañado de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (Contiene gluten, soja)",
+      "price": "11,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_992809afc265498385586c13fd68a204~mv2.jpg",
+      "imageAlt": "BOCADILLO DE \"KANDA\"",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-tacos",
+      "name": "TACOS",
+      "description": "3uds de tacos de \"chorizo\" al pastor con salsa verde o \"cochinita\" pibil con seta shitake, Fusion japo-mexicana!, ¡¡No te los pierdas !! (Contiene gluten, soja)",
+      "price": "14 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Frutos secos",
+        "Picante",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_b5a4bcfc669d4c6babce61fe51b089ca~mv2.jpg",
+      "imageAlt": "TACOS",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-crispy-burrito-falafel",
+      "name": "CRISPY BURRITO FALAFEL",
+      "description": "Burrito de falafel con cebolla encurtida, lechuga, tomate y salsa de yogurt. Envuelto en tortilla de espinacas. Acompañado de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo. (contiene gluten, soja y sésamo)",
+      "price": "13,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Trigo"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_d86966e246494e1aac942114d036f6de~mv2.jpeg",
+      "imageAlt": "CRISPY BURRITO FALAFEL",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-pad-thai",
+      "name": "PAD THAI",
+      "description": "Tallarines de arroz salteados con verduras, \"pollo\", \"huevo\" y salsa de cacahuetes al más puro estilo de las calles de Bangkok. * Ligeramente picante (Contiene frutos secos y soja)",
+      "price": "14,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Frutos secos",
+        "Soja",
+        "Sin gluten",
+        "Suave"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+      "imageAlt": "PAD THAI",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-nasi-goreng",
+      "name": "NASI GORENG",
+      "description": "El nasi goreng es un plato típico de la cocina indonesia y malaya, con base de arroz y verduras salteadas al wok. Vegetales al wok con arroz ( nasi) con \"pollo\" y \"huevo\". *Ligeramente picante. (opción sin picante )(Contiene soja, sésamo y sulfitos).",
+      "price": "14,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Sin gluten",
+        "Suave"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+      "imageAlt": "NASI GORENG",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-shawarma",
+      "name": "SHAWARMA",
+      "description": "El Shawarma o Shaggar es un plato originario de la gastronomía callejera de Medio Oriente, muy popular especialmente en Egipto y los países del Levante, la península arábiga, entre otros. En nuestra cocina se prepara con \"carne\", y se acompaña de hummus. (Contiene gluten, soja, sésamo y sulfitos en la salsa ).",
+      "price": "14,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_03c5c1f923504d16a775ce9a825bbc8d~mv2.jpg",
+      "imageAlt": "SHAWARMA",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-street-food-poke-bowl-pollo",
+      "name": "POKE BOWL POLLO",
+      "description": "Poke bowl de \"pollo\", con arroz, piña, aguacate, cebolla roja, tomates secos, hummus y salsa rosa. (Contiene sésamo, soja y sulfitos)",
+      "price": "14,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sésamo",
+        "Soja",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+      "imageAlt": "POKE BOWL POLLO",
+      "sourceMenu": "carta",
+      "sourceSection": "STREET FOOD",
+      "category": "Carta",
+      "section": "STREET FOOD"
+    },
+    {
+      "id": "carta-menu-infantil-menu-infantil",
+      "name": "MENU INFANTIL",
+      "description": "Fingers de \"pollo\" con bastones de boniato fritos y arroz jazmín con salsa de tomate casera. Incluye bebida y postre. (Contiene gluten y soja).",
+      "price": "13,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Soja"
+      ],
+      "image": "",
+      "imageAlt": "MENU INFANTIL",
+      "sourceMenu": "carta",
+      "sourceSection": "MENU INFANTIL",
+      "category": "Carta",
+      "section": "MENU INFANTIL"
+    },
+    {
+      "id": "carta-postres-torrija-de-pina-colada",
+      "name": "TORRIJA DE PIÑA COLADA",
+      "description": "Torrija de piña colada con helado de mango-maracuyá. (Contiene gluten)",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+      "imageAlt": "TORRIJA DE PIÑA COLADA",
+      "sourceMenu": "carta",
+      "sourceSection": "POSTRES",
+      "category": "Carta",
+      "section": "POSTRES"
+    },
+    {
+      "id": "carta-postres-torrija-de-mango",
+      "name": "TORRIJA DE MANGO",
+      "description": "Torrija de mango con helado de chocolate. (Contiene gluten)",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+      "imageAlt": "TORRIJA DE MANGO",
+      "sourceMenu": "carta",
+      "sourceSection": "POSTRES",
+      "category": "Carta",
+      "section": "POSTRES"
+    },
+    {
+      "id": "carta-postres-tarta-de-choco",
+      "name": "TARTA DE CHOCO",
+      "description": "Tarta de choco con base de galleta y cubierta con mermelada de naranja asada con chili .",
+      "price": "6 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+      "imageAlt": "TARTA DE CHOCO",
+      "sourceMenu": "carta",
+      "sourceSection": "POSTRES",
+      "category": "Carta",
+      "section": "POSTRES"
+    },
+    {
+      "id": "carta-postres-tarta-de-queso-y-acai",
+      "name": "TARTA DE \"QUESO\" Y AÇAI",
+      "description": "Cogemos la clásica tarta de queso y le añadimos açai para darle nuestro toque Tropical. Acompañada de dulce de leche de coco.",
+      "price": "6 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+      "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
+      "sourceMenu": "carta",
+      "sourceSection": "POSTRES",
+      "category": "Carta",
+      "section": "POSTRES"
+    },
+    {
+      "id": "menu-del-dia-menu-del-dia-nasi-goreng",
+      "name": "NASI GORENG",
+      "description": "El nasi goreng es un plato típico de la cocina indonesia y malaya, con base de arroz y verduras salteadas al wok. Vegetales al wok con arroz ( nasi) con \"pollo\" y \"huevo\". *Ligeramente picante. (opción sin picante )(Contiene soja, sésamo y sulfitos).",
+      "price": "14,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Sin gluten",
+        "Suave"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+      "imageAlt": "NASI GORENG",
+      "sourceMenu": "menu-del-dia",
+      "sourceSection": "MENU DEL DIA",
+      "category": "Menú del día",
+      "section": "MENU DEL DIA"
+    },
+    {
+      "id": "menu-del-dia-menu-del-dia-pad-thai",
+      "name": "PAD THAI",
+      "description": "Tallarines de arroz salteados con verduras, \"pollo\", \"huevo\" y salsa de cacahuetes al más puro estilo de las calles de Bangkok. * Ligeramente picante (Contiene frutos secos y soja)",
+      "price": "14,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Frutos secos",
+        "Soja",
+        "Sin gluten",
+        "Suave"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+      "imageAlt": "PAD THAI",
+      "sourceMenu": "menu-del-dia",
+      "sourceSection": "MENU DEL DIA",
+      "category": "Menú del día",
+      "section": "MENU DEL DIA"
+    },
+    {
+      "id": "menu-del-dia-menu-del-dia-poke-bowl-pollo",
+      "name": "POKE BOWL POLLO",
+      "description": "Poke bowl de \"pollo\", con arroz, piña, aguacate, cebolla roja, tomates secos, hummus y salsa rosa. (Contiene sésamo, soja y sulfitos)",
+      "price": "14,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sésamo",
+        "Soja",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+      "imageAlt": "POKE BOWL POLLO",
+      "sourceMenu": "menu-del-dia",
+      "sourceSection": "MENU DEL DIA",
+      "category": "Menú del día",
+      "section": "MENU DEL DIA"
+    },
+    {
+      "id": "menu-del-dia-menu-del-dia-burger",
+      "name": "BURGER",
+      "description": "Elige entre nuestras burgers Latina u Oriental. Acompañadas de guarnición a elegir entre: patatas cajún, sticks de boniato o hummus de garbanzo.",
+      "price": "14,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Frutos secos",
+        "Trigo"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+      "imageAlt": "BURGER",
+      "sourceMenu": "menu-del-dia",
+      "sourceSection": "MENU DEL DIA",
+      "category": "Menú del día",
+      "section": "MENU DEL DIA"
+    },
+    {
+      "id": "tardeo-tardeo-nachos",
+      "name": "NACHOS",
+      "description": "Nachos con \"chorizo\", frijoles, salsa \"cheddar\" casera, guacamole y pico de gallo. (Contiene gluten, soja y frutos secos).",
+      "price": "13,50 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Frutos secos",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+      "imageAlt": "NACHOS",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-fingers-de-pollo",
+      "name": "FINGERS DE \"POLLO\"",
+      "description": "Fingers de \"pollo\" crujiente con salsa de mostaza y agave. (Contiene soja y mostaza)",
+      "price": "",
+      "variants": [
+        {
+          "name": "Media ración (4uds)",
+          "price": "4,90 €"
+        },
+        {
+          "name": "Ración (8uds)",
+          "price": "9 €"
+        }
+      ],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+      "imageAlt": "FINGERS DE \"POLLO\"",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-tequenos",
+      "name": "TEQUEÑOS",
+      "description": "Ni el origen de esta receta ni su denominación están del todo claras, pero se atribuye a Venezuela su creación. Allí se manejan tres hipótesis, la más conocida y difundida es que son originarios de la ciudad de Los Teques. Tequeños de \"queso\" llanero típico venezolano. Acompañados con salsa tártara (\"mayonesa\", cebolla y cilantro). (Contiene gluten, soja, sésamo y mostaza y sulfitos en la salsa).",
+      "price": "",
+      "variants": [
+        {
+          "name": "Media ración 4uds",
+          "price": "8 €"
+        },
+        {
+          "name": "Ración",
+          "price": "14,9 €"
+        }
+      ],
+      "labels": [
+        "Soja",
+        "Trigo",
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+      "imageAlt": "TEQUEÑOS",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-tabla-de-humus-con-aceitunas-aderezadas",
+      "name": "TABLA DE HUMUS CON ACEITUNAS ADEREZADAS",
+      "description": "Nuestra tabla de aperitivos compuesta de humus con chips de yuca, y dos tipos de aceitunas con aderezo casero: sabor asiático (sake, jengibre, soja, lima, canela, sésamo y cilantro) y sabor mejicano (Achiote, limón, ajo, chiles, laurel y cebollino). (Contiene sésamo)",
+      "price": "9,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_8a872b3d808b46a081a09e6c06f53691~mv2.jpg",
+      "imageAlt": "TABLA DE HUMUS CON ACEITUNAS ADEREZADAS",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-patatas-cajun",
+      "name": "PATATAS CAJÚN",
+      "description": "Patatas gajo cajún con mostanesa sweet chili",
+      "price": "4,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_57b2538ac43245c290f686745aa16028~mv2.jpg",
+      "imageAlt": "PATATAS CAJÚN",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-sticks-de-boniato",
+      "name": "STICKS DE BONIATO",
+      "description": "Sticks de boniato frito acompañados de ketchup de remolacha.",
+      "price": "4,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_45fb51d6585244aeabf8651fd8eb420b~mv2.jpg",
+      "imageAlt": "STICKS DE BONIATO",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-edamame",
+      "name": "EDAMAME",
+      "description": "Edamames en su vaina, salteados con reducción de soja y sriracha y polvo de lima. (Contiene soja)",
+      "price": "4,90 €",
+      "variants": [],
+      "labels": [
+        "Suave",
+        "Vegano",
+        "Sin gluten",
+        "Soja"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+      "imageAlt": "EDAMAME",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-cookies",
+      "name": "COOKIES",
+      "description": "Nuestras cookies elaboradas completamente en nuestra cocina con dos variedades, chocolate y avellanas y Levain, con chips de chocolate y nueces. 2,5€ la unidad. (contiene gluten y frutos secos )",
+      "price": "2,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo",
+        "Frutos secos"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_d9ff5226fccd4686bee3a7605b83475d~mv2.jpg",
+      "imageAlt": "COOKIES",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-torrija-de-pina-colada",
+      "name": "TORRIJA DE PIÑA COLADA",
+      "description": "Torrija de piña colada con helado de mango-maracuyá. (Contiene gluten)",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+      "imageAlt": "TORRIJA DE PIÑA COLADA",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-torrija-de-mango",
+      "name": "TORRIJA DE MANGO",
+      "description": "Torrija de mango con helado de chocolate. (Contiene gluten)",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+      "imageAlt": "TORRIJA DE MANGO",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-tarta-de-queso-y-acai",
+      "name": "TARTA DE \"QUESO\" Y AÇAI",
+      "description": "Cogemos la clásica tarta de queso y le añadimos açai para darle nuestro toque Tropical. Acompañada de dulce de leche de coco.",
+      "price": "6 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Soja",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+      "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "tardeo-tardeo-tarta-de-choco",
+      "name": "TARTA DE CHOCO",
+      "description": "Tarta de choco con base de galleta y cubierta con mermelada de naranja asada con chili .",
+      "price": "6 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+      "imageAlt": "TARTA DE CHOCO",
+      "sourceMenu": "tardeo",
+      "sourceSection": "TARDEO",
+      "category": "Tardeo",
+      "section": "TARDEO"
+    },
+    {
+      "id": "bebida-limonadas-black-lemonade",
+      "name": "BLACK LEMONADE",
+      "description": "Limonada 100% natural con carbón activo y azúcar de caña.",
+      "price": "5,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_8fffb49363764b4e9a02ca9e6172f7d8~mv2.jpg",
+      "imageAlt": "BLACK LEMONADE",
+      "sourceMenu": "bebida",
+      "sourceSection": "LIMONADAS",
+      "category": "Bebida",
+      "section": "LIMONADAS"
+    },
+    {
+      "id": "bebida-limonadas-pink-lemonade",
+      "name": "PINK LEMONADE",
+      "description": "Limonada 100% natural con bayas de açai y azúcar de caña.",
+      "price": "5,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_3c73f91f924643379f5ab0dbb81f0849~mv2.jpg",
+      "imageAlt": "PINK LEMONADE",
+      "sourceMenu": "bebida",
+      "sourceSection": "LIMONADAS",
+      "category": "Bebida",
+      "section": "LIMONADAS"
+    },
+    {
+      "id": "bebida-limonadas-green-lemonade",
+      "name": "GREEN LEMONADE",
+      "description": "Limonada 100% natural con menta y azúcar de caña.",
+      "price": "5,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_fe90c119b54849b9a55a80827500c6a1~mv2.jpg",
+      "imageAlt": "GREEN LEMONADE",
+      "sourceMenu": "bebida",
+      "sourceSection": "LIMONADAS",
+      "category": "Bebida",
+      "section": "LIMONADAS"
+    },
+    {
+      "id": "bebida-limonadas-velvet-lemonade",
+      "name": "VELVET LEMONADE",
+      "description": "Limonada 100% natural con frambuesa y azúcar de caña.",
+      "price": "5,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_1f0569924eeb449a975a6fae579df9a0~mv2.jpg",
+      "imageAlt": "VELVET LEMONADE",
+      "sourceMenu": "bebida",
+      "sourceSection": "LIMONADAS",
+      "category": "Bebida",
+      "section": "LIMONADAS"
+    },
+    {
+      "id": "bebida-limonadas-white-lemonade",
+      "name": "WHITE LEMONADE",
+      "description": "Limonada 100% natural con coco y azúcar de caña.",
+      "price": "5,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_7f4b2e6c627141b38793be6cf15b19af~mv2.jpg",
+      "imageAlt": "WHITE LEMONADE",
+      "sourceMenu": "bebida",
+      "sourceSection": "LIMONADAS",
+      "category": "Bebida",
+      "section": "LIMONADAS"
+    },
+    {
+      "id": "bebida-refrescos-zumos-y-agua-fritz-kola-original-y-sin-azucar",
+      "name": "FRITZ KOLA ORIGINAL Y SIN AZUCAR",
+      "description": "Sabor original y sin azúcar Hecha con nuez de cola real y cafeína natural.",
+      "price": "3,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "",
+      "imageAlt": "FRITZ KOLA ORIGINAL Y SIN AZUCAR",
+      "sourceMenu": "bebida",
+      "sourceSection": "REFRESCOS, ZUMOS Y AGUA",
+      "category": "Bebida",
+      "section": "REFRESCOS, ZUMOS Y AGUA"
+    },
+    {
+      "id": "bebida-refrescos-zumos-y-agua-fritz-naranja-limon",
+      "name": "FRITZ NARANJA/ LIMON",
+      "description": "Sin duda, una refresco perfecto : sabor afrutado, elaborado con limones y naranjas ecológicos. Un refresco buenísimo. Calma la sed con esta refrescante bebida de limón o naranja elaborada con ingredientes naturales y zumo de limón o naranja . Además, es sin gluten y vegano.",
+      "price": "3,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "",
+      "imageAlt": "FRITZ NARANJA/ LIMON",
+      "sourceMenu": "bebida",
+      "sourceSection": "REFRESCOS, ZUMOS Y AGUA",
+      "category": "Bebida",
+      "section": "REFRESCOS, ZUMOS Y AGUA"
+    },
+    {
+      "id": "bebida-refrescos-zumos-y-agua-zumos-linda",
+      "name": "ZUMOS LINDA",
+      "description": "MANDARINA Y ROMERO O PERA Y PIMIENTA DE SICHUAN",
+      "price": "3,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "",
+      "imageAlt": "ZUMOS LINDA",
+      "sourceMenu": "bebida",
+      "sourceSection": "REFRESCOS, ZUMOS Y AGUA",
+      "category": "Bebida",
+      "section": "REFRESCOS, ZUMOS Y AGUA"
+    },
+    {
+      "id": "bebida-refrescos-zumos-y-agua-linda-te-verde",
+      "name": "LINDA TÉ VERDE",
+      "description": "Nuestro ice té natural no contienen ingredientes artificiales, ni azúcares añadidos y tienen menos de 50 calorías a parte de estar hecho en España con agua pura de manantiales.",
+      "price": "3,5 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "",
+      "imageAlt": "LINDA TÉ VERDE",
+      "sourceMenu": "bebida",
+      "sourceSection": "REFRESCOS, ZUMOS Y AGUA",
+      "category": "Bebida",
+      "section": "REFRESCOS, ZUMOS Y AGUA"
+    },
+    {
+      "id": "bebida-refrescos-zumos-y-agua-kombucha",
+      "name": "KOMBUCHA",
+      "description": "DE FRUTOS ROJOS O LIMON Y JENGIBRE.",
+      "price": "3,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "",
+      "imageAlt": "KOMBUCHA",
+      "sourceMenu": "bebida",
+      "sourceSection": "REFRESCOS, ZUMOS Y AGUA",
+      "category": "Bebida",
+      "section": "REFRESCOS, ZUMOS Y AGUA"
+    },
+    {
+      "id": "bebida-refrescos-zumos-y-agua-agua-mineral-font-vella",
+      "name": "AGUA MINERAL FONT VELLA",
+      "description": "El agua mineral natural Font Vella lanza al mercado una identidad de marca renovada para su gama de vidrio en la que resalta, desde 1878 hasta nuestros días, su larga relación con la hostelería y su constante presencia en nuestras mesas.",
+      "price": "",
+      "variants": [
+        {
+          "name": "1L",
+          "price": "4 €"
+        },
+        {
+          "name": "0.5L",
+          "price": "2,5 €"
+        }
+      ],
+      "labels": [],
+      "image": "",
+      "imageAlt": "AGUA MINERAL FONT VELLA",
+      "sourceMenu": "bebida",
+      "sourceSection": "REFRESCOS, ZUMOS Y AGUA",
+      "category": "Bebida",
+      "section": "REFRESCOS, ZUMOS Y AGUA"
+    },
+    {
+      "id": "bebida-refrescos-zumos-y-agua-agua-con-gas-imperial",
+      "name": "AGUA CON GAS IMPERIAL",
+      "description": "Tu agua mineral natural con gas procedente de Caldes de Malavella, una ciudad termal y reconocida como el origen del agua con gas de alta calidad, a la que se le otorga propiedades minero-medicinales desde 1928, que la convierten en un agua especialmente saludable. 0,5L",
+      "price": "2,9 €",
+      "variants": [],
+      "labels": [],
+      "image": "",
+      "imageAlt": "AGUA CON GAS IMPERIAL",
+      "sourceMenu": "bebida",
+      "sourceSection": "REFRESCOS, ZUMOS Y AGUA",
+      "category": "Bebida",
+      "section": "REFRESCOS, ZUMOS Y AGUA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-mahou-clasica",
+      "name": "MAHOU CLASICA",
+      "description": "La Mahou que siempre está ahí, como los amigos de toda la vida. Con una receta de más de 130 años de antigüedad, Mahou Clásica es la Pale Lager con la que brindar con tus amigos de siempre",
+      "price": "",
+      "variants": [
+        {
+          "name": "CAÑA",
+          "price": "2,5 €"
+        },
+        {
+          "name": "JARRA",
+          "price": "3,9 €"
+        }
+      ],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "",
+      "imageAlt": "MAHOU CLASICA",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-mahou-reserva",
+      "name": "MAHOU RESERVA",
+      "description": "Cerveza de sabor único, con ingredientes especialmente seleccionados: la malta Munich proporciona matices acaramelados y los lúpulos americanos en late hopping aportan un refinado aroma. 33cl 6,3%vol",
+      "price": "3,9 €",
+      "variants": [],
+      "labels": [],
+      "image": "",
+      "imageAlt": "MAHOU RESERVA",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-mahou-sin-gluten",
+      "name": "MAHOU SIN GLUTEN",
+      "description": "De color dorado brillante, nuestra cerveza sin gluten destaca por su cremosidad y consistencia, así como por su cuerpo intenso y equilibrado y su aroma afrutado.",
+      "price": "3,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "",
+      "imageAlt": "MAHOU SIN GLUTEN",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-mahou-radler",
+      "name": "MAHOU RADLER",
+      "description": "Cerveza con Limón Alc: 3,20%.",
+      "price": "3,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "",
+      "imageAlt": "MAHOU RADLER",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-corona",
+      "name": "CORONA",
+      "description": "Cerveza de tipo pilsner. 4,5º",
+      "price": "3,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "",
+      "imageAlt": "CORONA",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-the-good-cider",
+      "name": "THE GOOD CIDER",
+      "description": "Sidra artesanal. Sabor Dry Apple o Strawberry.",
+      "price": "3,9 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "",
+      "imageAlt": "THE GOOD CIDER",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-mahou-sin-alcohol",
+      "name": "MAHOU SIN ALCOHOL",
+      "description": "Una cerveza \"sin\" que está muy cerca del sabor de una \"con\". Pale Lager con un bajo nivel de amargor y un leve dulzor sin alcohol.",
+      "price": "3,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "",
+      "imageAlt": "MAHOU SIN ALCOHOL",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-cervezas-y-sidra-mahou-0-0-tostada",
+      "name": "MAHOU 0,0 TOSTADA",
+      "description": "Mahou 0,0 Tostada, elaborada para los que quieren disfrutar de una experiencia 100% cervecera cuándo y dónde sea, con un sabor tostado que hará las delicias de los paladares más exigentes.",
+      "price": "3,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Trigo"
+      ],
+      "image": "",
+      "imageAlt": "MAHOU 0,0 TOSTADA",
+      "sourceMenu": "bebida",
+      "sourceSection": "CERVEZAS Y SIDRA",
+      "category": "Bebida",
+      "section": "CERVEZAS Y SIDRA"
+    },
+    {
+      "id": "bebida-sangria-vermu-vino-y-cava-vermut-bendito",
+      "name": "VERMUT BENDITO",
+      "description": "Vermut rojo Bendito.",
+      "price": "4,5 €",
+      "variants": [],
+      "labels": [],
+      "image": "https://static.wixstatic.com/media/c51783_eb64ba9ccf3b4c2888d5675a02e6353d~mv2.jpg",
+      "imageAlt": "VERMUT BENDITO",
+      "sourceMenu": "bebida",
+      "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
+      "category": "Bebida",
+      "section": "SANGRÍA, VERMÚ, VINO Y CAVA"
+    },
+    {
+      "id": "bebida-sangria-vermu-vino-y-cava-blanco-de-verano",
+      "name": "BLANCO DE VERANO",
+      "description": "Vino blanco con limón y hierbabuena.",
+      "price": "4,5 €",
+      "variants": [],
+      "labels": [],
+      "image": "",
+      "imageAlt": "BLANCO DE VERANO",
+      "sourceMenu": "bebida",
+      "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
+      "category": "Bebida",
+      "section": "SANGRÍA, VERMÚ, VINO Y CAVA"
+    },
+    {
+      "id": "bebida-sangria-vermu-vino-y-cava-sangria-tropicool",
+      "name": "SANGRIA TROPICOOL",
+      "description": "Sangría con fruta del trópico y elaborada con vino semi dulce blanco con toques muy frescos y tropicales.",
+      "price": "14,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_4c117be148bd4e39af2965b69eee9939~mv2.jpg",
+      "imageAlt": "SANGRIA TROPICOOL",
+      "sourceMenu": "bebida",
+      "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
+      "category": "Bebida",
+      "section": "SANGRÍA, VERMÚ, VINO Y CAVA"
+    },
+    {
+      "id": "bebida-sangria-vermu-vino-y-cava-chiquita-locura-tinto-botella",
+      "name": "CHIQUITA LOCURA (TINTO) BOTELLA",
+      "description": "Vino tinto joven elaborado de uvas tintas procedentes de suelos volcánicos en las Islas Canarias. Color rojo rubí, con un sutil ribete violáceo y capa media. En nariz se presenta intenso destacando las notas propias de la Listán negro (pimienta negra y hoja de higuera) y dotándole de complejidad el aporte de las otras variedades. En boca es agradable, con carácter y una tanicidad media. Alc: 13,5% vol. (Contiene Sulfitos)",
+      "price": "",
+      "variants": [
+        {
+          "name": "COPA",
+          "price": "4,5 €"
+        },
+        {
+          "name": "BOTELLA",
+          "price": "24 €"
+        }
+      ],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_82a0c68dfd974f2fb6d4809b0c46ae16~mv2.jpg",
+      "imageAlt": "CHIQUITA LOCURA (TINTO) BOTELLA",
+      "sourceMenu": "bebida",
+      "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
+      "category": "Bebida",
+      "section": "SANGRÍA, VERMÚ, VINO Y CAVA"
+    },
+    {
+      "id": "bebida-sangria-vermu-vino-y-cava-flor-de-chasna-blanco-afrutado-botella",
+      "name": "FLOR DE CHASNA (BLANCO AFRUTADO) BOTELLA",
+      "description": "El galardonado Flor de Chasna Blanco Afrutado es un vino joven y fresco. Su color es blanco pálido con irisaciones verdes y plateadas. En nariz tiene un aroma muy intenso que recuerda a frutas tropicales como la parchita o el melocotón y también nos recuerda a hierbas como la ruda. Los viñedos de este vino están situados a más de 1.000 metros de altitud, lo que los hace uno de los más altos de Europa, procedentes exclusivamente de los altos del municipio de la Comarca de Abona (Tenerife). Alc: 10,5% vol. (Contiene Sulfitos)",
+      "price": "",
+      "variants": [
+        {
+          "name": "BOTELLA",
+          "price": "24 €"
+        },
+        {
+          "name": "COPA",
+          "price": "4,5 €"
+        }
+      ],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_4c0fe704ae3d4df8b75c9ed88f499da8~mv2.jpg",
+      "imageAlt": "FLOR DE CHASNA (BLANCO AFRUTADO) BOTELLA",
+      "sourceMenu": "bebida",
+      "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
+      "category": "Bebida",
+      "section": "SANGRÍA, VERMÚ, VINO Y CAVA"
+    },
+    {
+      "id": "bebida-sangria-vermu-vino-y-cava-bach-extrisimo-semidulce-blanco",
+      "name": "Bach Extrísimo Semidulce Blanco",
+      "description": "Su paladar suave y ligeramente dulce marcó una época y con ella un precedente de vinos dulces de calidad. Bach Extrísimo Semidulce Blanco está elaborado con Xarel·lo y Macabeo y su vinificación es tradicional: tras el despalillado y el prensado se enfría y clarifica el mosto preparándolo para la fermentación alcohólica a temperatura controlada durante 7 o 10 días.",
+      "price": "",
+      "variants": [
+        {
+          "name": "COPA",
+          "price": "3 €"
+        },
+        {
+          "name": "BOTELLA",
+          "price": "12 €"
+        }
+      ],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_c7e15ec418054ea1816867b24607d815~mv2.webp",
+      "imageAlt": "Bach Extrísimo Semidulce Blanco",
+      "sourceMenu": "bebida",
+      "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
+      "category": "Bebida",
+      "section": "SANGRÍA, VERMÚ, VINO Y CAVA"
+    },
+    {
+      "id": "bebida-sangria-vermu-vino-y-cava-moet-chandon-rose",
+      "name": "MÖET & CHANDON ROSE",
+      "description": "SERVIDO CON HIELO Y FRESAS",
+      "price": "100 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_fef8be75a7ce4edcb08b27e478805aba~mv2.png",
+      "imageAlt": "MÖET & CHANDON ROSE",
+      "sourceMenu": "bebida",
+      "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
+      "category": "Bebida",
+      "section": "SANGRÍA, VERMÚ, VINO Y CAVA"
+    },
+    {
+      "id": "bebida-cafe-e-infusiones-cafe-solo",
+      "name": "CAFÉ SOLO",
+      "description": "Mezcla de granos de Arábica de América y Robusta Africano. Con un ligero sabor a miel y fruta Madura.",
+      "price": "2 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin lactosa",
+        "Soja"
+      ],
+      "image": "",
+      "imageAlt": "CAFÉ SOLO",
+      "sourceMenu": "bebida",
+      "sourceSection": "CAFÉ E INFUSIONES",
+      "category": "Bebida",
+      "section": "CAFÉ E INFUSIONES"
+    },
+    {
+      "id": "bebida-cafe-e-infusiones-cafe-con-bebida-vegetal-soja-o-avena",
+      "name": "CAFÉ CON BEBIDA VEGETAL (SOJA O AVENA)",
+      "description": "",
+      "price": "2,50 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin lactosa",
+        "Sin gluten"
+      ],
+      "image": "",
+      "imageAlt": "CAFÉ CON BEBIDA VEGETAL (SOJA O AVENA)",
+      "sourceMenu": "bebida",
+      "sourceSection": "CAFÉ E INFUSIONES",
+      "category": "Bebida",
+      "section": "CAFÉ E INFUSIONES"
+    },
+    {
+      "id": "bebida-cafe-e-infusiones-cafe-capuchino",
+      "name": "CAFÉ CAPUCHINO",
+      "description": "",
+      "price": "",
+      "variants": [],
+      "labels": [],
+      "image": "",
+      "imageAlt": "CAFÉ CAPUCHINO",
+      "sourceMenu": "bebida",
+      "sourceSection": "CAFÉ E INFUSIONES",
+      "category": "Bebida",
+      "section": "CAFÉ E INFUSIONES"
+    },
+    {
+      "id": "bebida-cafe-e-infusiones-pistaccio-latte",
+      "name": "PISTACCIO LATTE",
+      "description": "El Pistaccio latte o Café de pistacho tiene este fruto seco tan exquisito y rico en nutrientes como protagonista. Solo se puede elaborar con leche de soja",
+      "price": "3,20 €",
+      "variants": [],
+      "labels": [
+        "Soja",
+        "Frutos secos",
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_6734722fdaf746f180f3cdd6f15d1c5e~mv2.jpg",
+      "imageAlt": "PISTACCIO LATTE",
+      "sourceMenu": "bebida",
+      "sourceSection": "CAFÉ E INFUSIONES",
+      "category": "Bebida",
+      "section": "CAFÉ E INFUSIONES"
+    },
+    {
+      "id": "bebida-cafe-e-infusiones-infusiones",
+      "name": "INFUSIONES",
+      "description": "Una colección de tés e infusiones elaborada con una cuidada selección de fruta, flores, hierbas y tés. MASALA CHAI-- TE ROJO ROYAL -- ROOIBOS NARANAJA DULCE --- ORGANIC EARL GREY --- RELAX ---MANZANILLA --FRUTOS DEL BOSQUE -- POLEO MENTA --- GINGER LEMON ---TE VERDE GUN POWDER ---ORGANIC DIGESTIVE ---",
+      "price": "2,90 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "",
+      "imageAlt": "INFUSIONES",
+      "sourceMenu": "bebida",
+      "sourceSection": "CAFÉ E INFUSIONES",
+      "category": "Bebida",
+      "section": "CAFÉ E INFUSIONES"
+    },
+    {
+      "id": "cocteles-con-alcohol-palma",
+      "name": "PALMA",
+      "description": "Vodka, sirope de manzana, limón y azúcar de remolacha.",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_95c03199442c4f489111ce8b91035a7e~mv2.jpg",
+      "imageAlt": "PALMA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-bahia",
+      "name": "BAHÍA",
+      "description": "Ginebra, aperol, puré de maracuyá, pomelo.",
+      "price": "10 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_66f08d8aa5864ee6918846f82d305f49~mv2.jpg",
+      "imageAlt": "BAHÍA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-mojito-clasico",
+      "name": "MOJITO CLASICO",
+      "description": "Lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_667b09d83efa4569bbdb08f4da9051b1~mv2.jpg",
+      "imageAlt": "MOJITO CLASICO",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-mojito-de-sandia",
+      "name": "MOJITO DE SANDÍA",
+      "description": "Sandía, lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+      "imageAlt": "MOJITO DE SANDÍA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-mojito-de-fresa",
+      "name": "MOJITO DE FRESA",
+      "description": "Fresa, lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_b1a666dcfc5a48df9fb81f90dd29e8f3~mv2.jpg",
+      "imageAlt": "MOJITO DE FRESA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-mojito-de-maracuya",
+      "name": "MOJITO DE MARACUYÁ",
+      "description": "Ron blanco, puré de maracuyá, pupa de maracuyá, hierbabuena, physalis.",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+      "imageAlt": "MOJITO DE MARACUYÁ",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-mojito-sunrise",
+      "name": "MOJITO SUNRISE",
+      "description": "Mandarina, lima, hierbabuena, azúcar de remolacha, ron blanco y soda",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_d9d3bedc87884acdbddadeb9b32c0e0d~mv2.jpg",
+      "imageAlt": "MOJITO SUNRISE",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-margarita",
+      "name": "MARGARITA",
+      "description": "Tequila, limón natural, licor de naranja, sample syrup y lima",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_0c7ec13475494fa290005ba1c5690e58~mv2.jpg",
+      "imageAlt": "MARGARITA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-daikiri-mango",
+      "name": "DAIKIRI MANGO",
+      "description": "Ron Santa Teresa, puré de mango, zumo de limón natural.",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_d265e246859b4e4780fcc742a251974a~mv2.jpg",
+      "imageAlt": "DAIKIRI MANGO",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-daikiri-fresa",
+      "name": "DAIKIRI FRESA",
+      "description": "Ron Santa Teresa, puré de fresa y zumo de limón natural.",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_7e88eae264ec42efbff01ca733ad8da7~mv2.jpg",
+      "imageAlt": "DAIKIRI FRESA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-caipirinha",
+      "name": "CAIPIRINHA",
+      "description": "Cachaza, lima y azúcar de remolacha",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_f3192c16b5ae4beaa80d71ee17aa5304~mv2.jpg",
+      "imageAlt": "CAIPIRINHA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-jagerinha",
+      "name": "JAGERINHA",
+      "description": "Jägermeister, lima y azúcar de remolacha",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_30b5ef7b3ad04b9bbc8a4adda8f14525~mv2.jpg",
+      "imageAlt": "JAGERINHA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-tequila-sunrise",
+      "name": "TEQUILA SUNRISE",
+      "description": "Tequila, zumo de naranja, granadina y naranja natural",
+      "price": "10 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_1741d856f4e44e00b160ee0351a30ff6~mv2.jpg",
+      "imageAlt": "TEQUILA SUNRISE",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-sex-on-the-beach",
+      "name": "SEX ON THE BEACH",
+      "description": "Vodka, zumo de naranja, arándanos, granadina, licor de durazno y naranja natural",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_76c4ed4cedea4f62ba5daf907f5aeefc~mv2.jpg",
+      "imageAlt": "SEX ON THE BEACH",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-aperol-citrus-spritz",
+      "name": "APEROL CITRUS SPRITZ",
+      "description": "Aperol, pomelo rosa, zumo de naranja, cinzano spritz.",
+      "price": "10 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_d4c042b91da942ed9c95df8c8a1f5a60~mv2.jpg",
+      "imageAlt": "APEROL CITRUS SPRITZ",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-aperol-spritz",
+      "name": "APEROL SPRITZ",
+      "description": "Aperol, naranja, proseco y soda",
+      "price": "9 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_9caf407336314743b176467574a4ba96~mv2.jpg",
+      "imageAlt": "APEROL SPRITZ",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-con-alcohol-pina-colada",
+      "name": "PIÑA COLADA",
+      "description": "Ron, coco, zumo de piña y piña natural",
+      "price": "10 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_5b60183651b44300a09d251afaeb8028~mv2.jpg",
+      "imageAlt": "PIÑA COLADA",
+      "sourceMenu": "cocteles",
+      "sourceSection": "CON ALCOHOL",
+      "category": "Cócteles",
+      "section": "CON ALCOHOL"
+    },
+    {
+      "id": "cocteles-sin-alcohol-mojito-clasico-sin",
+      "name": "MOJITO CLASICO SIN",
+      "description": "Lima, hierbabuena, azúcar de remolacha y soda",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "",
+      "imageAlt": "MOJITO CLASICO SIN",
+      "sourceMenu": "cocteles",
+      "sourceSection": "SIN ALCOHOL",
+      "category": "Cócteles",
+      "section": "SIN ALCOHOL"
+    },
+    {
+      "id": "cocteles-sin-alcohol-mojito-de-sandia-sin",
+      "name": "MOJITO DE SANDÍA SIN",
+      "description": "Sandía, lima, hierbabuena, azúcar de remolacha y soda",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+      "imageAlt": "MOJITO DE SANDÍA SIN",
+      "sourceMenu": "cocteles",
+      "sourceSection": "SIN ALCOHOL",
+      "category": "Cócteles",
+      "section": "SIN ALCOHOL"
+    },
+    {
+      "id": "cocteles-sin-alcohol-mojito-de-fresa-sin",
+      "name": "MOJITO DE FRESA SIN",
+      "description": "Fresa, frambuesa, lima, hierbabuena, azúcar de remolacha y soda",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "",
+      "imageAlt": "MOJITO DE FRESA SIN",
+      "sourceMenu": "cocteles",
+      "sourceSection": "SIN ALCOHOL",
+      "category": "Cócteles",
+      "section": "SIN ALCOHOL"
+    },
+    {
+      "id": "cocteles-sin-alcohol-mojito-sunrise-sin",
+      "name": "MOJITO SUNRISE SIN",
+      "description": "Mandarina, lima, hierbabuena, azúcar de remolacha y soda",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "",
+      "imageAlt": "MOJITO SUNRISE SIN",
+      "sourceMenu": "cocteles",
+      "sourceSection": "SIN ALCOHOL",
+      "category": "Cócteles",
+      "section": "SIN ALCOHOL"
+    },
+    {
+      "id": "cocteles-sin-alcohol-sex-on-the-beach-sin",
+      "name": "SEX ON THE BEACH SIN",
+      "description": "Zumo de naranja, fresa y granadina.",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "",
+      "imageAlt": "SEX ON THE BEACH SIN",
+      "sourceMenu": "cocteles",
+      "sourceSection": "SIN ALCOHOL",
+      "category": "Cócteles",
+      "section": "SIN ALCOHOL"
+    },
+    {
+      "id": "cocteles-sin-alcohol-pina-colada-sin",
+      "name": "PIÑA COLADA SIN",
+      "description": "coco, zumo de piña y piña natural",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "",
+      "imageAlt": "PIÑA COLADA SIN",
+      "sourceMenu": "cocteles",
+      "sourceSection": "SIN ALCOHOL",
+      "category": "Cócteles",
+      "section": "SIN ALCOHOL"
+    },
+    {
+      "id": "cocteles-sin-alcohol-mojito-de-maracuya-sin",
+      "name": "MOJITO DE MARACUYÁ SIN",
+      "description": "Puré de maracuyá, pulpa de maracuyá, hierbabuena, physalis.",
+      "price": "7 €",
+      "variants": [],
+      "labels": [
+        "Vegano"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+      "imageAlt": "MOJITO DE MARACUYÁ SIN",
+      "sourceMenu": "cocteles",
+      "sourceSection": "SIN ALCOHOL",
+      "category": "Cócteles",
+      "section": "SIN ALCOHOL"
+    },
+    {
+      "id": "shishas-cachimbas-shishas-cahimbas-shishas-cahimbas",
+      "name": "SHISHAS-CAHIMBAS",
+      "description": "*COSTEÑA (amarilla) Pastel de queso con lima. *AMAZONAS (verde) Limón, lima, kiwi, té verde y chicle de menta. *BANGKOK (roja) Fresa, pera espumosa y sandía. *BORA BORA (azul) Uva moscatel, bayas de açai, arándanos y grosellas negras.",
+      "price": "15 €",
+      "variants": [],
+      "labels": [
+        "Vegano",
+        "Sin gluten"
+      ],
+      "image": "https://static.wixstatic.com/media/c51783_6e5dcf06b278498f8b74ea25e7d0f472~mv2.jpg",
+      "imageAlt": "SHISHAS-CAHIMBAS",
+      "sourceMenu": "shishas-cachimbas",
+      "sourceSection": "SHISHAS-CAHIMBAS",
+      "category": "Shishas - cachimbas",
+      "section": "SHISHAS-CAHIMBAS"
+    }
+  ]
+}

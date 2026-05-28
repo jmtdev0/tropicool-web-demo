@@ -1,0 +1,307 @@
+---
+import '../styles/global.css';
+import LanguageToggle from '../components/LanguageToggle.svelte';
+import MenuExplorer from '../components/MenuExplorer.svelte';
+import MotionBoot from '../components/MotionBoot.svelte';
+import TranslationRuntime from '../components/TranslationRuntime.svelte';
+import { site, navigation } from '../data/site';
+import { featuredItems, galleryItems, menuData, menuStats, wixImage } from '../data/menu';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CreativeWork',
+  name: 'Tropicool website redesign demo',
+  description: site.description,
+  isBasedOn: site.url,
+  about: {
+    '@type': 'Restaurant',
+    name: 'Tropicool',
+    url: site.url,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'C/ Oslo 53, C.C. X Madrid',
+      addressLocality: 'Alcorcón',
+      addressRegion: 'Madrid',
+      postalCode: '28922',
+      addressCountry: 'ES',
+    },
+  },
+};
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={site.description} />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#041607" />
+    <meta property="og:title" content={site.title} />
+    <meta property="og:description" content={site.description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={site.assets.hero} />
+    <title>{site.title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <MotionBoot client:load />
+    <TranslationRuntime client:load />
+
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#041607]/78 backdrop-blur-xl">
+      <nav class="container-shell flex min-h-16 items-center justify-between gap-4">
+        <a href="#inicio" class="wordmark text-2xl text-[var(--tc-pink)]">
+          Tropicool
+        </a>
+        <div class="hidden items-center gap-6 text-sm font-bold text-[rgba(255,249,223,.82)] md:flex">
+          {navigation.map((item) => (
+            <a class="hover:text-[var(--tc-lime)]" href={item.href} data-i18n={`nav.${item.key}`}>
+              {item.label}
+            </a>
+          ))}
+        </div>
+        <div class="flex items-center gap-2">
+          <LanguageToggle client:load />
+          <a class="button-neon min-h-10 px-4 text-sm" href={site.links.reserve} data-i18n="cta.reserve">Reservar</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="texture-noise relative min-h-[94svh] overflow-hidden pt-16">
+        <div class="absolute inset-0 z-[-2]">
+          <img
+            data-hero-media
+            src={site.assets.hero}
+            alt="Hojas tropicales y estética visual de Tropicool"
+            class="h-full w-full object-cover opacity-52"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,22,7,.98),rgba(4,22,7,.72)_42%,rgba(4,22,7,.25)),linear-gradient(180deg,rgba(4,22,7,.14),#041607_94%)]"></div>
+        </div>
+
+        <div class="container-shell grid min-h-[calc(94svh-4rem)] items-center gap-10 py-10 lg:grid-cols-[1.05fr_.95fr]">
+          <div class="max-w-4xl">
+            <p data-hero-word class="mb-4 inline-flex border border-[rgba(255,249,223,.22)] bg-[#041607]/72 px-3 py-2 text-xs font-black uppercase text-[var(--tc-cyan)]" data-i18n="demo.notice">
+              Demo no oficial de rediseño. No afiliada ni aprobada por Tropicool.
+            </p>
+            <p data-hero-word class="eyebrow" data-i18n="hero.kicker">{site.copy.kicker}</p>
+            <h1 class="wordmark mt-5 max-w-[11ch] text-[clamp(4rem,16vw,11.5rem)] text-[var(--tc-pink)]">
+              <span data-hero-word class="block">Tropi</span>
+              <span data-hero-word class="block">cool</span>
+            </h1>
+            <p data-hero-word class="mt-5 max-w-2xl text-xl font-black text-[var(--tc-cream)] md:text-3xl" data-i18n="hero.text">
+              {site.copy.heroText}
+            </p>
+            <div data-hero-word class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a class="button-neon px-6 py-3" href={site.links.reserve} data-i18n="cta.reserveTable">Reservar mesa</a>
+              <a class="button-ghost px-6 py-3" href="#carta" data-i18n="cta.fullMenu">Ver carta completa</a>
+              <a class="button-ghost px-6 py-3" href={site.links.order} data-i18n="cta.orderOnline">Pedir online</a>
+            </div>
+          </div>
+
+          <div data-hero-word class="hidden lg:block">
+            <div class="glass-panel relative overflow-hidden p-4">
+              <img
+                src={site.assets.accent}
+                alt="Ambiente Tropicool"
+                class="aspect-[4/5] w-full object-cover"
+                loading="eager"
+                decoding="async"
+              />
+              <div class="absolute bottom-4 left-4 right-4 grid grid-cols-3 gap-2 text-center text-xs font-black uppercase">
+                <span class="bg-[#041607]/82 px-3 py-3 text-[var(--tc-lime)]">Vegan</span>
+                <span class="bg-[#041607]/82 px-3 py-3 text-[var(--tc-pink)]">Cocktails</span>
+                <span class="bg-[#041607]/82 px-3 py-3 text-[var(--tc-cyan)]">Street</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band py-10 md:py-16" data-animate>
+        <div class="container-shell grid gap-6 md:grid-cols-3">
+          <div class="md:col-span-2">
+            <p class="eyebrow" data-i18n="intro.eyebrow">Sabores atrevidos</p>
+            <h2 class="mt-4 max-w-4xl text-4xl font-black leading-none text-[var(--tc-cream)] md:text-6xl" data-i18n="intro.title">
+              Cocina vegetal para compartir, beber bien y repetir plan.
+            </h2>
+            <p class="mt-5 max-w-2xl text-lg text-[rgba(255,249,223,.76)]" data-i18n="intro.text">
+              {site.copy.intro}
+            </p>
+          </div>
+          <div class="grid grid-cols-3 gap-3 md:grid-cols-1">
+            <div class="glass-panel p-4">
+              <strong class="block text-3xl text-[var(--tc-lime)]">{menuStats.items}</strong>
+              <span class="text-sm text-[rgba(255,249,223,.72)]" data-i18n="stats.items">referencias en carta</span>
+            </div>
+            <div class="glass-panel p-4">
+              <strong class="block text-3xl text-[var(--tc-pink)]">100%</strong>
+              <span class="text-sm text-[rgba(255,249,223,.72)]" data-i18n="stats.plant">plant based</span>
+            </div>
+            <div class="glass-panel p-4">
+              <strong class="block text-3xl text-[var(--tc-cyan)]">X</strong>
+              <span class="text-sm text-[rgba(255,249,223,.72)]" data-i18n="stats.location">Madrid</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-12 md:py-20" data-animate>
+        <div class="container-shell">
+          <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p class="eyebrow" data-i18n="featured.eyebrow">Platos que abren la puerta</p>
+              <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="featured.title">Favoritos Tropicool</h2>
+            </div>
+            <a class="button-ghost px-5 py-3" href="#carta" data-i18n="featured.explore">Explorar carta</a>
+          </div>
+
+          <div class="grid gap-4 md:grid-cols-3">
+            {featuredItems.map((item) => (
+              <article class="group overflow-hidden border border-[rgba(255,249,223,.15)] bg-[#061e0c]">
+                {item.image && (
+                  <img
+                    src={wixImage(item.image, 900, 760)}
+                    alt={item.imageAlt || item.name}
+                    class="aspect-[1.18] w-full object-cover transition duration-500 group-hover:scale-[1.035]"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                )}
+                <div class="p-4">
+                  <div class="flex items-start justify-between gap-3">
+                    <h3 class="text-lg font-black uppercase text-[var(--tc-cream)]" data-menu-item-name={item.id}>{item.name}</h3>
+                    <p class="font-black text-[var(--tc-lime)]">{item.price || item.variants[0]?.price}</p>
+                  </div>
+                  <p class="mt-3 text-sm text-[rgba(255,249,223,.7)]" data-menu-item-description={item.id}>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="carta" class="section-band scroll-mt-20 py-12 md:py-20" data-animate>
+        <div class="container-shell">
+          <div class="mb-8 max-w-3xl">
+            <p class="eyebrow" data-i18n="menu.eyebrow">Carta completa</p>
+            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="menu.title">Todo lo que puedes pedir.</h2>
+            <p class="mt-4 text-[rgba(255,249,223,.74)]" data-i18n="menu.description">
+              Carta, bebida, cócteles, menú del día, tardeo y shishas en un solo explorador. Los productos
+              sin gluten pueden contener trazas por contaminación cruzada.
+            </p>
+          </div>
+
+          <MenuExplorer menus={menuData.menus} client:load />
+        </div>
+      </section>
+
+      <section id="reservar" class="scroll-mt-20 py-12 md:py-20" data-animate>
+        <div class="container-shell grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-stretch">
+          <div>
+            <p class="eyebrow" data-i18n="booking.eyebrow">Reserva y pedidos</p>
+            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="booking.title">De aquí a la mesa en dos clics.</h2>
+            <p class="mt-5 max-w-xl text-lg text-[rgba(255,249,223,.76)]" data-i18n="booking.text">{site.copy.reservationText}</p>
+            <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+              <a class="button-neon px-6 py-3" href={site.links.reserve} data-i18n="cta.reserve">Reservar ahora</a>
+              <a id="pedidos" class="button-ghost scroll-mt-24 px-6 py-3" href={site.links.order} data-i18n="cta.orderUber">Pedir en Uber Eats</a>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <a class="glass-panel p-5 no-underline" href={site.links.reserve}>
+              <span class="label-chip" data-i18n="booking.card.reserveTag">Reservas</span>
+              <h3 class="mt-5 text-2xl font-black text-[var(--tc-pink)]" data-i18n="booking.card.reserveTitle">Mesa asegurada</h3>
+              <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]" data-i18n="booking.card.reserveText">
+                Enlace directo al sistema de reservas actual.
+              </p>
+            </a>
+            <a class="glass-panel p-5 no-underline" href={site.links.order}>
+              <span class="label-chip" data-i18n="booking.card.deliveryTag">Delivery</span>
+              <h3 class="mt-5 text-2xl font-black text-[var(--tc-lime)]" data-i18n="booking.card.deliveryTitle">Tropicool en casa</h3>
+              <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]" data-i18n="booking.card.deliveryText">
+                Acceso a pedidos online sin mezclarlo con la reserva.
+              </p>
+            </a>
+            <a class="glass-panel p-5 no-underline sm:col-span-2" href={site.links.maps}>
+              <span class="label-chip" data-i18n="booking.card.mapsTag">Cómo llegar</span>
+              <h3 class="mt-5 text-2xl font-black text-[var(--tc-cyan)]">{site.shortAddress}</h3>
+              <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]">{site.address}</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band py-12 md:py-20" data-animate>
+        <div class="container-shell">
+          <div class="mb-8 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+            <div>
+              <p class="eyebrow" data-i18n="gallery.eyebrow">Mood de cocina</p>
+              <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="gallery.title">Tropical, vegetal, nocturno.</h2>
+            </div>
+            <a class="button-ghost px-5 py-3" href={site.links.instagram}>Instagram</a>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 md:grid-cols-5">
+            {galleryItems.map((item, index) => (
+              <figure class={`overflow-hidden border border-[rgba(255,249,223,.14)] bg-[#061e0c] ${index === 0 || index === 6 ? 'md:col-span-2 md:row-span-2' : ''}`}>
+                <img
+                  src={wixImage(item.image, index === 0 || index === 6 ? 1000 : 560, index === 0 || index === 6 ? 1000 : 680)}
+                  alt={item.imageAlt || item.name}
+                  class="h-full min-h-40 w-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="scroll-mt-20 py-12 md:py-20" data-animate>
+        <div class="container-shell grid gap-8 lg:grid-cols-[1fr_.9fr]">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
+            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="contact.title">Nos vemos en X Madrid.</h2>
+            <div class="mt-8 grid gap-3 text-lg font-bold">
+              <a class="hover:text-[var(--tc-lime)]" href={site.links.maps}>{site.address}</a>
+              <a class="hover:text-[var(--tc-lime)]" href={site.links.tel}>{site.phone}</a>
+              <a class="hover:text-[var(--tc-lime)]" href={site.links.mail}>{site.email}</a>
+            </div>
+            <div class="mt-8 flex gap-3">
+              <a class="button-ghost px-5 py-3" href={site.links.instagram}>Instagram</a>
+              <a class="button-ghost px-5 py-3" href={site.links.tiktok}>TikTok</a>
+            </div>
+          </div>
+
+          <div class="overflow-hidden border border-[rgba(255,249,223,.15)]">
+            <img
+              src={site.assets.interior}
+              alt="Interior luminoso de restaurante"
+              class="h-full min-h-80 w-full object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="safe-bottom border-t border-white/10 py-8">
+      <div class="container-shell flex flex-col justify-between gap-4 text-sm text-[rgba(255,249,223,.62)] md:flex-row">
+        <p class="wordmark text-xl text-[var(--tc-pink)]">Tropicool</p>
+        <p data-i18n="footer.note">Prototipo local 2026 · contenido público corregido para revisión.</p>
+      </div>
+    </footer>
+
+    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-[#041607]/90 p-2 backdrop-blur-xl md:hidden">
+      <div class="grid grid-cols-3 gap-2">
+        <a class="button-neon min-h-11 text-sm" href={site.links.reserve} data-i18n="cta.reserve">Reservar</a>
+        <a class="button-ghost min-h-11 text-sm" href="#carta" data-i18n="nav.menu">Carta</a>
+        <a class="button-ghost min-h-11 text-sm" href={site.links.order} data-i18n="nav.order">Pedir</a>
+      </div>
+    </div>
+  </body>
+</html>
