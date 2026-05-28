@@ -4,6 +4,11 @@
 
 This is a standalone Astro/Svelte prototype for a refreshed Tropicool home page: bilingual ES/EN content, structured menu explorer, strong reservation CTAs, lightweight motion and responsive accessibility-minded UI.
 
+## Live Demo
+
+- Netlify: https://tropicool-web-demo.netlify.app
+- GitHub: https://github.com/jmtdev0/tropicool-web-demo
+
 ## Important Notice
 
 - Tropicool, its brand, public menu content, public contact details and visual assets belong to their respective owners.
