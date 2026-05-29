@@ -13,7 +13,7 @@ This is a standalone Astro/Svelte prototype for a refreshed Tropicool home page:
 
 - Tropicool, its brand, public menu content, public contact details and visual assets belong to their respective owners.
 - The prototype is published only as a design/implementation demo and should not be treated as the official Tropicool website.
-- Public images are referenced from the existing public website for demo context. A production version should use assets explicitly authorized by Tropicool.
+- Public images are mirrored locally from the existing public website for demo context. A production version should use assets explicitly authorized by Tropicool.
 - If Tropicool or a rights holder wants anything removed or changed, the demo should be updated immediately.
 
 ## Stack

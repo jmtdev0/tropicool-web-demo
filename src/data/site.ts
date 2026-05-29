@@ -30,12 +30,9 @@ export const site = {
       'Mesa para cenar, tardeo con cócteles o plan de finde: reserva en un toque y ven con hambre.',
   },
   assets: {
-    hero:
-      'https://static.wixstatic.com/media/c51783_bdfa1249a3cc418a813ff6ea5f992369~mv2.jpg/v1/fill/w_1600,h_1800,al_c,q_82,enc_avif,quality_auto/c51783_bdfa1249a3cc418a813ff6ea5f992369~mv2.jpg',
-    interior:
-      'https://static.wixstatic.com/media/7173b2f3bb944503a036d50e562c7a08.jpg/v1/fill/w_1600,h_900,al_c,q_82,enc_avif,quality_auto/7173b2f3bb944503a036d50e562c7a08.jpg',
-    accent:
-      'https://static.wixstatic.com/media/c51783_a77b2349aca84716a8cefaeca9191bda~mv2.jpg/v1/fill/w_900,h_900,al_c,q_82,enc_avif,quality_auto/c51783_a77b2349aca84716a8cefaeca9191bda~mv2.jpg',
+    hero: '/images/assets/site/hero.webp',
+    interior: '/images/assets/site/interior.webp',
+    accent: '/images/assets/site/accent.webp',
   },
 };
 

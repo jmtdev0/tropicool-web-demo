@@ -26,7 +26,7 @@
                 "Frutos secos",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+              "image": "/images/assets/menu/c51783_e33cdef0b1464bbca52cde4419426198~mv2.webp",
               "imageAlt": "NACHOS",
               "sourceMenu": "carta",
               "sourceSection": "ENTRANTES"
@@ -51,7 +51,7 @@
                 "Soja",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+              "image": "/images/assets/menu/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.webp",
               "imageAlt": "FINGERS DE \"POLLO\"",
               "sourceMenu": "carta",
               "sourceSection": "ENTRANTES"
@@ -68,7 +68,7 @@
                 "Sin gluten",
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_d797042422de437399307212511e706f~mv2.jpg",
+              "image": "/images/assets/menu/c51783_d797042422de437399307212511e706f~mv2.webp",
               "imageAlt": "FALAFEL",
               "sourceMenu": "carta",
               "sourceSection": "ENTRANTES"
@@ -84,7 +84,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_4692009ecf7647f2908b0b505359eeac~mv2.jpg",
+              "image": "/images/assets/menu/c51783_4692009ecf7647f2908b0b505359eeac~mv2.webp",
               "imageAlt": "BROCHETAS SAHARA",
               "sourceMenu": "carta",
               "sourceSection": "ENTRANTES"
@@ -101,7 +101,7 @@
                 "Sin gluten",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+              "image": "/images/assets/menu/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.webp",
               "imageAlt": "EDAMAME",
               "sourceMenu": "carta",
               "sourceSection": "ENTRANTES"
@@ -117,7 +117,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_62d9ca5dbae347afa93ac76417afdf20~mv2.jpg",
+              "image": "/images/assets/menu/c51783_62d9ca5dbae347afa93ac76417afdf20~mv2.webp",
               "imageAlt": "KARAAGE",
               "sourceMenu": "carta",
               "sourceSection": "ENTRANTES"
@@ -142,7 +142,7 @@
                 "Trigo",
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+              "image": "/images/assets/menu/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.webp",
               "imageAlt": "TEQUEÑOS",
               "sourceMenu": "carta",
               "sourceSection": "ENTRANTES"
@@ -165,7 +165,7 @@
                 "Soja",
                 "Trigo"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_fd4968382a244c3c83379cecc833ce11~mv2.jpg",
+              "image": "/images/assets/menu/c51783_fd4968382a244c3c83379cecc833ce11~mv2.webp",
               "imageAlt": "SÁNDWICH \"EL CUBANITO\"",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -181,7 +181,7 @@
                 "Trigo",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+              "image": "/images/assets/menu/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.webp",
               "imageAlt": "BURGER LATINA",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -197,7 +197,7 @@
                 "Trigo",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_0d7fc1342ff147558ae0a69626009ddd~mv2.jpg",
+              "image": "/images/assets/menu/c51783_0d7fc1342ff147558ae0a69626009ddd~mv2.webp",
               "imageAlt": "BURGER ORIENTAL",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -213,7 +213,7 @@
                 "Trigo",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_992809afc265498385586c13fd68a204~mv2.jpg",
+              "image": "/images/assets/menu/c51783_992809afc265498385586c13fd68a204~mv2.webp",
               "imageAlt": "BOCADILLO DE \"KANDA\"",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -231,7 +231,7 @@
                 "Picante",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_b5a4bcfc669d4c6babce61fe51b089ca~mv2.jpg",
+              "image": "/images/assets/menu/c51783_b5a4bcfc669d4c6babce61fe51b089ca~mv2.webp",
               "imageAlt": "TACOS",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -247,7 +247,7 @@
                 "Soja",
                 "Trigo"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_d86966e246494e1aac942114d036f6de~mv2.jpeg",
+              "image": "/images/assets/menu/c51783_d86966e246494e1aac942114d036f6de~mv2.webp",
               "imageAlt": "CRISPY BURRITO FALAFEL",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -265,7 +265,7 @@
                 "Sin gluten",
                 "Suave"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+              "image": "/images/assets/menu/c51783_9727711012d34fe1a5624da61ca46242~mv2.webp",
               "imageAlt": "PAD THAI",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -282,7 +282,7 @@
                 "Sin gluten",
                 "Suave"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+              "image": "/images/assets/menu/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.webp",
               "imageAlt": "NASI GORENG",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -298,7 +298,7 @@
                 "Trigo",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_03c5c1f923504d16a775ce9a825bbc8d~mv2.jpg",
+              "image": "/images/assets/menu/c51783_03c5c1f923504d16a775ce9a825bbc8d~mv2.webp",
               "imageAlt": "SHAWARMA",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -315,7 +315,7 @@
                 "Soja",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+              "image": "/images/assets/menu/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.webp",
               "imageAlt": "POKE BOWL POLLO",
               "sourceMenu": "carta",
               "sourceSection": "STREET FOOD"
@@ -360,7 +360,7 @@
                 "Vegano",
                 "Trigo"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+              "image": "/images/assets/menu/c51783_103d780660b5451e868ea6c833ab560d~mv2.webp",
               "imageAlt": "TORRIJA DE PIÑA COLADA",
               "sourceMenu": "carta",
               "sourceSection": "POSTRES"
@@ -375,7 +375,7 @@
                 "Vegano",
                 "Trigo"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+              "image": "/images/assets/menu/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.webp",
               "imageAlt": "TORRIJA DE MANGO",
               "sourceMenu": "carta",
               "sourceSection": "POSTRES"
@@ -390,7 +390,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+              "image": "/images/assets/menu/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.webp",
               "imageAlt": "TARTA DE CHOCO",
               "sourceMenu": "carta",
               "sourceSection": "POSTRES"
@@ -406,7 +406,7 @@
                 "Soja",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+              "image": "/images/assets/menu/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.webp",
               "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
               "sourceMenu": "carta",
               "sourceSection": "POSTRES"
@@ -439,7 +439,7 @@
                 "Sin gluten",
                 "Suave"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+              "image": "/images/assets/menu/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.webp",
               "imageAlt": "NASI GORENG",
               "sourceMenu": "menu-del-dia",
               "sourceSection": "MENU DEL DIA"
@@ -457,7 +457,7 @@
                 "Sin gluten",
                 "Suave"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+              "image": "/images/assets/menu/c51783_9727711012d34fe1a5624da61ca46242~mv2.webp",
               "imageAlt": "PAD THAI",
               "sourceMenu": "menu-del-dia",
               "sourceSection": "MENU DEL DIA"
@@ -474,7 +474,7 @@
                 "Soja",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+              "image": "/images/assets/menu/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.webp",
               "imageAlt": "POKE BOWL POLLO",
               "sourceMenu": "menu-del-dia",
               "sourceSection": "MENU DEL DIA"
@@ -491,7 +491,7 @@
                 "Frutos secos",
                 "Trigo"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+              "image": "/images/assets/menu/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.webp",
               "imageAlt": "BURGER",
               "sourceMenu": "menu-del-dia",
               "sourceSection": "MENU DEL DIA"
@@ -524,7 +524,7 @@
                 "Frutos secos",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+              "image": "/images/assets/menu/c51783_e33cdef0b1464bbca52cde4419426198~mv2.webp",
               "imageAlt": "NACHOS",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -549,7 +549,7 @@
                 "Soja",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+              "image": "/images/assets/menu/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.webp",
               "imageAlt": "FINGERS DE \"POLLO\"",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -574,7 +574,7 @@
                 "Trigo",
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+              "image": "/images/assets/menu/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.webp",
               "imageAlt": "TEQUEÑOS",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -589,7 +589,7 @@
                 "Vegano",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_8a872b3d808b46a081a09e6c06f53691~mv2.jpg",
+              "image": "/images/assets/menu/c51783_8a872b3d808b46a081a09e6c06f53691~mv2.webp",
               "imageAlt": "TABLA DE HUMUS CON ACEITUNAS ADEREZADAS",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -603,7 +603,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_57b2538ac43245c290f686745aa16028~mv2.jpg",
+              "image": "/images/assets/menu/c51783_57b2538ac43245c290f686745aa16028~mv2.webp",
               "imageAlt": "PATATAS CAJÚN",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -618,7 +618,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_45fb51d6585244aeabf8651fd8eb420b~mv2.jpg",
+              "image": "/images/assets/menu/c51783_45fb51d6585244aeabf8651fd8eb420b~mv2.webp",
               "imageAlt": "STICKS DE BONIATO",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -635,7 +635,7 @@
                 "Sin gluten",
                 "Soja"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+              "image": "/images/assets/menu/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.webp",
               "imageAlt": "EDAMAME",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -651,7 +651,7 @@
                 "Trigo",
                 "Frutos secos"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_d9ff5226fccd4686bee3a7605b83475d~mv2.jpg",
+              "image": "/images/assets/menu/c51783_d9ff5226fccd4686bee3a7605b83475d~mv2.webp",
               "imageAlt": "COOKIES",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -666,7 +666,7 @@
                 "Vegano",
                 "Trigo"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+              "image": "/images/assets/menu/c51783_103d780660b5451e868ea6c833ab560d~mv2.webp",
               "imageAlt": "TORRIJA DE PIÑA COLADA",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -681,7 +681,7 @@
                 "Vegano",
                 "Trigo"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+              "image": "/images/assets/menu/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.webp",
               "imageAlt": "TORRIJA DE MANGO",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -697,7 +697,7 @@
                 "Soja",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+              "image": "/images/assets/menu/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.webp",
               "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -712,7 +712,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+              "image": "/images/assets/menu/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.webp",
               "imageAlt": "TARTA DE CHOCO",
               "sourceMenu": "tardeo",
               "sourceSection": "TARDEO"
@@ -743,7 +743,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_8fffb49363764b4e9a02ca9e6172f7d8~mv2.jpg",
+              "image": "/images/assets/menu/c51783_8fffb49363764b4e9a02ca9e6172f7d8~mv2.webp",
               "imageAlt": "BLACK LEMONADE",
               "sourceMenu": "bebida",
               "sourceSection": "LIMONADAS"
@@ -758,7 +758,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_3c73f91f924643379f5ab0dbb81f0849~mv2.jpg",
+              "image": "/images/assets/menu/c51783_3c73f91f924643379f5ab0dbb81f0849~mv2.webp",
               "imageAlt": "PINK LEMONADE",
               "sourceMenu": "bebida",
               "sourceSection": "LIMONADAS"
@@ -773,7 +773,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_fe90c119b54849b9a55a80827500c6a1~mv2.jpg",
+              "image": "/images/assets/menu/c51783_fe90c119b54849b9a55a80827500c6a1~mv2.webp",
               "imageAlt": "GREEN LEMONADE",
               "sourceMenu": "bebida",
               "sourceSection": "LIMONADAS"
@@ -788,7 +788,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_1f0569924eeb449a975a6fae579df9a0~mv2.jpg",
+              "image": "/images/assets/menu/c51783_1f0569924eeb449a975a6fae579df9a0~mv2.webp",
               "imageAlt": "VELVET LEMONADE",
               "sourceMenu": "bebida",
               "sourceSection": "LIMONADAS"
@@ -803,7 +803,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_7f4b2e6c627141b38793be6cf15b19af~mv2.jpg",
+              "image": "/images/assets/menu/c51783_7f4b2e6c627141b38793be6cf15b19af~mv2.webp",
               "imageAlt": "WHITE LEMONADE",
               "sourceMenu": "bebida",
               "sourceSection": "LIMONADAS"
@@ -1069,7 +1069,7 @@
               "price": "4,5 €",
               "variants": [],
               "labels": [],
-              "image": "https://static.wixstatic.com/media/c51783_eb64ba9ccf3b4c2888d5675a02e6353d~mv2.jpg",
+              "image": "/images/assets/menu/c51783_eb64ba9ccf3b4c2888d5675a02e6353d~mv2.webp",
               "imageAlt": "VERMUT BENDITO",
               "sourceMenu": "bebida",
               "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
@@ -1096,7 +1096,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_4c117be148bd4e39af2965b69eee9939~mv2.jpg",
+              "image": "/images/assets/menu/c51783_4c117be148bd4e39af2965b69eee9939~mv2.webp",
               "imageAlt": "SANGRIA TROPICOOL",
               "sourceMenu": "bebida",
               "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
@@ -1120,7 +1120,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_82a0c68dfd974f2fb6d4809b0c46ae16~mv2.jpg",
+              "image": "/images/assets/menu/c51783_82a0c68dfd974f2fb6d4809b0c46ae16~mv2.webp",
               "imageAlt": "CHIQUITA LOCURA (TINTO) BOTELLA",
               "sourceMenu": "bebida",
               "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
@@ -1144,7 +1144,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_4c0fe704ae3d4df8b75c9ed88f499da8~mv2.jpg",
+              "image": "/images/assets/menu/c51783_4c0fe704ae3d4df8b75c9ed88f499da8~mv2.webp",
               "imageAlt": "FLOR DE CHASNA (BLANCO AFRUTADO) BOTELLA",
               "sourceMenu": "bebida",
               "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
@@ -1168,7 +1168,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_c7e15ec418054ea1816867b24607d815~mv2.webp",
+              "image": "/images/assets/menu/c51783_c7e15ec418054ea1816867b24607d815~mv2.webp",
               "imageAlt": "Bach Extrísimo Semidulce Blanco",
               "sourceMenu": "bebida",
               "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
@@ -1183,7 +1183,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_fef8be75a7ce4edcb08b27e478805aba~mv2.png",
+              "image": "/images/assets/menu/c51783_fef8be75a7ce4edcb08b27e478805aba~mv2.webp",
               "imageAlt": "MÖET & CHANDON ROSE",
               "sourceMenu": "bebida",
               "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA"
@@ -1250,7 +1250,7 @@
                 "Frutos secos",
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_6734722fdaf746f180f3cdd6f15d1c5e~mv2.jpg",
+              "image": "/images/assets/menu/c51783_6734722fdaf746f180f3cdd6f15d1c5e~mv2.webp",
               "imageAlt": "PISTACCIO LATTE",
               "sourceMenu": "bebida",
               "sourceSection": "CAFÉ E INFUSIONES"
@@ -1294,7 +1294,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_95c03199442c4f489111ce8b91035a7e~mv2.jpg",
+              "image": "/images/assets/menu/c51783_95c03199442c4f489111ce8b91035a7e~mv2.webp",
               "imageAlt": "PALMA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1308,7 +1308,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_66f08d8aa5864ee6918846f82d305f49~mv2.jpg",
+              "image": "/images/assets/menu/c51783_66f08d8aa5864ee6918846f82d305f49~mv2.webp",
               "imageAlt": "BAHÍA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1322,7 +1322,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_667b09d83efa4569bbdb08f4da9051b1~mv2.jpg",
+              "image": "/images/assets/menu/c51783_667b09d83efa4569bbdb08f4da9051b1~mv2.webp",
               "imageAlt": "MOJITO CLASICO",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1336,7 +1336,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+              "image": "/images/assets/menu/c51783_362cad490d3b46e98d5c563befc29946~mv2.webp",
               "imageAlt": "MOJITO DE SANDÍA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1350,7 +1350,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_b1a666dcfc5a48df9fb81f90dd29e8f3~mv2.jpg",
+              "image": "/images/assets/menu/c51783_b1a666dcfc5a48df9fb81f90dd29e8f3~mv2.webp",
               "imageAlt": "MOJITO DE FRESA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1364,7 +1364,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+              "image": "/images/assets/menu/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.webp",
               "imageAlt": "MOJITO DE MARACUYÁ",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1378,7 +1378,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_d9d3bedc87884acdbddadeb9b32c0e0d~mv2.jpg",
+              "image": "/images/assets/menu/c51783_d9d3bedc87884acdbddadeb9b32c0e0d~mv2.webp",
               "imageAlt": "MOJITO SUNRISE",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1392,7 +1392,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_0c7ec13475494fa290005ba1c5690e58~mv2.jpg",
+              "image": "/images/assets/menu/c51783_0c7ec13475494fa290005ba1c5690e58~mv2.webp",
               "imageAlt": "MARGARITA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1406,7 +1406,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_d265e246859b4e4780fcc742a251974a~mv2.jpg",
+              "image": "/images/assets/menu/c51783_d265e246859b4e4780fcc742a251974a~mv2.webp",
               "imageAlt": "DAIKIRI MANGO",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1420,7 +1420,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_7e88eae264ec42efbff01ca733ad8da7~mv2.jpg",
+              "image": "/images/assets/menu/c51783_7e88eae264ec42efbff01ca733ad8da7~mv2.webp",
               "imageAlt": "DAIKIRI FRESA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1434,7 +1434,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_f3192c16b5ae4beaa80d71ee17aa5304~mv2.jpg",
+              "image": "/images/assets/menu/c51783_f3192c16b5ae4beaa80d71ee17aa5304~mv2.webp",
               "imageAlt": "CAIPIRINHA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1448,7 +1448,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_30b5ef7b3ad04b9bbc8a4adda8f14525~mv2.jpg",
+              "image": "/images/assets/menu/c51783_30b5ef7b3ad04b9bbc8a4adda8f14525~mv2.webp",
               "imageAlt": "JAGERINHA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1462,7 +1462,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_1741d856f4e44e00b160ee0351a30ff6~mv2.jpg",
+              "image": "/images/assets/menu/c51783_1741d856f4e44e00b160ee0351a30ff6~mv2.webp",
               "imageAlt": "TEQUILA SUNRISE",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1476,7 +1476,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_76c4ed4cedea4f62ba5daf907f5aeefc~mv2.jpg",
+              "image": "/images/assets/menu/c51783_76c4ed4cedea4f62ba5daf907f5aeefc~mv2.webp",
               "imageAlt": "SEX ON THE BEACH",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1490,7 +1490,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_d4c042b91da942ed9c95df8c8a1f5a60~mv2.jpg",
+              "image": "/images/assets/menu/c51783_d4c042b91da942ed9c95df8c8a1f5a60~mv2.webp",
               "imageAlt": "APEROL CITRUS SPRITZ",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1504,7 +1504,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_9caf407336314743b176467574a4ba96~mv2.jpg",
+              "image": "/images/assets/menu/c51783_9caf407336314743b176467574a4ba96~mv2.webp",
               "imageAlt": "APEROL SPRITZ",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1518,7 +1518,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_5b60183651b44300a09d251afaeb8028~mv2.jpg",
+              "image": "/images/assets/menu/c51783_5b60183651b44300a09d251afaeb8028~mv2.webp",
               "imageAlt": "PIÑA COLADA",
               "sourceMenu": "cocteles",
               "sourceSection": "CON ALCOHOL"
@@ -1553,7 +1553,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+              "image": "/images/assets/menu/c51783_362cad490d3b46e98d5c563befc29946~mv2.webp",
               "imageAlt": "MOJITO DE SANDÍA SIN",
               "sourceMenu": "cocteles",
               "sourceSection": "SIN ALCOHOL"
@@ -1623,7 +1623,7 @@
               "labels": [
                 "Vegano"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+              "image": "/images/assets/menu/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.webp",
               "imageAlt": "MOJITO DE MARACUYÁ SIN",
               "sourceMenu": "cocteles",
               "sourceSection": "SIN ALCOHOL"
@@ -1654,7 +1654,7 @@
                 "Vegano",
                 "Sin gluten"
               ],
-              "image": "https://static.wixstatic.com/media/c51783_6e5dcf06b278498f8b74ea25e7d0f472~mv2.jpg",
+              "image": "/images/assets/menu/c51783_6e5dcf06b278498f8b74ea25e7d0f472~mv2.webp",
               "imageAlt": "SHISHAS-CAHIMBAS",
               "sourceMenu": "shishas-cachimbas",
               "sourceSection": "SHISHAS-CAHIMBAS"
@@ -1677,7 +1677,7 @@
         "Frutos secos",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+      "image": "/images/assets/menu/c51783_e33cdef0b1464bbca52cde4419426198~mv2.webp",
       "imageAlt": "NACHOS",
       "sourceMenu": "carta",
       "sourceSection": "ENTRANTES",
@@ -1704,7 +1704,7 @@
         "Soja",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+      "image": "/images/assets/menu/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.webp",
       "imageAlt": "FINGERS DE \"POLLO\"",
       "sourceMenu": "carta",
       "sourceSection": "ENTRANTES",
@@ -1723,7 +1723,7 @@
         "Sin gluten",
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_d797042422de437399307212511e706f~mv2.jpg",
+      "image": "/images/assets/menu/c51783_d797042422de437399307212511e706f~mv2.webp",
       "imageAlt": "FALAFEL",
       "sourceMenu": "carta",
       "sourceSection": "ENTRANTES",
@@ -1741,7 +1741,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_4692009ecf7647f2908b0b505359eeac~mv2.jpg",
+      "image": "/images/assets/menu/c51783_4692009ecf7647f2908b0b505359eeac~mv2.webp",
       "imageAlt": "BROCHETAS SAHARA",
       "sourceMenu": "carta",
       "sourceSection": "ENTRANTES",
@@ -1760,7 +1760,7 @@
         "Sin gluten",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+      "image": "/images/assets/menu/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.webp",
       "imageAlt": "EDAMAME",
       "sourceMenu": "carta",
       "sourceSection": "ENTRANTES",
@@ -1778,7 +1778,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_62d9ca5dbae347afa93ac76417afdf20~mv2.jpg",
+      "image": "/images/assets/menu/c51783_62d9ca5dbae347afa93ac76417afdf20~mv2.webp",
       "imageAlt": "KARAAGE",
       "sourceMenu": "carta",
       "sourceSection": "ENTRANTES",
@@ -1805,7 +1805,7 @@
         "Trigo",
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+      "image": "/images/assets/menu/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.webp",
       "imageAlt": "TEQUEÑOS",
       "sourceMenu": "carta",
       "sourceSection": "ENTRANTES",
@@ -1823,7 +1823,7 @@
         "Soja",
         "Trigo"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_fd4968382a244c3c83379cecc833ce11~mv2.jpg",
+      "image": "/images/assets/menu/c51783_fd4968382a244c3c83379cecc833ce11~mv2.webp",
       "imageAlt": "SÁNDWICH \"EL CUBANITO\"",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1841,7 +1841,7 @@
         "Trigo",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+      "image": "/images/assets/menu/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.webp",
       "imageAlt": "BURGER LATINA",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1859,7 +1859,7 @@
         "Trigo",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_0d7fc1342ff147558ae0a69626009ddd~mv2.jpg",
+      "image": "/images/assets/menu/c51783_0d7fc1342ff147558ae0a69626009ddd~mv2.webp",
       "imageAlt": "BURGER ORIENTAL",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1877,7 +1877,7 @@
         "Trigo",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_992809afc265498385586c13fd68a204~mv2.jpg",
+      "image": "/images/assets/menu/c51783_992809afc265498385586c13fd68a204~mv2.webp",
       "imageAlt": "BOCADILLO DE \"KANDA\"",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1897,7 +1897,7 @@
         "Picante",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_b5a4bcfc669d4c6babce61fe51b089ca~mv2.jpg",
+      "image": "/images/assets/menu/c51783_b5a4bcfc669d4c6babce61fe51b089ca~mv2.webp",
       "imageAlt": "TACOS",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1915,7 +1915,7 @@
         "Soja",
         "Trigo"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_d86966e246494e1aac942114d036f6de~mv2.jpeg",
+      "image": "/images/assets/menu/c51783_d86966e246494e1aac942114d036f6de~mv2.webp",
       "imageAlt": "CRISPY BURRITO FALAFEL",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1935,7 +1935,7 @@
         "Sin gluten",
         "Suave"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+      "image": "/images/assets/menu/c51783_9727711012d34fe1a5624da61ca46242~mv2.webp",
       "imageAlt": "PAD THAI",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1954,7 +1954,7 @@
         "Sin gluten",
         "Suave"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+      "image": "/images/assets/menu/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.webp",
       "imageAlt": "NASI GORENG",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1972,7 +1972,7 @@
         "Trigo",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_03c5c1f923504d16a775ce9a825bbc8d~mv2.jpg",
+      "image": "/images/assets/menu/c51783_03c5c1f923504d16a775ce9a825bbc8d~mv2.webp",
       "imageAlt": "SHAWARMA",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -1991,7 +1991,7 @@
         "Soja",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+      "image": "/images/assets/menu/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.webp",
       "imageAlt": "POKE BOWL POLLO",
       "sourceMenu": "carta",
       "sourceSection": "STREET FOOD",
@@ -2026,7 +2026,7 @@
         "Vegano",
         "Trigo"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+      "image": "/images/assets/menu/c51783_103d780660b5451e868ea6c833ab560d~mv2.webp",
       "imageAlt": "TORRIJA DE PIÑA COLADA",
       "sourceMenu": "carta",
       "sourceSection": "POSTRES",
@@ -2043,7 +2043,7 @@
         "Vegano",
         "Trigo"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+      "image": "/images/assets/menu/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.webp",
       "imageAlt": "TORRIJA DE MANGO",
       "sourceMenu": "carta",
       "sourceSection": "POSTRES",
@@ -2060,7 +2060,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+      "image": "/images/assets/menu/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.webp",
       "imageAlt": "TARTA DE CHOCO",
       "sourceMenu": "carta",
       "sourceSection": "POSTRES",
@@ -2078,7 +2078,7 @@
         "Soja",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+      "image": "/images/assets/menu/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.webp",
       "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
       "sourceMenu": "carta",
       "sourceSection": "POSTRES",
@@ -2097,7 +2097,7 @@
         "Sin gluten",
         "Suave"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.jpg",
+      "image": "/images/assets/menu/c51783_739aabf7641442d78a21d0ee9eaae4dc~mv2.webp",
       "imageAlt": "NASI GORENG",
       "sourceMenu": "menu-del-dia",
       "sourceSection": "MENU DEL DIA",
@@ -2117,7 +2117,7 @@
         "Sin gluten",
         "Suave"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_9727711012d34fe1a5624da61ca46242~mv2.jpg",
+      "image": "/images/assets/menu/c51783_9727711012d34fe1a5624da61ca46242~mv2.webp",
       "imageAlt": "PAD THAI",
       "sourceMenu": "menu-del-dia",
       "sourceSection": "MENU DEL DIA",
@@ -2136,7 +2136,7 @@
         "Soja",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.jpg",
+      "image": "/images/assets/menu/c51783_bc6f93965d934a03b7e0398e125935b1~mv2.webp",
       "imageAlt": "POKE BOWL POLLO",
       "sourceMenu": "menu-del-dia",
       "sourceSection": "MENU DEL DIA",
@@ -2155,7 +2155,7 @@
         "Frutos secos",
         "Trigo"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.jpg",
+      "image": "/images/assets/menu/c51783_0ebf9813339b4596bd40094f8bd5f7f6~mv2.webp",
       "imageAlt": "BURGER",
       "sourceMenu": "menu-del-dia",
       "sourceSection": "MENU DEL DIA",
@@ -2174,7 +2174,7 @@
         "Frutos secos",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_e33cdef0b1464bbca52cde4419426198~mv2.jpg",
+      "image": "/images/assets/menu/c51783_e33cdef0b1464bbca52cde4419426198~mv2.webp",
       "imageAlt": "NACHOS",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2201,7 +2201,7 @@
         "Soja",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.jpg",
+      "image": "/images/assets/menu/c51783_034a73e4fc5c46fc9f2f5a6537d37aaf~mv2.webp",
       "imageAlt": "FINGERS DE \"POLLO\"",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2228,7 +2228,7 @@
         "Trigo",
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.jpg",
+      "image": "/images/assets/menu/c51783_7d1901f2b98c43c2bf31f49f742a10e4~mv2.webp",
       "imageAlt": "TEQUEÑOS",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2245,7 +2245,7 @@
         "Vegano",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_8a872b3d808b46a081a09e6c06f53691~mv2.jpg",
+      "image": "/images/assets/menu/c51783_8a872b3d808b46a081a09e6c06f53691~mv2.webp",
       "imageAlt": "TABLA DE HUMUS CON ACEITUNAS ADEREZADAS",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2261,7 +2261,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_57b2538ac43245c290f686745aa16028~mv2.jpg",
+      "image": "/images/assets/menu/c51783_57b2538ac43245c290f686745aa16028~mv2.webp",
       "imageAlt": "PATATAS CAJÚN",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2278,7 +2278,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_45fb51d6585244aeabf8651fd8eb420b~mv2.jpg",
+      "image": "/images/assets/menu/c51783_45fb51d6585244aeabf8651fd8eb420b~mv2.webp",
       "imageAlt": "STICKS DE BONIATO",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2297,7 +2297,7 @@
         "Sin gluten",
         "Soja"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.jpeg",
+      "image": "/images/assets/menu/c51783_0d6d78af2ef7475b898ade89be53da23~mv2.webp",
       "imageAlt": "EDAMAME",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2315,7 +2315,7 @@
         "Trigo",
         "Frutos secos"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_d9ff5226fccd4686bee3a7605b83475d~mv2.jpg",
+      "image": "/images/assets/menu/c51783_d9ff5226fccd4686bee3a7605b83475d~mv2.webp",
       "imageAlt": "COOKIES",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2332,7 +2332,7 @@
         "Vegano",
         "Trigo"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_103d780660b5451e868ea6c833ab560d~mv2.jpeg",
+      "image": "/images/assets/menu/c51783_103d780660b5451e868ea6c833ab560d~mv2.webp",
       "imageAlt": "TORRIJA DE PIÑA COLADA",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2349,7 +2349,7 @@
         "Vegano",
         "Trigo"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.jpg",
+      "image": "/images/assets/menu/c51783_7353db8834f84c3ea754858d3bcfbf7d~mv2.webp",
       "imageAlt": "TORRIJA DE MANGO",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2367,7 +2367,7 @@
         "Soja",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.jpg",
+      "image": "/images/assets/menu/c51783_35fe9c85e9754ce2b4f03cd82d55da51~mv2.webp",
       "imageAlt": "TARTA DE \"QUESO\" Y AÇAI",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2384,7 +2384,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.png",
+      "image": "/images/assets/menu/c51783_eb32b1ac6f9a457c9f885f3d12000a21~mv2.webp",
       "imageAlt": "TARTA DE CHOCO",
       "sourceMenu": "tardeo",
       "sourceSection": "TARDEO",
@@ -2401,7 +2401,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_8fffb49363764b4e9a02ca9e6172f7d8~mv2.jpg",
+      "image": "/images/assets/menu/c51783_8fffb49363764b4e9a02ca9e6172f7d8~mv2.webp",
       "imageAlt": "BLACK LEMONADE",
       "sourceMenu": "bebida",
       "sourceSection": "LIMONADAS",
@@ -2418,7 +2418,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_3c73f91f924643379f5ab0dbb81f0849~mv2.jpg",
+      "image": "/images/assets/menu/c51783_3c73f91f924643379f5ab0dbb81f0849~mv2.webp",
       "imageAlt": "PINK LEMONADE",
       "sourceMenu": "bebida",
       "sourceSection": "LIMONADAS",
@@ -2435,7 +2435,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_fe90c119b54849b9a55a80827500c6a1~mv2.jpg",
+      "image": "/images/assets/menu/c51783_fe90c119b54849b9a55a80827500c6a1~mv2.webp",
       "imageAlt": "GREEN LEMONADE",
       "sourceMenu": "bebida",
       "sourceSection": "LIMONADAS",
@@ -2452,7 +2452,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_1f0569924eeb449a975a6fae579df9a0~mv2.jpg",
+      "image": "/images/assets/menu/c51783_1f0569924eeb449a975a6fae579df9a0~mv2.webp",
       "imageAlt": "VELVET LEMONADE",
       "sourceMenu": "bebida",
       "sourceSection": "LIMONADAS",
@@ -2469,7 +2469,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_7f4b2e6c627141b38793be6cf15b19af~mv2.jpg",
+      "image": "/images/assets/menu/c51783_7f4b2e6c627141b38793be6cf15b19af~mv2.webp",
       "imageAlt": "WHITE LEMONADE",
       "sourceMenu": "bebida",
       "sourceSection": "LIMONADAS",
@@ -2746,7 +2746,7 @@
       "price": "4,5 €",
       "variants": [],
       "labels": [],
-      "image": "https://static.wixstatic.com/media/c51783_eb64ba9ccf3b4c2888d5675a02e6353d~mv2.jpg",
+      "image": "/images/assets/menu/c51783_eb64ba9ccf3b4c2888d5675a02e6353d~mv2.webp",
       "imageAlt": "VERMUT BENDITO",
       "sourceMenu": "bebida",
       "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
@@ -2777,7 +2777,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_4c117be148bd4e39af2965b69eee9939~mv2.jpg",
+      "image": "/images/assets/menu/c51783_4c117be148bd4e39af2965b69eee9939~mv2.webp",
       "imageAlt": "SANGRIA TROPICOOL",
       "sourceMenu": "bebida",
       "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
@@ -2803,7 +2803,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_82a0c68dfd974f2fb6d4809b0c46ae16~mv2.jpg",
+      "image": "/images/assets/menu/c51783_82a0c68dfd974f2fb6d4809b0c46ae16~mv2.webp",
       "imageAlt": "CHIQUITA LOCURA (TINTO) BOTELLA",
       "sourceMenu": "bebida",
       "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
@@ -2829,7 +2829,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_4c0fe704ae3d4df8b75c9ed88f499da8~mv2.jpg",
+      "image": "/images/assets/menu/c51783_4c0fe704ae3d4df8b75c9ed88f499da8~mv2.webp",
       "imageAlt": "FLOR DE CHASNA (BLANCO AFRUTADO) BOTELLA",
       "sourceMenu": "bebida",
       "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
@@ -2855,7 +2855,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_c7e15ec418054ea1816867b24607d815~mv2.webp",
+      "image": "/images/assets/menu/c51783_c7e15ec418054ea1816867b24607d815~mv2.webp",
       "imageAlt": "Bach Extrísimo Semidulce Blanco",
       "sourceMenu": "bebida",
       "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
@@ -2872,7 +2872,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_fef8be75a7ce4edcb08b27e478805aba~mv2.png",
+      "image": "/images/assets/menu/c51783_fef8be75a7ce4edcb08b27e478805aba~mv2.webp",
       "imageAlt": "MÖET & CHANDON ROSE",
       "sourceMenu": "bebida",
       "sourceSection": "SANGRÍA, VERMÚ, VINO Y CAVA",
@@ -2940,7 +2940,7 @@
         "Frutos secos",
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_6734722fdaf746f180f3cdd6f15d1c5e~mv2.jpg",
+      "image": "/images/assets/menu/c51783_6734722fdaf746f180f3cdd6f15d1c5e~mv2.webp",
       "imageAlt": "PISTACCIO LATTE",
       "sourceMenu": "bebida",
       "sourceSection": "CAFÉ E INFUSIONES",
@@ -2972,7 +2972,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_95c03199442c4f489111ce8b91035a7e~mv2.jpg",
+      "image": "/images/assets/menu/c51783_95c03199442c4f489111ce8b91035a7e~mv2.webp",
       "imageAlt": "PALMA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -2988,7 +2988,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_66f08d8aa5864ee6918846f82d305f49~mv2.jpg",
+      "image": "/images/assets/menu/c51783_66f08d8aa5864ee6918846f82d305f49~mv2.webp",
       "imageAlt": "BAHÍA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3004,7 +3004,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_667b09d83efa4569bbdb08f4da9051b1~mv2.jpg",
+      "image": "/images/assets/menu/c51783_667b09d83efa4569bbdb08f4da9051b1~mv2.webp",
       "imageAlt": "MOJITO CLASICO",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3020,7 +3020,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+      "image": "/images/assets/menu/c51783_362cad490d3b46e98d5c563befc29946~mv2.webp",
       "imageAlt": "MOJITO DE SANDÍA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3036,7 +3036,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_b1a666dcfc5a48df9fb81f90dd29e8f3~mv2.jpg",
+      "image": "/images/assets/menu/c51783_b1a666dcfc5a48df9fb81f90dd29e8f3~mv2.webp",
       "imageAlt": "MOJITO DE FRESA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3052,7 +3052,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+      "image": "/images/assets/menu/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.webp",
       "imageAlt": "MOJITO DE MARACUYÁ",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3068,7 +3068,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_d9d3bedc87884acdbddadeb9b32c0e0d~mv2.jpg",
+      "image": "/images/assets/menu/c51783_d9d3bedc87884acdbddadeb9b32c0e0d~mv2.webp",
       "imageAlt": "MOJITO SUNRISE",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3084,7 +3084,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_0c7ec13475494fa290005ba1c5690e58~mv2.jpg",
+      "image": "/images/assets/menu/c51783_0c7ec13475494fa290005ba1c5690e58~mv2.webp",
       "imageAlt": "MARGARITA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3100,7 +3100,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_d265e246859b4e4780fcc742a251974a~mv2.jpg",
+      "image": "/images/assets/menu/c51783_d265e246859b4e4780fcc742a251974a~mv2.webp",
       "imageAlt": "DAIKIRI MANGO",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3116,7 +3116,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_7e88eae264ec42efbff01ca733ad8da7~mv2.jpg",
+      "image": "/images/assets/menu/c51783_7e88eae264ec42efbff01ca733ad8da7~mv2.webp",
       "imageAlt": "DAIKIRI FRESA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3132,7 +3132,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_f3192c16b5ae4beaa80d71ee17aa5304~mv2.jpg",
+      "image": "/images/assets/menu/c51783_f3192c16b5ae4beaa80d71ee17aa5304~mv2.webp",
       "imageAlt": "CAIPIRINHA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3148,7 +3148,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_30b5ef7b3ad04b9bbc8a4adda8f14525~mv2.jpg",
+      "image": "/images/assets/menu/c51783_30b5ef7b3ad04b9bbc8a4adda8f14525~mv2.webp",
       "imageAlt": "JAGERINHA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3164,7 +3164,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_1741d856f4e44e00b160ee0351a30ff6~mv2.jpg",
+      "image": "/images/assets/menu/c51783_1741d856f4e44e00b160ee0351a30ff6~mv2.webp",
       "imageAlt": "TEQUILA SUNRISE",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3180,7 +3180,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_76c4ed4cedea4f62ba5daf907f5aeefc~mv2.jpg",
+      "image": "/images/assets/menu/c51783_76c4ed4cedea4f62ba5daf907f5aeefc~mv2.webp",
       "imageAlt": "SEX ON THE BEACH",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3196,7 +3196,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_d4c042b91da942ed9c95df8c8a1f5a60~mv2.jpg",
+      "image": "/images/assets/menu/c51783_d4c042b91da942ed9c95df8c8a1f5a60~mv2.webp",
       "imageAlt": "APEROL CITRUS SPRITZ",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3212,7 +3212,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_9caf407336314743b176467574a4ba96~mv2.jpg",
+      "image": "/images/assets/menu/c51783_9caf407336314743b176467574a4ba96~mv2.webp",
       "imageAlt": "APEROL SPRITZ",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3228,7 +3228,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_5b60183651b44300a09d251afaeb8028~mv2.jpg",
+      "image": "/images/assets/menu/c51783_5b60183651b44300a09d251afaeb8028~mv2.webp",
       "imageAlt": "PIÑA COLADA",
       "sourceMenu": "cocteles",
       "sourceSection": "CON ALCOHOL",
@@ -3260,7 +3260,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_362cad490d3b46e98d5c563befc29946~mv2.jpg",
+      "image": "/images/assets/menu/c51783_362cad490d3b46e98d5c563befc29946~mv2.webp",
       "imageAlt": "MOJITO DE SANDÍA SIN",
       "sourceMenu": "cocteles",
       "sourceSection": "SIN ALCOHOL",
@@ -3340,7 +3340,7 @@
       "labels": [
         "Vegano"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.jpg",
+      "image": "/images/assets/menu/c51783_5b2b4905d7f64cc4bab2db7b41479922~mv2.webp",
       "imageAlt": "MOJITO DE MARACUYÁ SIN",
       "sourceMenu": "cocteles",
       "sourceSection": "SIN ALCOHOL",
@@ -3357,7 +3357,7 @@
         "Vegano",
         "Sin gluten"
       ],
-      "image": "https://static.wixstatic.com/media/c51783_6e5dcf06b278498f8b74ea25e7d0f472~mv2.jpg",
+      "image": "/images/assets/menu/c51783_6e5dcf06b278498f8b74ea25e7d0f472~mv2.webp",
       "imageAlt": "SHISHAS-CAHIMBAS",
       "sourceMenu": "shishas-cachimbas",
       "sourceSection": "SHISHAS-CAHIMBAS",
