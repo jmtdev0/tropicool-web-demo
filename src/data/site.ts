@@ -1,7 +1,7 @@
 export const site = {
   name: 'Tropicool',
   url: 'https://www.tropicoolrestaurante.com/',
-  title: 'Tropicool demo - Plant based & cocktail bar en X Madrid',
+  title: 'TROPICOOL - Demo',
   description:
     'Demo no oficial de rediseño para Tropicool: restaurante 100% plant based y cocktail bar en C.C. X Madrid, Alcorcón.',
   address: 'C/ Oslo 53, C.C. X Madrid, Alcorcón, Madrid 28922',
@@ -23,7 +23,7 @@ export const site = {
     kicker: '100% plant based + cocktail bar',
     heroTitle: 'Be Tropic. Be Cool.',
     heroText:
-      'Sabores atrevidos, street food vegetal y cócteles con alma tropical en X Madrid.',
+      'El primer restaurante "100% plant based" abierto en un centro comercial de España.',
     intro:
       'Tropicool nace de viajar, probar y mezclar sabores de la franja tropical. Todo es plant based, con alternativas vegetales y una carta pensada para compartir.',
     reservationText:
@@ -39,6 +39,6 @@ export const site = {
 export const navigation = [
   { key: 'menu', label: 'Carta', href: '#carta' },
   { key: 'reserve', label: 'Reservar', href: '#reservar' },
-  { key: 'order', label: 'Pedir', href: '#pedidos' },
-  { key: 'contact', label: 'Contacto', href: '#contacto' },
+  { key: 'order', label: 'Pedir online', href: '#pedidos' },
+  { key: 'contact', label: '¿Dónde estamos?', href: '#contacto' },
 ];

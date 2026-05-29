@@ -22,7 +22,7 @@
     { id: 'Picante', key: 'filter.spicy', label: 'Picante' },
   ];
 
-  let selectedMenu = 'carta';
+  let selectedMenu = 'todo';
   let activeFilter = 'todos';
   let query = '';
 
@@ -95,6 +95,13 @@
     return `https://static.wixstatic.com/media/${uri}/v1/fill/w_${width},h_${height},al_c,q_82,enc_avif,quality_auto/${uri}`;
   }
 
+  function selectMenu(menuId: string) {
+    selectedMenu = menuId;
+    activeFilter = 'todos';
+    query = '';
+    requestAnimationFrame(() => document.getElementById('menu-results')?.scrollIntoView({ block: 'start' }));
+  }
+
   function iconFor(menuId: string) {
     if (menuId.includes('cocteles') || menuId.includes('bebida')) return Martini;
     if (menuId.includes('tardeo')) return Flame;
@@ -111,35 +118,37 @@
       </div>
 
       <div class="mt-4 grid gap-2">
-        <button
-          type="button"
+        <a
+          href="#menu-results"
           class:selected={selectedMenu === 'todo'}
           class="menu-tab"
-          on:click={() => (selectedMenu = 'todo')}
+          aria-current={selectedMenu === 'todo' ? 'true' : undefined}
+          on:click|preventDefault={() => selectMenu('todo')}
         >
           <Utensils size={17} aria-hidden="true" />
           {t('menuExplorer.all', $language)}
           <span>{allItems.length}</span>
-        </button>
+        </a>
 
         {#each menus as menu}
           {@const Icon = iconFor(menu.id)}
-          <button
-            type="button"
+          <a
+            href="#menu-results"
             class:selected={selectedMenu === menu.id}
             class="menu-tab"
-            on:click={() => (selectedMenu = menu.id)}
+            aria-current={selectedMenu === menu.id ? 'true' : undefined}
+            on:click|preventDefault={() => selectMenu(menu.id)}
           >
             <Icon size={17} aria-hidden="true" />
             {translateMenuName(menu.name, $language)}
             <span>{menu.sections.reduce((total, section) => total + section.items.length, 0)}</span>
-          </button>
+          </a>
         {/each}
       </div>
     </div>
   </aside>
 
-  <div class="min-w-0">
+  <div id="menu-results" class="min-w-0 scroll-mt-24">
     <div class="glass-panel p-4 md:p-5">
       <div class="grid gap-3 md:grid-cols-[1fr_auto] md:items-center">
         <label class="relative block">
@@ -207,8 +216,8 @@
         </div>
       {/if}
 
-      {#each groupedItems as group, index}
-        <details class="menu-section" open={index === 0 || Boolean(query)}>
+      {#each groupedItems as group, index (group.key)}
+        <details class="menu-section" open={index === 0 || selectedMenu === 'todo' || Boolean(query)}>
           <summary>
             <span>
               <strong>{group.title}</strong>
@@ -229,10 +238,6 @@
                     loading="lazy"
                     decoding="async"
                   />
-                {:else}
-                  <div class="menu-card-fallback">
-                    <Leaf size={30} aria-hidden="true" />
-                  </div>
                 {/if}
 
                 <div class="flex grow flex-col p-4">
@@ -287,6 +292,7 @@
     color: var(--tc-cream);
     padding: 0.72rem 0.8rem;
     text-align: left;
+    text-decoration: none;
     transition:
       border-color 160ms ease,
       background 160ms ease,
@@ -385,20 +391,10 @@
       #061e0c;
   }
 
-  .menu-card img,
-  .menu-card-fallback {
+  .menu-card img {
     aspect-ratio: 4 / 3;
     width: 100%;
     object-fit: cover;
-    background:
-      radial-gradient(circle at 40% 35%, rgba(239, 143, 186, 0.28), transparent 32%),
-      linear-gradient(135deg, #092d14, #020b04);
-  }
-
-  .menu-card-fallback {
-    display: grid;
-    place-items: center;
-    color: var(--tc-lime);
   }
 
   .menu-card h3 {
