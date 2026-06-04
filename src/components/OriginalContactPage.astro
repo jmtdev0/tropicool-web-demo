@@ -1,0 +1,161 @@
+---
+const navItems = [
+  { label: 'Inicio', href: 'https://www.tropicoolrestaurante.com/' },
+  { label: 'CARTA', href: 'https://www.tropicoolrestaurante.com/menus' },
+  { label: 'BEBIDA', href: 'https://www.tropicoolrestaurante.com/menus-1' },
+  { label: 'RESERVAR', href: 'https://www.tropicoolrestaurante.com/general-clean' },
+  { label: 'PEDIDOS', href: 'https://www.tropicoolrestaurante.com/general-8' },
+  { label: 'Contacto', href: 'https://www.tropicoolrestaurante.com/contact-9' },
+  { label: 'Experiencias', href: 'https://www.tropicoolrestaurante.com/experiences' },
+];
+---
+
+<a class="skip-link" href="#main">Skip to Main Content</a>
+
+<div class="page-frame">
+  <header class="topbar" aria-label="Navegación principal">
+    <nav>
+      {navItems.map((item) => (
+        <a href={item.href}>{item.label}</a>
+      ))}
+    </nav>
+
+    <a class="login-link" href="#" aria-label="Log In">
+      <span aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="3.3" />
+          <path d="M5 20a7 7 0 0 1 14 0" />
+        </svg>
+      </span>
+      Log In
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="contact-hero" aria-labelledby="contact-title">
+      <div class="contact-grid">
+        <section class="contact-copy">
+          <h1 id="contact-title">Contacto</h1>
+
+          <div class="contact-row">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s7-7 7-12a7 7 0 0 0-14 0c0 5 7 12 7 12Z" />
+                <circle cx="12" cy="10" r="2.4" />
+              </svg>
+            </span>
+            <p>
+              <strong>C/ Oslo 53 C.C X Madrid</strong>
+              <strong>Alocorcón , Madrid 28922</strong>
+            </p>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" />
+              </svg>
+            </span>
+            <p><strong>917321557</strong></p>
+          </div>
+
+          <div class="contact-row">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="14" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </span>
+            <p>
+              <a href="mailto:info@misitio.com"><strong>Tropicoolrestaurante@gmail.com</strong></a>
+            </p>
+          </div>
+
+          <div class="contact-row social-row">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M7 11v10" />
+                <path d="M7 11H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h3" />
+                <path d="M7 11l4-8a3 3 0 0 1 3 3v4h4.5a2 2 0 0 1 2 2.2l-.8 6a3 3 0 0 1-3 2.8H7" />
+              </svg>
+            </span>
+            <p class="social-links">
+              <a class="instagram-dot" href="https://www.instagram.com/tropicool_xmadrid" aria-label="Instagram Tropicool">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="ig" x1="0" x2="1" y1="1" y2="0">
+                      <stop offset="0" stop-color="#ffd600" />
+                      <stop offset="0.35" stop-color="#ff0069" />
+                      <stop offset="0.7" stop-color="#d300c5" />
+                      <stop offset="1" stop-color="#7638fa" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17" cy="7" r="1.1" />
+                </svg>
+              </a>
+              <a class="tiktok-dot" href="https://www.tiktok.com/@tropicool_xmadrid" aria-label="TikTok Tropicool">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M14 3v11.1a4 4 0 1 1-3.5-4" />
+                  <path d="M14 5c1.3 2.6 3.3 4 6 4" />
+                </svg>
+              </a>
+            </p>
+          </div>
+        </section>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="split-fields">
+            <label>
+              Nombre
+              <input name="nombre" type="text" />
+            </label>
+            <label>
+              Apellido
+              <input name="apellido" type="text" />
+            </label>
+          </div>
+
+          <label>
+            Email *
+            <input name="email" type="email" />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="mensaje"></textarea>
+          </label>
+
+          <button type="submit">Enviar</button>
+          <p class="thanks" aria-live="polite">¡Gracias por tu mensaje!</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="map-section" aria-label="Mapa de ubicación">
+      <iframe
+        title="Mapa de Tropicool en C.C. X Madrid"
+        src="https://www.google.com/maps?q=C.%20Oslo%2053%20C.C%20X%20Madrid%20Alcorc%C3%B3n&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <footer>
+      <h2>C.C. X MADRID</h2>
+      <a href="mailto:tropicoolrestaurante@gmail.com">tropicoolrestaurante@gmail.com</a>
+      <p>©2024 por TROPICOOL&nbsp;</p>
+    </footer>
+  </main>
+</div>
+
+<script>
+  const form = document.querySelector('.contact-form');
+  const thanks = document.querySelector('.thanks');
+
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    thanks?.classList.add('is-visible');
+  });
+</script>
