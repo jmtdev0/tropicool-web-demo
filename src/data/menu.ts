@@ -41,12 +41,12 @@ export type TropicoolMenuData = {
 export const menuData = rawMenuData as TropicoolMenuData;
 
 const preferredNames = [
-  'NACHOS',
-  'SÁNDWICH "EL CUBANITO"',
-  'BURGER LATINA',
-  'CURRY AMARILLO',
-  'TORRIJA DE PIÑA COLADA',
-  'KARAAGE',
+  'Nachos',
+  'Sándwich "El Cubanito"',
+  'Burger latina',
+  'Curry amarillo',
+  'Torrija de piña colada',
+  'Karaage',
 ];
 
 export const featuredItems = preferredNames

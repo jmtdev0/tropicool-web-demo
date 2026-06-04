@@ -13,49 +13,73 @@ export const language = writable<Lang>(defaultLang);
 
 export const messages = {
   es: {
-    'meta.title': 'TROPICOOL - Demo',
+    'meta.title': 'Tropicool - Demo',
     'meta.description':
       'Demo no oficial de rediseño para Tropicool: restaurante 100% plant based y cocktail bar en C.C. X Madrid, Alcorcón.',
     'demo.notice': 'Demo no oficial de rediseño. No afiliada ni aprobada por Tropicool.',
     'nav.menu': 'Carta',
+    'nav.gallery': 'Galería',
     'nav.reserve': 'Reservar',
     'nav.order': 'Pedir online',
-    'nav.contact': '¿Dónde estamos?',
+    'nav.contact': 'X Madrid',
     'lang.label': 'Idioma',
     'lang.aria': 'Cambiar idioma',
     'hero.kicker': '100% plant based + cocktail bar',
     'hero.text': 'El primer restaurante "100% plant based" abierto en un centro comercial de España.',
+    'hero.storyToggle': 'Conoce nuestra historia',
+    'hero.storyLead': 'Tropicool nace de una pequeña locura.',
+    'hero.storyText':
+      'Acumulando viajes por todo el mundo, hemos aprendido y absorbido experiencias y momentos que intentamos aplicar en nuestro día a día.',
+    'hero.aboutText':
+      'Recopilamos platos y bebidas típicas de la franja que comprende desde el trópico de Cáncer hasta el trópico de Capricornio.',
+    'hero.storySignature': '100% plant based · Be Tropic. Be Cool.',
+    'hero.foundedText':
+      'Fundamos Tropicool en el año 2000 y somos bien conocidos por revolucionar la manera en que la gente come y disfruta sus alimentos. Nos sentimos orgullosos por haber descubierto sabores exclusivos a nivel mundial y compartirlos con personas de todo el mundo. ¡Únete a nosotros!',
     'cta.reserve': 'Reservar',
+    'cta.reserveCall': 'Reservar por teléfono',
     'cta.reserveTable': 'Reservar mesa',
     'cta.fullMenu': 'Ver carta completa',
     'cta.orderOnline': 'Pedir online',
     'cta.orderUber': 'Pedir en Uber Eats',
+    'cta.callNow': 'Llamar ahora',
+    'cta.getDirections': 'Cómo llegar',
     'menu.eyebrow': 'Carta completa',
-    'menu.title': 'Nuestra carta 100% plant based 🌱💚',
+    'menu.title': 'Nuestra carta 100% plant based',
     'menu.description':
-      'Carta, bebida, cócteles, menú del día, tardeo y shishas en un solo explorador. Los productos sin gluten pueden contener trazas por contaminación cruzada.',
+      'Toda nuestra carta es 100% plant based y utiliza únicamente ingredientes de origen vegetal. Los ingredientes entre comillas son alternativas vegetales que simulan a las de origen animal. Los productos marcados sin gluten no contienen gluten en sus ingredientes, pero pueden contener trazas por contaminación cruzada durante su elaboración.',
     'booking.eyebrow': 'Reserva y pedidos',
-    'booking.title': 'De aquí a la mesa en dos clics.',
+    'booking.title': 'Reserva llamando. Pide en Uber Eats.',
     'booking.text':
-      'Mesa para cenar, tardeo con cócteles o plan de finde: reserva en un toque y ven con hambre.',
+      'Para reservar mesa, llámanos y te confirmamos disponibilidad al momento. Si quieres pedir a domicilio, te llevamos directo a Uber Eats.',
     'booking.card.reserveTag': 'Reservas',
-    'booking.card.reserveTitle': 'Mesa asegurada',
-    'booking.card.reserveText': 'Enlace directo al sistema de reservas actual.',
+    'booking.card.reserveTitle': 'Reserva por teléfono',
+    'booking.card.reserveText': 'Te mostramos el número y un botón directo para llamar a Tropicool.',
     'booking.card.deliveryTag': 'Delivery',
     'booking.card.deliveryTitle': 'Tropicool en casa',
-    'booking.card.deliveryText': 'Acceso a pedidos online sin mezclarlo con la reserva.',
+    'booking.card.deliveryText': 'El pedido online se abre fuera de esta web y te redirige a Uber Eats.',
     'booking.card.mapsTag': 'Cómo llegar',
-    'gallery.eyebrow': 'Mood de cocina',
-    'gallery.title': 'Tropical, vegetal, nocturno.',
-    'contact.eyebrow': 'Contacto',
-    'contact.title': 'Nos vemos en X Madrid.',
+    'reservation.title': 'Reserva por teléfono',
+    'reservation.text': 'Para reservar mesa en Tropicool, llámanos y te confirmamos disponibilidad al momento.',
+    'reservation.close': 'Cerrar reserva',
+    'reservation.later': 'Ahora no',
+    'gallery.eyebrow': 'Galería',
+    'gallery.title': 'Tropicool a pantalla completa.',
+    'gallery.text': 'Fotos y vídeos de Tropicool para abrir, mirar y cerrar sin salir de la web.',
+    'gallery.open': 'Abrir',
+    'gallery.close': 'Cerrar galería',
+    'gallery.previous': 'Anterior',
+    'gallery.next': 'Siguiente',
+    'gallery.photo': 'Foto',
+    'gallery.video': 'Vídeo',
+    'contact.eyebrow': 'X Madrid',
+    'contact.title': 'Ven a Tropicool en X Madrid.',
+    'contact.text': 'Estamos en C.C. X Madrid, Alcorcón. Guarda la ruta, llama si quieres reservar y vente con hambre.',
     'footer.note': 'Demo no oficial 2026 · propuesta pública de rediseño basada en contenido público.',
     'menuExplorer.title': 'Carta 100% plant based',
     'menuExplorer.all': 'Todo',
     'menuExplorer.searchLabel': 'Buscar en la carta',
     'menuExplorer.searchPlaceholder': 'Buscar nachos, burger, cóctel, soja...',
     'menuExplorer.clear': 'Limpiar búsqueda',
-    'menuExplorer.count': '{visible} de {total} propuestas',
     'menuExplorer.allergenWarning': 'Los alérgenos deben validarse con cocina antes de publicar.',
     'menuExplorer.noResults': 'No hay resultados',
     'menuExplorer.noResultsText': 'Prueba con otra categoría o borra el filtro.',
@@ -71,44 +95,69 @@ export const messages = {
       'Unofficial redesign demo for Tropicool: a 100% plant-based restaurant and cocktail bar at C.C. X Madrid, Alcorcon.',
     'demo.notice': 'Unofficial redesign demo. Not affiliated with or approved by Tropicool.',
     'nav.menu': 'Menu',
+    'nav.gallery': 'Gallery',
     'nav.reserve': 'Book',
     'nav.order': 'Order online',
-    'nav.contact': 'Find us',
+    'nav.contact': 'X Madrid',
     'lang.label': 'Language',
     'lang.aria': 'Change language',
     'hero.kicker': '100% plant-based + cocktail bar',
     'hero.text': 'The first "100% plant-based" restaurant opened in a shopping centre in Spain.',
+    'hero.storyToggle': 'Read the story',
+    'hero.storyLead':
+      'Tropicool was born from a small madness.',
+    'hero.storyText':
+      'After travelling around the world, we have learned and absorbed experiences and moments that we try to apply in our everyday life.',
+    'hero.aboutText':
+      'We gather typical dishes and drinks from the belt that stretches from the Tropic of Cancer to the Tropic of Capricorn.',
+    'hero.storySignature': '100% plant-based · Be Tropic. Be Cool.',
+    'hero.foundedText':
+      'We founded Tropicool in 2000 and are well known for revolutionising the way people eat and enjoy their food. We are proud to have discovered exclusive flavours from around the world and to share them with people everywhere. Join us!',
     'cta.reserve': 'Book',
+    'cta.reserveCall': 'Book by phone',
     'cta.reserveTable': 'Book a table',
     'cta.fullMenu': 'View full menu',
     'cta.orderOnline': 'Order online',
     'cta.orderUber': 'Order on Uber Eats',
+    'cta.callNow': 'Call now',
+    'cta.getDirections': 'Get directions',
     'menu.eyebrow': 'Full menu',
-    'menu.title': 'Our 100% plant-based menu 🌱💚',
+    'menu.title': 'Our 100% plant-based menu',
     'menu.description':
-      'Food, drinks, cocktails, lunch menu, afternoon plates and shishas in one explorer. Gluten-free products may contain traces due to cross-contamination.',
+      'Our whole menu is 100% plant-based, using only ingredients of plant origin. Ingredients in quotation marks are plant-based alternatives that simulate animal-based ones. *Products marked gluten-free do not contain gluten in any of their ingredients, but may contain traces due to cross-contamination during preparation.',
     'booking.eyebrow': 'Bookings and orders',
-    'booking.title': 'From here to the table in two clicks.',
+    'booking.title': 'Book by phone. Order on Uber Eats.',
     'booking.text':
-      'Dinner, cocktails or a weekend plan: book in a tap and arrive hungry.',
+      'To book a table, call us and we will confirm availability right away. For delivery, we take you straight to Uber Eats.',
     'booking.card.reserveTag': 'Bookings',
-    'booking.card.reserveTitle': 'Your table, sorted',
-    'booking.card.reserveText': 'Direct link to the current reservation system.',
+    'booking.card.reserveTitle': 'Book by phone',
+    'booking.card.reserveText': 'We show the number and a direct call button for Tropicool.',
     'booking.card.deliveryTag': 'Delivery',
     'booking.card.deliveryTitle': 'Tropicool at home',
-    'booking.card.deliveryText': 'Online ordering access without mixing it with reservations.',
+    'booking.card.deliveryText': 'Online ordering opens outside this website and redirects you to Uber Eats.',
     'booking.card.mapsTag': 'Directions',
-    'gallery.eyebrow': 'Kitchen mood',
-    'gallery.title': 'Tropical, plant-based, nocturnal.',
-    'contact.eyebrow': 'Contact',
-    'contact.title': 'See you at X Madrid.',
+    'reservation.title': 'Book by phone',
+    'reservation.text': 'To book a table at Tropicool, call us and we will confirm availability right away.',
+    'reservation.close': 'Close booking dialog',
+    'reservation.later': 'Not now',
+    'gallery.eyebrow': 'Gallery',
+    'gallery.title': 'Tropicool fullscreen.',
+    'gallery.text': 'Photos and videos from Tropicool to open, watch and close without leaving the site.',
+    'gallery.open': 'Open',
+    'gallery.close': 'Close gallery',
+    'gallery.previous': 'Previous',
+    'gallery.next': 'Next',
+    'gallery.photo': 'Photo',
+    'gallery.video': 'Video',
+    'contact.eyebrow': 'X Madrid',
+    'contact.title': 'Come to Tropicool at X Madrid.',
+    'contact.text': 'Find us at C.C. X Madrid, Alcorcon. Save the route, call if you want to book and arrive hungry.',
     'footer.note': 'Unofficial demo 2026 · public redesign proposal based on public content.',
     'menuExplorer.title': '100% plant-based menu',
     'menuExplorer.all': 'All',
     'menuExplorer.searchLabel': 'Search the menu',
     'menuExplorer.searchPlaceholder': 'Search nachos, burger, cocktail, soy...',
     'menuExplorer.clear': 'Clear search',
-    'menuExplorer.count': '{visible} of {total} items',
     'menuExplorer.allergenWarning': 'Allergens must be validated with the kitchen before publishing.',
     'menuExplorer.noResults': 'No results',
     'menuExplorer.noResultsText': 'Try another category or clear the filter.',
@@ -130,35 +179,35 @@ const menuNameEN: Record<string, string> = {
 };
 
 const sectionNameEN: Record<string, string> = {
-  ENTRANTES: 'Starters',
-  'STREET FOOD': 'Street food',
-  'MENU INFANTIL': 'Kids menu',
-  POSTRES: 'Desserts',
-  'MENU DEL DIA': 'Lunch menu',
-  TARDEO: 'Afternoon plates',
-  LIMONADAS: 'Lemonades',
-  'REFRESCOS, ZUMOS Y AGUA': 'Soft drinks, juices & water',
-  'CERVEZAS Y SIDRA': 'Beer & cider',
-  'SANGRIA, VERMU, VINO Y CAVA': 'Sangria, vermouth, wine & cava',
-  'CAFE E INFUSIONES': 'Coffee & tea',
-  CÓCTELES: 'Cocktails',
-  'CON ALCOHOL': 'With alcohol',
-  'SIN ALCOHOL': 'Alcohol-free',
-  'SHISHAS-CACHIMBAS': 'Shishas',
+  Entrantes: 'Starters',
+  'Street food': 'Street food',
+  'Menú infantil': 'Kids menu',
+  Postres: 'Desserts',
+  'Menú del día': 'Lunch menu',
+  Tardeo: 'Afternoon plates',
+  Limonadas: 'Lemonades',
+  'Refrescos, zumos y agua': 'Soft drinks, juices & water',
+  'Cervezas y sidra': 'Beer & cider',
+  'Sangría, vermú, vino y cava': 'Sangria, vermouth, wine & cava',
+  'Café e infusiones': 'Coffee & tea',
+  Cócteles: 'Cocktails',
+  'Con alcohol': 'With alcohol',
+  'Sin alcohol': 'Alcohol-free',
+  'Shishas - cachimbas': 'Shishas',
 };
 
 const sectionDescriptionEN: Record<string, string> = {
-  ENTRANTES: 'Tropicool is made for sharing. Start here and build the table around it.',
-  'STREET FOOD': 'Street-food classics from around the world, always with a Tropicool twist.',
-  'MENU INFANTIL': 'A plant-based menu for the little ones.',
-  POSTRES: 'Sweet endings with a Tropicool accent.',
-  'MENU DEL DIA': 'Lunch menu available Monday to Friday from 13:00 to 16:30, except holidays and eves.',
-  TARDEO: 'Friday, Saturday, Sunday and holiday-afternoon specials from 18:30.',
-  LIMONADAS: 'House lemonades made with 100% natural ingredients.',
-  CÓCTELES: 'Classic cocktails with a Tropicool twist and alcohol-free options.',
-  'CON ALCOHOL': 'Cocktails with alcohol.',
-  'SIN ALCOHOL': 'Alcohol-free cocktails.',
-  'SHISHAS-CACHIMBAS': 'Shishas with several flavor options. Ask the team for current availability.',
+  Entrantes: 'Tropicool is made for sharing. Start here and build the table around it.',
+  'Street food': 'Street-food classics from around the world, always with a Tropicool twist.',
+  'Menú infantil': 'A plant-based menu for the little ones.',
+  Postres: 'Sweet endings with a Tropicool accent.',
+  'Menú del día': 'Lunch menu available Monday to Friday from 13:00 to 16:30, except holidays and eves.',
+  Tardeo: 'Friday, Saturday, Sunday and holiday-afternoon specials from 18:30.',
+  Limonadas: 'House lemonades made with 100% natural ingredients.',
+  Cócteles: 'Classic cocktails with a Tropicool twist and alcohol-free options.',
+  'Con alcohol': 'Cocktails with alcohol.',
+  'Sin alcohol': 'Alcohol-free cocktails.',
+  'Shishas - cachimbas': 'Shishas with several flavor options. Ask the team for current availability.',
 };
 
 const labelEN: Record<string, string> = {
@@ -178,53 +227,53 @@ const labelEN: Record<string, string> = {
 };
 
 const itemDescriptionEN: Record<string, string> = {
-  'carta-ENTRANTES-NACHOS':
+  'carta-ENTRANTES-Nachos':
     'Nachos with plant-based "chorizo", beans, homemade cheddar-style sauce, guacamole and pico de gallo. Contains gluten, soy and tree nuts.',
-  'carta-ENTRANTES-FINGERS DE "POLLO"':
+  'carta-ENTRANTES-Fingers de "pollo"':
     'Crispy plant-based "chicken" fingers with mustard and agave sauce. Contains soy and mustard.',
-  'carta-ENTRANTES-FALAFEL':
+  'carta-ENTRANTES-Falafel':
     'Homemade falafel with yogurt-style sauce, vegan mayo and tahini, finished with Dukkah. Contains soy and tree nuts.',
-  'carta-ENTRANTES-BROCHETAS SAHARA':
+  'carta-ENTRANTES-Brochetas Sahara':
     'Sahara-style skewers with plant-based pieces and tropical seasoning.',
-  'carta-ENTRANTES-EDAMAME':
+  'carta-ENTRANTES-Edamame':
     'Edamame pods served with a Tropicool touch.',
-  'carta-ENTRANTES-KARAAGE':
+  'carta-ENTRANTES-Karaage':
     'Japanese-style plant-based karaage, crisp outside and juicy inside.',
-  'carta-ENTRANTES-TEQUEÑOS':
+  'carta-ENTRANTES-Tequeños':
     'Venezuelan-style tequeños with a plant-based filling.',
-  'carta-STREET FOOD-SÁNDWICH "EL CUBANITO"':
+  'carta-STREET FOOD-Sándwich "El Cubanito"':
     'Pulled plant-based "pork" sandwich in brioche with vegan bacon, cheese-style sauce and pickles.',
-  'carta-STREET FOOD-BURGER LATINA':
+  'carta-STREET FOOD-Burger latina':
     'Burger with vegan bacon, jalapeño sauce, guacamole, red onion, lettuce and tomato.',
-  'carta-STREET FOOD-BURGER ORIENTAL':
+  'carta-STREET FOOD-Burger oriental':
     'Burger with shiitake mushroom and kimchi mayo. Add vegan cheese or vegan bacon as extras.',
   'carta-STREET FOOD-BROCCOLINO YOGURTH':
     'Broccolini with yogurt-style sauce and Tropicool seasoning.',
-  'carta-STREET FOOD-TACOS':
+  'carta-STREET FOOD-Tacos':
     'Plant-based tacos with fresh toppings and house sauces.',
   'carta-STREET FOOD-CURRY AMARILLO':
     'Yellow curry with vegetables and aromatic spices.',
-  'carta-STREET FOOD-PAD THAI':
+  'carta-STREET FOOD-Pad Thai':
     'Plant-based Pad Thai with rice noodles, vegetables and Thai-inspired sauce.',
-  'carta-STREET FOOD-NASI GORENG':
+  'carta-STREET FOOD-Nasi goreng':
     'Indonesian-style fried rice with vegetables and plant-based protein.',
-  'carta-STREET FOOD-SHAWARMA':
+  'carta-STREET FOOD-Shawarma':
     'Plant-based shawarma with fresh vegetables and house sauce.',
-  'carta-STREET FOOD-POKE BOWL/POLLO':
+  'carta-STREET FOOD-Poke bowl pollo':
     'Poke bowl with plant-based "chicken", rice, vegetables and Tropicool dressing.',
-  'carta-POSTRES-TORRIJA DE PIÑA COLADA':
+  'carta-POSTRES-Torrija de piña colada':
     'Piña colada-style torrija with mango and passion fruit ice cream. Contains gluten.',
-  'carta-POSTRES-TORRIJA DE MANGO':
+  'carta-POSTRES-Torrija de mango':
     'Mango torrija with chocolate ice cream. Contains gluten.',
-  'carta-POSTRES-TARTA DE CHOCO':
+  'carta-POSTRES-Tarta de choco':
     'Chocolate cake with a cookie base and roasted orange marmalade.',
 };
 
 const nameEN: Record<string, string> = {
-  'MENU INFANTIL': 'Kids menu',
-  'TORRIJA DE PIÑA COLADA': 'Piña colada torrija',
-  'TORRIJA DE MANGO': 'Mango torrija',
-  'TARTA DE CHOCO': 'Chocolate cake',
+  'Menú infantil': 'Kids menu',
+  'Torrija de piña colada': 'Piña colada torrija',
+  'Torrija de mango': 'Mango torrija',
+  'Tarta de choco': 'Chocolate cake',
 };
 
 export function t(key: string, lang: Lang, replacements: Record<string, string | number> = {}) {

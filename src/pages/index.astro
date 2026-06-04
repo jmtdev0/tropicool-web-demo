@@ -7,15 +7,13 @@ import TranslationRuntime from '../components/TranslationRuntime.svelte';
 import { site, navigation } from '../data/site';
 import { menuData } from '../data/menu';
 
-const heroVideos = [
-  '/videos/instagram/ig-1-DPPFYlADdTy.mp4',
-  '/videos/instagram/ig-1-DPPFZACjQLC.mp4',
-  '/videos/instagram/ig-1-DPPFZfHDS_d.mp4',
-  '/videos/instagram/ig-2-DPCT95mjdL6.mp4',
-  '/videos/instagram/ig-3-DOl-2DkDVCu.mp4',
-  '/videos/instagram/ig-4-DNtTRCn2mZM.mp4',
-  '/videos/instagram/ig-5-DNEDgSFtn8H.mp4',
-];
+const heroVideos = Array.from({ length: 7 }, (_, index) => {
+  const fileNumber = String(index + 1).padStart(2, '0');
+  return {
+    desktop: `/videos/hero/desktop/hero-${fileNumber}.mp4`,
+    mobile: `/videos/hero/mobile/hero-${fileNumber}.mp4`,
+  };
+});
 
 const jsonLd = {
   '@context': 'https://schema.org',
@@ -82,9 +80,26 @@ const jsonLd = {
             </a>
           ))}
         </div>
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-3">
+          <a class="social-icon-link" href={site.links.instagram} target="_blank" rel="noreferrer" aria-label="Instagram Tropicool">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="18" height="18" x="3" y="3" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <path d="M17.5 6.5h.01" />
+            </svg>
+          </a>
+          <a class="social-icon-link social-icon-link--filled" href={site.links.facebook} target="_blank" rel="noreferrer" aria-label="Facebook Tropicool">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M14 8h2.5V4H13c-3 0-5 2-5 5v3H5.5v4H8v5h4v-5h3l1-4h-4V9.2c0-.7.4-1.2 1-1.2Z" />
+            </svg>
+          </a>
+          <a class="social-icon-link" href={site.links.mail} aria-label="Email Tropicool">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect width="18" height="14" x="3" y="5" rx="2" />
+              <path d="m3 7 9 6 9-6" />
+            </svg>
+          </a>
           <LanguageToggle client:load />
-          <a class="button-neon min-h-10 px-4 text-sm" href={site.links.reserve} data-i18n="cta.reserve">Reservar</a>
         </div>
       </nav>
     </header>
@@ -96,12 +111,12 @@ const jsonLd = {
             {[...heroVideos, ...heroVideos].map((video, index) => (
               <div class="hero-video-card" data-hero-video-card>
                 <video
-                  src={video}
                   muted
-                  autoplay
                   loop
                   playsinline
-                  preload={index < heroVideos.length ? 'auto' : 'metadata'}
+                  preload="none"
+                  data-desktop-src={video.desktop}
+                  data-mobile-src={video.mobile}
                 ></video>
               </div>
             ))}
@@ -151,18 +166,45 @@ const jsonLd = {
             <p data-hero-word class="mt-6 max-w-2xl text-xl font-black text-[var(--tc-cream)] drop-shadow-[0_3px_20px_rgba(0,0,0,.75)] md:text-3xl" data-i18n="hero.text">
               {site.copy.heroText}
             </p>
+            <details data-hero-word class="hero-story mt-5">
+              <summary>
+                <span data-i18n="hero.storyToggle">Conoce nuestra historia</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </summary>
+              <div class="hero-story__panel">
+                <p data-i18n="hero.storyLead">
+                  Tropicool nace de una pequeña locura.
+                </p>
+                <p data-i18n="hero.storyText">
+                  Acumulando viajes por todo el mundo, hemos aprendido y absorbido experiencias y momentos que intentamos aplicar en nuestro día a día.
+                </p>
+                <p data-i18n="hero.aboutText">
+                  Recopilamos platos y bebidas típicas de la franja que comprende desde el trópico de Cáncer hasta el trópico de Capricornio.
+                </p>
+                <p data-i18n="hero.storySignature">
+                  100% plant based · Be Tropic. Be Cool.
+                </p>
+                <p data-i18n="hero.foundedText">
+                  Fundamos Tropicool en el año 2000 y somos bien conocidos por revolucionar la manera en que la gente come y disfruta sus alimentos. Nos sentimos orgullosos por haber descubierto sabores exclusivos a nivel mundial y compartirlos con personas de todo el mundo. ¡Únete a nosotros!
+                </p>
+              </div>
+            </details>
           </div>
         </div>
       </section>
 
       <section id="carta" class="section-band scroll-mt-20 py-12 md:py-20" data-animate>
         <div class="container-shell">
-          <div class="mb-8 max-w-3xl">
+          <div class="mb-8 max-w-6xl">
             <p class="eyebrow" data-i18n="menu.eyebrow">Carta completa</p>
-            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="menu.title">Nuestra carta 100% plant based 🌱💚</h2>
+            <h2 class="menu-title mt-3 text-4xl font-black leading-none" data-i18n="menu.title">Nuestra carta 100% plant based</h2>
             <p class="mt-4 text-[rgba(255,249,223,.74)]" data-i18n="menu.description">
-              Carta, bebida, cócteles, menú del día, tardeo y shishas en un solo explorador. Los productos
-              sin gluten pueden contener trazas por contaminación cruzada.
+              Toda nuestra carta es 100% plant based y utiliza únicamente ingredientes de origen vegetal.
+              Los ingredientes entre comillas son alternativas vegetales que simulan a las de origen animal.
+              Los productos marcados sin gluten no contienen gluten en sus ingredientes, pero pueden contener
+              trazas por contaminación cruzada durante su elaboración.
             </p>
           </div>
 
@@ -174,27 +216,27 @@ const jsonLd = {
         <div class="container-shell grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-stretch">
           <div>
             <p class="eyebrow" data-i18n="booking.eyebrow">Reserva y pedidos</p>
-            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="booking.title">De aquí a la mesa en dos clics.</h2>
+            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="booking.title">Reserva llamando. Pide en Uber Eats.</h2>
             <p class="mt-5 max-w-xl text-lg text-[rgba(255,249,223,.76)]" data-i18n="booking.text">{site.copy.reservationText}</p>
             <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-              <a class="button-neon px-6 py-3" href={site.links.reserve} data-i18n="cta.reserve">Reservar ahora</a>
-              <a id="pedidos" class="button-ghost scroll-mt-24 px-6 py-3" href={site.links.order} data-i18n="cta.orderUber">Pedir en Uber Eats</a>
+              <button type="button" class="button-neon px-6 py-3" data-reservation-trigger data-i18n="cta.reserveCall">Reservar por teléfono</button>
+              <a id="pedidos" class="button-ghost scroll-mt-24 px-6 py-3" href={site.links.order} target="_blank" rel="noreferrer" data-i18n="cta.orderUber">Pedir en Uber Eats</a>
             </div>
           </div>
 
           <div class="grid gap-4 sm:grid-cols-2">
-            <a class="glass-panel p-5 no-underline" href={site.links.reserve}>
+            <button type="button" class="glass-panel reservation-card p-5" data-reservation-trigger>
               <span class="label-chip" data-i18n="booking.card.reserveTag">Reservas</span>
-              <h3 class="mt-5 text-2xl font-black text-[var(--tc-pink)]" data-i18n="booking.card.reserveTitle">Mesa asegurada</h3>
+              <h3 class="mt-5 text-2xl font-black text-[var(--tc-pink)]" data-i18n="booking.card.reserveTitle">Reserva por teléfono</h3>
               <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]" data-i18n="booking.card.reserveText">
-                Enlace directo al sistema de reservas actual.
+                Te mostramos el número y un botón directo para llamar a Tropicool.
               </p>
-            </a>
-            <a class="glass-panel p-5 no-underline" href={site.links.order}>
+            </button>
+            <a class="glass-panel p-5 no-underline" href={site.links.order} target="_blank" rel="noreferrer">
               <span class="label-chip" data-i18n="booking.card.deliveryTag">Delivery</span>
               <h3 class="mt-5 text-2xl font-black text-[var(--tc-lime)]" data-i18n="booking.card.deliveryTitle">Tropicool en casa</h3>
               <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]" data-i18n="booking.card.deliveryText">
-                Acceso a pedidos online sin mezclarlo con la reserva.
+                El pedido online se abre fuera de esta web y te redirige a Uber Eats.
               </p>
             </a>
             <a class="glass-panel p-5 no-underline sm:col-span-2" href={site.links.maps}>
@@ -209,16 +251,20 @@ const jsonLd = {
       <section id="contacto" class="scroll-mt-20 py-12 md:py-20" data-animate>
         <div class="container-shell grid gap-8 lg:grid-cols-[1fr_.9fr]">
           <div>
-            <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
-            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="contact.title">Nos vemos en X Madrid.</h2>
+            <p class="eyebrow" data-i18n="contact.eyebrow">X Madrid</p>
+            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="contact.title">Ven a Tropicool en X Madrid.</h2>
+            <p class="mt-5 max-w-xl text-lg text-[rgba(255,249,223,.76)]" data-i18n="contact.text">
+              Estamos en C.C. X Madrid, Alcorcón. Guarda la ruta, llama si quieres reservar y vente con hambre.
+            </p>
             <div class="mt-8 grid gap-3 text-lg font-bold">
               <a class="hover:text-[var(--tc-lime)]" href={site.links.maps}>{site.address}</a>
               <a class="hover:text-[var(--tc-lime)]" href={site.links.tel}>{site.phone}</a>
               <a class="hover:text-[var(--tc-lime)]" href={site.links.mail}>{site.email}</a>
             </div>
-            <div class="mt-8 flex gap-3">
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a class="button-neon px-5 py-3" href={site.links.maps} data-i18n="cta.getDirections">Cómo llegar</a>
+              <a class="button-ghost px-5 py-3" href={site.links.tel} data-i18n="cta.callNow">Llamar ahora</a>
               <a class="button-ghost px-5 py-3" href={site.links.instagram}>Instagram</a>
-              <a class="button-ghost px-5 py-3" href={site.links.tiktok}>TikTok</a>
             </div>
           </div>
 
@@ -236,7 +282,7 @@ const jsonLd = {
     </main>
 
     <footer class="safe-bottom border-t border-white/10 py-8">
-      <div class="container-shell flex flex-col justify-between gap-4 text-sm text-[rgba(255,249,223,.62)] md:flex-row">
+      <div class="container-shell flex flex-col justify-between gap-4 text-sm text-[rgba(255,249,223,.62)] md:flex-row md:items-center">
         <img
           src="/images/assets/site/wordmark.png"
           alt="Tropicool"
@@ -246,41 +292,183 @@ const jsonLd = {
           loading="lazy"
           decoding="async"
         />
-        <p data-i18n="footer.note">Prototipo local 2026 · contenido público corregido para revisión.</p>
+        <div class="flex flex-col gap-3 md:items-end">
+          <div class="flex items-center gap-3">
+            <a class="social-icon-link social-icon-link--footer" href={site.links.instagram} target="_blank" rel="noreferrer" aria-label="Instagram Tropicool">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="18" height="18" x="3" y="3" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M17.5 6.5h.01" />
+              </svg>
+            </a>
+            <a class="social-icon-link social-icon-link--footer social-icon-link--filled" href={site.links.facebook} target="_blank" rel="noreferrer" aria-label="Facebook Tropicool">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 8h2.5V4H13c-3 0-5 2-5 5v3H5.5v4H8v5h4v-5h3l1-4h-4V9.2c0-.7.4-1.2 1-1.2Z" />
+              </svg>
+            </a>
+            <a class="social-icon-link social-icon-link--footer" href={site.links.mail} aria-label="Email Tropicool">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="18" height="14" x="3" y="5" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg>
+            </a>
+          </div>
+          <p data-i18n="footer.note">Demo no oficial 2026 · propuesta pública de rediseño basada en contenido público.</p>
+        </div>
       </div>
     </footer>
 
     <div class="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-[#041607]/90 p-2 backdrop-blur-xl md:hidden">
       <div class="grid grid-cols-3 gap-2">
-        <a class="button-neon min-h-11 text-sm" href={site.links.reserve} data-i18n="cta.reserve">Reservar</a>
+        <button type="button" class="button-neon min-h-11 text-sm" data-reservation-trigger data-i18n="cta.reserve">Reservar</button>
         <a class="button-ghost min-h-11 text-sm" href="#carta" data-i18n="nav.menu">Carta</a>
-        <a class="button-ghost min-h-11 text-sm" href={site.links.order} data-i18n="nav.order">Pedir</a>
+        <a class="button-ghost min-h-11 text-sm" href={site.links.order} target="_blank" rel="noreferrer" data-i18n="nav.order">Pedir</a>
       </div>
     </div>
 
-    <script>
-      const videoSources = [
-        '/videos/instagram/ig-1-DPPFYlADdTy.mp4',
-        '/videos/instagram/ig-1-DPPFZACjQLC.mp4',
-        '/videos/instagram/ig-1-DPPFZfHDS_d.mp4',
-        '/videos/instagram/ig-2-DPCT95mjdL6.mp4',
-        '/videos/instagram/ig-3-DOl-2DkDVCu.mp4',
-        '/videos/instagram/ig-4-DNtTRCn2mZM.mp4',
-        '/videos/instagram/ig-5-DNEDgSFtn8H.mp4',
-      ];
+    <dialog class="reservation-dialog" data-reservation-dialog aria-labelledby="reservation-dialog-title">
+      <div class="reservation-dialog__inner">
+        <button
+          type="button"
+          class="reservation-dialog__close"
+          data-reservation-close
+          data-i18n-aria-label="reservation.close"
+          aria-label="Cerrar reserva"
+        >
+          ×
+        </button>
+        <p class="eyebrow" data-i18n="booking.card.reserveTag">Reservas</p>
+        <h2 id="reservation-dialog-title" data-i18n="reservation.title">Reserva por teléfono</h2>
+        <p data-i18n="reservation.text">
+          Para reservar mesa en Tropicool, llámanos y te confirmamos disponibilidad al momento.
+        </p>
+        <a class="reservation-dialog__phone" href={site.links.tel}>{site.phone}</a>
+        <div class="reservation-dialog__actions">
+          <a class="button-neon px-5 py-3" href={site.links.tel} data-reservation-primary data-i18n="cta.callNow">Llamar ahora</a>
+          <button type="button" class="button-ghost px-5 py-3" data-reservation-close data-i18n="reservation.later">Ahora no</button>
+        </div>
+      </div>
+    </dialog>
 
-      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      const shuffled = [...videoSources].sort(() => Math.random() - 0.5);
-      document.querySelectorAll('[data-hero-video-card] video').forEach((video, index) => {
-        if (reduceMotion) {
-          video.removeAttribute('autoplay');
-          video.preload = 'metadata';
+    <script>
+      const reservationDialog = document.querySelector('[data-reservation-dialog]');
+      const reservationTriggers = document.querySelectorAll('[data-reservation-trigger]');
+      const reservationClosers = document.querySelectorAll('[data-reservation-close]');
+      let reservationLastFocus = null;
+
+      function closeReservationDialog() {
+        if (!reservationDialog) return;
+        if (typeof reservationDialog.close === 'function' && reservationDialog.open) {
+          reservationDialog.close();
+        } else {
+          reservationDialog.removeAttribute('open');
+          document.body.classList.remove('dialog-open');
         }
-        video.src = shuffled[index % shuffled.length];
-        if (reduceMotion) {
-          video.addEventListener('loadedmetadata', () => video.pause(), { once: true });
+      }
+
+      reservationTriggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          if (!reservationDialog) return;
+          reservationLastFocus = document.activeElement;
+          if (typeof reservationDialog.showModal === 'function') {
+            reservationDialog.showModal();
+          } else {
+            reservationDialog.setAttribute('open', '');
+            document.body.classList.add('dialog-open');
+          }
+          reservationDialog.querySelector('[data-reservation-primary]')?.focus();
+        });
+      });
+
+      reservationClosers.forEach((closer) => {
+        closer.addEventListener('click', closeReservationDialog);
+      });
+
+      reservationDialog?.addEventListener('close', () => {
+        document.body.classList.remove('dialog-open');
+        if (reservationLastFocus instanceof HTMLElement) {
+          reservationLastFocus.focus();
         }
       });
+
+      const stage = document.querySelector('[data-hero-video-stage]');
+      const cards = Array.from(document.querySelectorAll('[data-hero-video-card]'));
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const mobileHero = window.matchMedia('(max-width: 767px)').matches;
+      const saveData = Boolean(navigator.connection?.saveData);
+
+      function shuffledSources(kind) {
+        const sources = cards
+          .map((card) => card.querySelector('video')?.dataset[kind])
+          .filter(Boolean);
+        return [...new Set(sources)].sort(() => Math.random() - 0.5);
+      }
+
+      function prepareVideo(video, src, preload = 'metadata') {
+        video.muted = true;
+        video.loop = true;
+        video.playsInline = true;
+        video.preload = preload;
+        if (video.getAttribute('src') !== src) {
+          video.src = src;
+        }
+        video.load();
+      }
+
+      function playVideo(video) {
+        if (reduceMotion || saveData) return;
+        video.play().catch(() => {});
+      }
+
+      if (stage && cards.length) {
+        if (mobileHero || saveData) {
+          stage.dataset.heroMode = 'mobile';
+          const [src] = shuffledSources('mobileSrc');
+          cards.forEach((card, index) => {
+            const video = card.querySelector('video');
+            card.classList.toggle('is-active', index === 0);
+            if (!video) return;
+            if (index === 0 && src) {
+              prepareVideo(video, src, saveData || reduceMotion ? 'metadata' : 'auto');
+              playVideo(video);
+            } else {
+              video.removeAttribute('src');
+              video.load();
+            }
+          });
+        } else {
+          stage.dataset.heroMode = 'desktop';
+          const sources = shuffledSources('desktopSrc');
+          cards.forEach((card, index) => {
+            const video = card.querySelector('video');
+            if (!video || !sources.length) return;
+            prepareVideo(video, sources[index % sources.length], index < 5 ? 'auto' : 'metadata');
+          });
+
+          if ('IntersectionObserver' in window) {
+            const observer = new IntersectionObserver(
+              (entries) => {
+                entries.forEach((entry) => {
+                  const video = entry.target.querySelector('video');
+                  if (!video) return;
+                  if (entry.isIntersecting) {
+                    playVideo(video);
+                  } else {
+                    video.pause();
+                  }
+                });
+              },
+              { threshold: 0.08 },
+            );
+            cards.forEach((card) => observer.observe(card));
+          } else {
+            cards.forEach((card) => {
+              const video = card.querySelector('video');
+              if (video) playVideo(video);
+            });
+          }
+        }
+      }
     </script>
   </body>
 </html>

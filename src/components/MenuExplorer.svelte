@@ -15,16 +15,12 @@
 
   export let menus: MenuGroup[] = [];
 
-  const filters = [
-    { id: 'todos', key: 'filter.all', label: 'Todo' },
-    { id: 'Vegano', key: 'filter.vegan', label: 'Vegano' },
-    { id: 'Sin gluten', key: 'filter.glutenFree', label: 'Sin gluten' },
-    { id: 'Picante', key: 'filter.spicy', label: 'Picante' },
-  ];
-
-  let selectedMenu = 'todo';
-  let activeFilter = 'todos';
+  let selectedMenu = 'carta';
+  let selectedSection = '';
+  let glutenFreeOnly = false;
   let query = '';
+
+  const primaryMenuIds = new Set(['carta', 'bebida']);
 
   const allItems = menus.flatMap((menu) =>
     menu.sections.flatMap((section) =>
@@ -36,11 +32,12 @@
     ),
   );
 
+  $: primaryMenus = menus.filter((menu) => primaryMenuIds.has(menu.id));
+  $: secondaryMenus = menus.filter((menu) => !primaryMenuIds.has(menu.id));
   $: selectedMenuData = menus.find((menu) => menu.id === selectedMenu);
-  $: scopedItems =
-    selectedMenu === 'todo'
-      ? allItems
-      : allItems.filter((item) => item.sourceMenu === selectedMenu);
+  $: scopedItems = allItems.filter(
+    (item) => item.sourceMenu === selectedMenu && (!selectedSection || item.section === selectedSection),
+  );
   $: normalizedQuery = query.trim().toLowerCase();
   $: visibleItems = scopedItems.filter((item) => {
     const matchesQuery =
@@ -48,7 +45,7 @@
       `${item.name} ${translateItemName(item, $language)} ${item.description} ${translateItemDescription(item, $language)} ${item.category} ${translateMenuName(item.category, $language)} ${item.section} ${translateSectionName(item.section, $language)} ${item.labels.join(' ')} ${item.labels.map((label) => translateLabel(label, $language)).join(' ')}`
         .toLowerCase()
         .includes(normalizedQuery);
-    const matchesFilter = activeFilter === 'todos' || item.labels.includes(activeFilter);
+    const matchesFilter = !glutenFreeOnly || item.labels.includes('Sin gluten');
     return matchesQuery && matchesFilter;
   });
   $: groupedItems = groupBySection(visibleItems);
@@ -57,18 +54,15 @@
     const groups = new Map<string, { key: string; title: string; subtitle: string; items: MenuItem[] }>();
 
     items.forEach((item) => {
-      const key = selectedMenu === 'todo' ? `${item.category}-${item.section}` : item.section;
+      const key = item.section;
       if (!groups.has(key)) {
         groups.set(key, {
           key,
-          title:
-            selectedMenu === 'todo'
-              ? `${translateMenuName(item.category, $language)} / ${translateSectionName(item.section, $language)}`
-              : translateSectionName(item.section, $language),
+          title: translateSectionName(item.section, $language),
           subtitle:
             translateSectionDescription(
               menus
-              .find((menu) => menu.id === item.sourceMenu)
+                .find((menu) => menu.id === item.sourceMenu)
                 ?.sections.find((section) => section.name === item.section)?.description ?? '',
               $language,
             ),
@@ -97,7 +91,16 @@
 
   function selectMenu(menuId: string) {
     selectedMenu = menuId;
-    activeFilter = 'todos';
+    selectedSection = '';
+    glutenFreeOnly = false;
+    query = '';
+    requestAnimationFrame(() => document.getElementById('menu-results')?.scrollIntoView({ block: 'start' }));
+  }
+
+  function selectSection(menuId: string, sectionName: string) {
+    selectedMenu = menuId;
+    selectedSection = sectionName;
+    glutenFreeOnly = false;
     query = '';
     requestAnimationFrame(() => document.getElementById('menu-results')?.scrollIntoView({ block: 'start' }));
   }
@@ -107,43 +110,67 @@
     if (menuId.includes('tardeo')) return Flame;
     return Utensils;
   }
+
+  function labelClass(label: string) {
+    if (label === 'Sin gluten') return 'gluten-free';
+    if (label === 'Picante') return 'spicy';
+    return '';
+  }
 </script>
 
-<div class="grid gap-7 lg:grid-cols-[300px_minmax(0,1fr)]">
-  <aside class="lg:sticky lg:top-5 lg:self-start">
-    <div class="glass-panel p-4">
-      <div class="flex items-center gap-2 text-sm font-bold text-[var(--tc-lime)]">
-        <Leaf size={18} aria-hidden="true" />
-        {t('menuExplorer.title', $language)}
+<div class="menu-layout grid gap-7 lg:grid-cols-[300px_minmax(0,1fr)]">
+  <aside class="menu-nav lg:sticky lg:top-5 lg:self-start">
+    <div class="menu-nav-stack">
+      <div class="glass-panel menu-nav-panel p-3 lg:p-4">
+        <div class="menu-tabs">
+          {#each primaryMenus as menu}
+            {@const Icon = iconFor(menu.id)}
+            <div class="menu-tab-group">
+              <a
+                href="#menu-results"
+                class:selected={selectedMenu === menu.id && !selectedSection}
+                class="menu-tab"
+                aria-current={selectedMenu === menu.id && !selectedSection ? 'true' : undefined}
+                on:click|preventDefault={() => selectMenu(menu.id)}
+              >
+                <Icon size={17} aria-hidden="true" />
+                {translateMenuName(menu.name, $language)}
+              </a>
+
+              <div class="menu-subtabs">
+                {#each menu.sections as section}
+                  <a
+                    href="#menu-results"
+                    class:selected={selectedMenu === menu.id && selectedSection === section.name}
+                    class="menu-subtab"
+                    aria-current={selectedMenu === menu.id && selectedSection === section.name ? 'true' : undefined}
+                    on:click|preventDefault={() => selectSection(menu.id, section.name)}
+                  >
+                    {translateSectionName(section.name, $language)}
+                  </a>
+                {/each}
+              </div>
+            </div>
+          {/each}
+        </div>
       </div>
 
-      <div class="mt-4 grid gap-2">
-        <a
-          href="#menu-results"
-          class:selected={selectedMenu === 'todo'}
-          class="menu-tab"
-          aria-current={selectedMenu === 'todo' ? 'true' : undefined}
-          on:click|preventDefault={() => selectMenu('todo')}
-        >
-          <Utensils size={17} aria-hidden="true" />
-          {t('menuExplorer.all', $language)}
-          <span>{allItems.length}</span>
-        </a>
-
-        {#each menus as menu}
+      <div class="glass-panel menu-nav-panel p-3 lg:p-4">
+        <div class="menu-tabs">
+          {#each secondaryMenus as menu}
           {@const Icon = iconFor(menu.id)}
           <a
             href="#menu-results"
-            class:selected={selectedMenu === menu.id}
+            class:selected={selectedMenu === menu.id && !selectedSection}
             class="menu-tab"
-            aria-current={selectedMenu === menu.id ? 'true' : undefined}
+            aria-current={selectedMenu === menu.id && !selectedSection ? 'true' : undefined}
             on:click|preventDefault={() => selectMenu(menu.id)}
           >
             <Icon size={17} aria-hidden="true" />
             {translateMenuName(menu.name, $language)}
-            <span>{menu.sections.reduce((total, section) => total + section.items.length, 0)}</span>
           </a>
-        {/each}
+          {/each}
+        </div>
       </div>
     </div>
   </aside>
@@ -176,34 +203,19 @@
           {/if}
         </label>
 
-        <div class="flex flex-wrap gap-2">
-          {#each filters as filter}
-            <button
-              type="button"
-              class:active-filter={activeFilter === filter.id}
-              class="filter-chip"
-              on:click={() => (activeFilter = filter.id)}
-            >
-              {#if filter.id === 'Sin gluten'}
-                <WheatOff size={14} aria-hidden="true" />
-              {:else if filter.id === 'Picante'}
-                <Flame size={14} aria-hidden="true" />
-              {:else if filter.id === 'Vegano'}
-                <Leaf size={14} aria-hidden="true" />
-              {/if}
-              {t(filter.key, $language)}
-            </button>
-          {/each}
-        </div>
+        <label class="gluten-toggle">
+          <input type="checkbox" bind:checked={glutenFreeOnly} />
+          <span aria-hidden="true">
+            <WheatOff size={15} />
+          </span>
+          {t('filter.glutenFree', $language)}
+        </label>
       </div>
 
       <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm text-[rgba(255,249,223,.72)]">
-        <p>
-          {t('menuExplorer.count', $language, { visible: visibleItems.length, total: scopedItems.length })}
-          {#if selectedMenuData?.description}
-            <span class="hidden md:inline"> · {selectedMenuData.description}</span>
-          {/if}
-        </p>
+        {#if selectedMenuData?.description}
+          <p>{selectedMenuData.description}</p>
+        {/if}
         <p class="text-[var(--tc-pink)]">{t('menuExplorer.allergenWarning', $language)}</p>
       </div>
     </div>
@@ -217,7 +229,7 @@
       {/if}
 
       {#each groupedItems as group, index (group.key)}
-        <details class="menu-section" open={index === 0 || selectedMenu === 'todo' || Boolean(query)}>
+        <details class="menu-section" open={index === 0 || Boolean(selectedSection) || Boolean(query)}>
           <summary>
             <span>
               <strong>{group.title}</strong>
@@ -225,7 +237,6 @@
                 <small>{group.subtitle}</small>
               {/if}
             </span>
-            <em>{group.items.length}</em>
           </summary>
 
           <div class="grid gap-4 pt-4 md:grid-cols-2 xl:grid-cols-3">
@@ -266,7 +277,7 @@
                   {#if item.labels.length}
                     <div class="mt-auto flex flex-wrap gap-1.5 pt-4">
                       {#each item.labels.slice(0, 5) as label}
-                        <span class="label-chip">{translateLabel(label, $language)}</span>
+                        <span class={`label-chip ${labelClass(label)}`}>{translateLabel(label, $language)}</span>
                       {/each}
                     </div>
                   {/if}
@@ -281,9 +292,19 @@
 </div>
 
 <style>
-  .menu-tab {
+  .menu-nav-stack {
     display: grid;
-    grid-template-columns: auto 1fr auto;
+    gap: 0.8rem;
+  }
+
+  .menu-tab-group {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .menu-tab {
+    display: inline-flex;
+    flex: 0 0 auto;
     align-items: center;
     gap: 0.7rem;
     min-height: 44px;
@@ -299,6 +320,36 @@
       transform 160ms ease;
   }
 
+  .menu-subtabs {
+    display: grid;
+    gap: 0.3rem;
+    padding-left: 1.65rem;
+  }
+
+  .menu-subtab {
+    display: inline-flex;
+    min-height: 34px;
+    align-items: center;
+    border-left: 1px solid rgba(255, 249, 223, 0.14);
+    color: rgba(255, 249, 223, 0.72);
+    font-size: 0.82rem;
+    font-weight: 740;
+    padding: 0.42rem 0.7rem;
+    text-decoration: none;
+    transition:
+      border-color 160ms ease,
+      background 160ms ease,
+      color 160ms ease,
+      transform 160ms ease;
+  }
+
+  .menu-layout,
+  .menu-nav,
+  .menu-nav-panel,
+  .menu-tabs {
+    min-width: 0;
+  }
+
   .menu-tab:hover,
   .menu-tab.selected {
     border-color: rgba(202, 255, 105, 0.45);
@@ -306,28 +357,43 @@
     transform: translateX(2px);
   }
 
-  .menu-tab span {
-    color: var(--tc-pink);
-    font-size: 0.78rem;
-    font-weight: 800;
+  .menu-subtab:hover,
+  .menu-subtab.selected {
+    border-color: rgba(239, 143, 186, 0.58);
+    background: rgba(239, 143, 186, 0.1);
+    color: var(--tc-cream);
+    transform: translateX(2px);
   }
 
-  .filter-chip {
+  .gluten-toggle {
     display: inline-flex;
     min-height: 40px;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.45rem;
     border: 1px solid rgba(255, 249, 223, 0.17);
     background: rgba(255, 249, 223, 0.055);
     color: var(--tc-cream);
+    cursor: pointer;
     font-size: 0.82rem;
     font-weight: 820;
     padding: 0.56rem 0.75rem;
   }
 
-  .filter-chip.active-filter {
-    border-color: rgba(239, 143, 186, 0.74);
-    background: rgba(239, 143, 186, 0.2);
+  .gluten-toggle:has(input:checked) {
+    border-color: rgba(255, 178, 73, 0.74);
+    background: rgba(255, 178, 73, 0.17);
+    color: #ffe6b9;
+  }
+
+  .gluten-toggle input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: #ffb249;
+  }
+
+  .gluten-toggle span {
+    display: inline-flex;
+    color: #ffb249;
   }
 
   .menu-section {
@@ -341,7 +407,6 @@
     cursor: pointer;
     list-style: none;
     align-items: center;
-    justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
   }
@@ -354,7 +419,6 @@
     color: var(--tc-pink);
     font-size: clamp(1.2rem, 2vw, 1.7rem);
     font-weight: 950;
-    text-transform: uppercase;
   }
 
   .menu-section small {
@@ -363,17 +427,6 @@
     margin-top: 0.3rem;
     color: rgba(255, 249, 223, 0.68);
     font-size: 0.84rem;
-  }
-
-  .menu-section em {
-    display: inline-grid;
-    min-width: 2.4rem;
-    min-height: 2.4rem;
-    place-items: center;
-    border: 1px solid rgba(202, 255, 105, 0.34);
-    color: var(--tc-lime);
-    font-style: normal;
-    font-weight: 900;
   }
 
   .menu-section > div {
@@ -402,7 +455,11 @@
     font-size: 1rem;
     font-weight: 920;
     line-height: 1.08;
-    text-transform: uppercase;
+  }
+
+  .menu-card p strong {
+    color: var(--tc-cream);
+    font-weight: 920;
   }
 
   .menu-card .price {
@@ -410,6 +467,18 @@
     color: var(--tc-lime);
     font-weight: 920;
     white-space: nowrap;
+  }
+
+  .label-chip.gluten-free {
+    border-color: rgba(255, 178, 73, 0.48);
+    background: rgba(255, 178, 73, 0.16);
+    color: #ffe6b9;
+  }
+
+  .label-chip.spicy {
+    border-color: rgba(255, 83, 83, 0.5);
+    background: rgba(255, 83, 83, 0.16);
+    color: #ffc8c8;
   }
 
   @media (max-width: 640px) {
@@ -420,6 +489,79 @@
 
     .menu-section > div {
       padding-inline: 0.75rem;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .menu-nav {
+      position: sticky;
+      top: 4rem;
+      z-index: 30;
+      margin-inline: -16px;
+      padding: 0.5rem 16px;
+      background: rgba(4, 22, 7, 0.9);
+      backdrop-filter: blur(18px);
+    }
+
+    .menu-nav-panel {
+      border-color: rgba(255, 249, 223, 0.12);
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.24);
+    }
+
+    .menu-nav-title {
+      font-size: 0.72rem;
+    }
+
+    .menu-tabs {
+      display: flex;
+      max-width: 100%;
+      gap: 0.5rem;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      padding-bottom: 0.2rem;
+      scrollbar-width: none;
+      scroll-snap-type: x proximity;
+    }
+
+    .menu-tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .menu-tab {
+      min-height: 40px;
+      scroll-snap-align: start;
+      white-space: nowrap;
+    }
+
+    .menu-tab-group {
+      display: contents;
+    }
+
+    .menu-subtabs {
+      display: flex;
+      flex: 0 0 auto;
+      gap: 0.45rem;
+      padding-left: 0;
+    }
+
+    .menu-subtab {
+      min-height: 40px;
+      border: 1px solid rgba(255, 249, 223, 0.13);
+      background: rgba(255, 249, 223, 0.035);
+      scroll-snap-align: start;
+      white-space: nowrap;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .menu-tabs {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    .menu-tab {
+      display: grid;
+      grid-template-columns: auto 1fr;
     }
   }
 </style>
