@@ -361,6 +361,51 @@ footer p {
   font-size: 14px;
 }
 
+.placeholder-frame {
+  min-height: 100vh;
+}
+
+.placeholder-main {
+  display: grid;
+  min-height: calc(100vh - 214px);
+  place-items: center;
+  background:
+    linear-gradient(rgba(0, 13, 0, 0.58), rgba(0, 13, 0, 0.58)),
+    url("/original/plantas-contacto.jpg") center / cover no-repeat;
+}
+
+.placeholder-panel {
+  width: min(760px, calc(100% - 48px));
+  border-top: 1px solid rgba(233, 150, 189, 0.65);
+  border-bottom: 1px solid rgba(233, 150, 189, 0.65);
+  padding: 58px 24px;
+  text-align: center;
+}
+
+.placeholder-panel h1 {
+  margin: 0;
+  color: var(--pink);
+  font-size: clamp(44px, 8vw, 74px);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.placeholder-panel p {
+  margin: 28px auto 0;
+  max-width: 28rem;
+  color: var(--pink);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.placeholder-panel a {
+  display: inline-flex;
+  margin-top: 34px;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  padding: 0.8rem 1.2rem;
+}
+
 @media (max-width: 900px) {
   .page-frame {
     padding-top: 34px;

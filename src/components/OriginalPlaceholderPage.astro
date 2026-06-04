@@ -1,0 +1,39 @@
+---
+import { originalNavItems } from '../data/originalNav';
+
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<a class="skip-link" href="#main">Skip to Main Content</a>
+
+<div class="page-frame placeholder-frame">
+  <header class="topbar" aria-label="Navegación principal">
+    <nav>
+      {originalNavItems.map((item) => (
+        <a href={item.href}>{item.label}</a>
+      ))}
+    </nav>
+
+    <a class="login-link" href="#" aria-label="Log In">
+      <span aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="3.3" />
+          <path d="M5 20a7 7 0 0 1 14 0" />
+        </svg>
+      </span>
+      Log In
+    </a>
+  </header>
+
+  <main id="main" class="placeholder-main">
+    <section class="placeholder-panel" aria-labelledby="placeholder-title">
+      <h1 id="placeholder-title">{title}</h1>
+      <p>Copia local de navegación. Esta página no enlaza con la web real.</p>
+      <a href="/contact-9/">Volver a Contacto</a>
+    </section>
+  </main>
+</div>

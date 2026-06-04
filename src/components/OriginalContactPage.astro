@@ -1,13 +1,5 @@
 ---
-const navItems = [
-  { label: 'Inicio', href: '/' },
-  { label: 'CARTA', href: '#carta' },
-  { label: 'BEBIDA', href: '#bebida' },
-  { label: 'RESERVAR', href: '#reservar' },
-  { label: 'PEDIDOS', href: '#pedidos' },
-  { label: 'Contacto', href: '/contact-9/' },
-  { label: 'Experiencias', href: '#experiencias' },
-];
+import { originalNavItems } from '../data/originalNav';
 ---
 
 <a class="skip-link" href="#main">Skip to Main Content</a>
@@ -15,7 +7,7 @@ const navItems = [
 <div class="page-frame">
   <header class="topbar" aria-label="Navegación principal">
     <nav>
-      {navItems.map((item) => (
+      {originalNavItems.map((item) => (
         <a href={item.href}>{item.label}</a>
       ))}
     </nav>
