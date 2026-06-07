@@ -4,6 +4,7 @@ import LanguageToggle from '../components/LanguageToggle.svelte';
 import MenuExplorer from '../components/MenuExplorer.svelte';
 import MotionBoot from '../components/MotionBoot.svelte';
 import TranslationRuntime from '../components/TranslationRuntime.svelte';
+import ActionDialogs from '../components/ActionDialogs.astro';
 import { site, navigation } from '../data/site';
 import { menuData } from '../data/menu';
 
@@ -75,9 +76,19 @@ const jsonLd = {
         </a>
         <div class="hidden items-center gap-6 text-sm font-bold text-[rgba(255,249,223,.82)] md:flex">
           {navigation.map((item) => (
-            <a class="hover:text-[var(--tc-lime)]" href={item.href} data-i18n={`nav.${item.key}`}>
-              {item.label}
-            </a>
+            item.key === 'reserve' ? (
+              <a class="nav-action-link hover:text-[var(--tc-lime)]" href={site.links.tel} data-reservation-trigger data-i18n={`nav.${item.key}`}>
+                {item.label}
+              </a>
+            ) : item.key === 'order' ? (
+              <a class="nav-action-link hover:text-[var(--tc-lime)]" href={site.links.order} target="_blank" rel="noreferrer" data-order-trigger data-i18n={`nav.${item.key}`}>
+                {item.label}
+              </a>
+            ) : (
+              <a class="hover:text-[var(--tc-lime)]" href={item.href} data-i18n={`nav.${item.key}`}>
+                {item.label}
+              </a>
+            )
           ))}
         </div>
         <div class="flex items-center gap-3">
@@ -195,7 +206,24 @@ const jsonLd = {
         </div>
       </section>
 
-      <section id="carta" class="section-band scroll-mt-20 py-12 md:py-20" data-animate>
+      <section id="carta" class="menu-doodle-section section-band scroll-mt-20 py-12 md:py-20" data-animate>
+        <div class="menu-doodle-layer" aria-hidden="true">
+          <img src="/images/assets/menu/doodles/tropical-drink.png" alt="" style="--x: 3%; --y: 2%; --s: 1; --r: -12deg;" />
+          <img src="/images/assets/menu/doodles/palm-leaf.png" alt="" style="--x: 75%; --y: 1%; --s: 0.9; --r: 17deg;" />
+          <img src="/images/assets/menu/doodles/nachos.png" alt="" style="--x: 53%; --y: 10%; --s: 0.78; --r: -7deg;" />
+          <img src="/images/assets/menu/doodles/taquitos.png" alt="" style="--x: 8%; --y: 22%; --s: 0.82; --r: 9deg;" />
+          <img src="/images/assets/menu/doodles/burger.png" alt="" style="--x: 82%; --y: 29%; --s: 0.82; --r: -10deg;" />
+          <img src="/images/assets/menu/doodles/palm-leaf.png" alt="" style="--x: 1%; --y: 46%; --s: 0.74; --r: -24deg;" />
+          <img src="/images/assets/menu/doodles/tropical-drink.png" alt="" style="--x: 68%; --y: 48%; --s: 0.68; --r: 13deg;" />
+          <img src="/images/assets/menu/doodles/nachos.png" alt="" style="--x: 29%; --y: 57%; --s: 0.72; --r: 8deg;" />
+          <img src="/images/assets/menu/doodles/burger.png" alt="" style="--x: 5%; --y: 73%; --s: 0.7; --r: 14deg;" />
+          <img src="/images/assets/menu/doodles/taquitos.png" alt="" style="--x: 73%; --y: 74%; --s: 0.76; --r: -11deg;" />
+          <img src="/images/assets/menu/doodles/palm-leaf.png" alt="" style="--x: 43%; --y: 3%; --s: 0.52; --r: -31deg;" />
+          <img src="/images/assets/menu/doodles/burger.png" alt="" style="--x: 31%; --y: 19%; --s: 0.58; --r: 16deg;" />
+          <img src="/images/assets/menu/doodles/tropical-drink.png" alt="" style="--x: 88%; --y: 58%; --s: 0.55; --r: -18deg;" />
+          <img src="/images/assets/menu/doodles/nachos.png" alt="" style="--x: 14%; --y: 91%; --s: 0.6; --r: -9deg;" />
+          <img src="/images/assets/menu/doodles/taquitos.png" alt="" style="--x: 47%; --y: 88%; --s: 0.64; --r: 12deg;" />
+        </div>
         <div class="container-shell">
           <div class="mb-8 max-w-6xl">
             <p class="eyebrow" data-i18n="menu.eyebrow">Carta completa</p>
@@ -212,70 +240,57 @@ const jsonLd = {
         </div>
       </section>
 
-      <section id="reservar" class="scroll-mt-20 py-12 md:py-20" data-animate>
-        <div class="container-shell grid gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-stretch">
-          <div>
-            <p class="eyebrow" data-i18n="booking.eyebrow">Reserva y pedidos</p>
-            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="booking.title">Reserva llamando. Pide en Uber Eats.</h2>
-            <p class="mt-5 max-w-xl text-lg text-[rgba(255,249,223,.76)]" data-i18n="booking.text">{site.copy.reservationText}</p>
-            <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-              <button type="button" class="button-neon px-6 py-3" data-reservation-trigger data-i18n="cta.reserveCall">Reservar por teléfono</button>
-              <a id="pedidos" class="button-ghost scroll-mt-24 px-6 py-3" href={site.links.order} target="_blank" rel="noreferrer" data-i18n="cta.orderUber">Pedir en Uber Eats</a>
+      <section id="contacto" class="x-madrid-section scroll-mt-20" data-animate aria-label="X Madrid">
+        <div class="container-shell x-madrid-section__inner">
+          <img
+            src="/images/assets/xmadrid/logo_xmadrid.webp"
+            alt="X-Madrid"
+            class="x-madrid-section__banner"
+            width="640"
+            height="224"
+            loading="lazy"
+            decoding="async"
+          />
+          <h2 class="x-madrid-section__title" data-i18n="contact.title">¿Dónde estamos?</h2>
+          <div class="x-madrid-section__grid">
+            <div class="x-madrid-section__column x-madrid-section__column--left">
+              <div class="x-madrid-section__copy">
+                <p class="eyebrow" data-i18n="contact.eyebrow">X Madrid</p>
+                <h3 data-i18n="contact.locationTitle">Tropicool está en X-Madrid, Alcorcón.</h3>
+                <p data-i18n="contact.locationText">
+                  Nos encontrarás dentro del centro comercial X-Madrid, en Alcorcón. Guarda la ruta y ven directo a disfrutar de Tropicool.
+                </p>
+                <a class="button-neon x-madrid-section__maps-link" href={site.links.maps} target="_blank" rel="noreferrer" data-i18n="cta.getDirections">
+                  Cómo llegar
+                </a>
+              </div>
+              <div class="x-madrid-section__photo-pair" aria-hidden="true">
+                <img
+                  src="/images/assets/xmadrid/x-madrid-alcorcon.jpg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  src="/images/assets/xmadrid/x-madrid_8-1.jpg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="grid gap-4 sm:grid-cols-2">
-            <button type="button" class="glass-panel reservation-card p-5" data-reservation-trigger>
-              <span class="label-chip" data-i18n="booking.card.reserveTag">Reservas</span>
-              <h3 class="mt-5 text-2xl font-black text-[var(--tc-pink)]" data-i18n="booking.card.reserveTitle">Reserva por teléfono</h3>
-              <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]" data-i18n="booking.card.reserveText">
-                Te mostramos el número y un botón directo para llamar a Tropicool.
-              </p>
-            </button>
-            <a class="glass-panel p-5 no-underline" href={site.links.order} target="_blank" rel="noreferrer">
-              <span class="label-chip" data-i18n="booking.card.deliveryTag">Delivery</span>
-              <h3 class="mt-5 text-2xl font-black text-[var(--tc-lime)]" data-i18n="booking.card.deliveryTitle">Tropicool en casa</h3>
-              <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]" data-i18n="booking.card.deliveryText">
-                El pedido online se abre fuera de esta web y te redirige a Uber Eats.
-              </p>
-            </a>
-            <a class="glass-panel p-5 no-underline sm:col-span-2" href={site.links.maps}>
-              <span class="label-chip" data-i18n="booking.card.mapsTag">Cómo llegar</span>
-              <h3 class="mt-5 text-2xl font-black text-[var(--tc-cyan)]">{site.shortAddress}</h3>
-              <p class="mt-2 text-sm text-[rgba(255,249,223,.72)]">{site.address}</p>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacto" class="scroll-mt-20 py-12 md:py-20" data-animate>
-        <div class="container-shell grid gap-8 lg:grid-cols-[1fr_.9fr]">
-          <div>
-            <p class="eyebrow" data-i18n="contact.eyebrow">X Madrid</p>
-            <h2 class="mt-3 text-4xl font-black leading-none md:text-6xl" data-i18n="contact.title">Ven a Tropicool en X Madrid.</h2>
-            <p class="mt-5 max-w-xl text-lg text-[rgba(255,249,223,.76)]" data-i18n="contact.text">
-              Estamos en C.C. X Madrid, Alcorcón. Guarda la ruta, llama si quieres reservar y vente con hambre.
-            </p>
-            <div class="mt-8 grid gap-3 text-lg font-bold">
-              <a class="hover:text-[var(--tc-lime)]" href={site.links.maps}>{site.address}</a>
-              <a class="hover:text-[var(--tc-lime)]" href={site.links.tel}>{site.phone}</a>
-              <a class="hover:text-[var(--tc-lime)]" href={site.links.mail}>{site.email}</a>
+            <div class="x-madrid-section__column x-madrid-section__column--right">
+              <figure class="x-madrid-section__map">
+                <img
+                  src="/images/assets/xmadrid/Planta-calle-X-Madrid_2178692149_7418552_960x680.jpg"
+                  alt="Plano de planta de X-Madrid señalando dónde está Tropicool"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <figcaption data-i18n="contact.mapCaption">Ubicación de Tropicool dentro de X-Madrid.</figcaption>
+              </figure>
             </div>
-            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a class="button-neon px-5 py-3" href={site.links.maps} data-i18n="cta.getDirections">Cómo llegar</a>
-              <a class="button-ghost px-5 py-3" href={site.links.tel} data-i18n="cta.callNow">Llamar ahora</a>
-              <a class="button-ghost px-5 py-3" href={site.links.instagram}>Instagram</a>
-            </div>
-          </div>
-
-          <div class="overflow-hidden border border-[rgba(255,249,223,.15)]">
-            <img
-              src={site.assets.interior}
-              alt="Interior luminoso de restaurante"
-              class="h-full min-h-80 w-full object-cover"
-              loading="lazy"
-              decoding="async"
-            />
           </div>
         </div>
       </section>
@@ -322,75 +337,13 @@ const jsonLd = {
       <div class="grid grid-cols-3 gap-2">
         <button type="button" class="button-neon min-h-11 text-sm" data-reservation-trigger data-i18n="cta.reserve">Reservar</button>
         <a class="button-ghost min-h-11 text-sm" href="#carta" data-i18n="nav.menu">Carta</a>
-        <a class="button-ghost min-h-11 text-sm" href={site.links.order} target="_blank" rel="noreferrer" data-i18n="nav.order">Pedir</a>
+        <a class="button-ghost min-h-11 text-sm" href={site.links.order} target="_blank" rel="noreferrer" data-order-trigger data-i18n="nav.order">Pedir</a>
       </div>
     </div>
 
-    <dialog class="reservation-dialog" data-reservation-dialog aria-labelledby="reservation-dialog-title">
-      <div class="reservation-dialog__inner">
-        <button
-          type="button"
-          class="reservation-dialog__close"
-          data-reservation-close
-          data-i18n-aria-label="reservation.close"
-          aria-label="Cerrar reserva"
-        >
-          ×
-        </button>
-        <p class="eyebrow" data-i18n="booking.card.reserveTag">Reservas</p>
-        <h2 id="reservation-dialog-title" data-i18n="reservation.title">Reserva por teléfono</h2>
-        <p data-i18n="reservation.text">
-          Para reservar mesa en Tropicool, llámanos y te confirmamos disponibilidad al momento.
-        </p>
-        <a class="reservation-dialog__phone" href={site.links.tel}>{site.phone}</a>
-        <div class="reservation-dialog__actions">
-          <a class="button-neon px-5 py-3" href={site.links.tel} data-reservation-primary data-i18n="cta.callNow">Llamar ahora</a>
-          <button type="button" class="button-ghost px-5 py-3" data-reservation-close data-i18n="reservation.later">Ahora no</button>
-        </div>
-      </div>
-    </dialog>
+    <ActionDialogs />
 
     <script>
-      const reservationDialog = document.querySelector('[data-reservation-dialog]');
-      const reservationTriggers = document.querySelectorAll('[data-reservation-trigger]');
-      const reservationClosers = document.querySelectorAll('[data-reservation-close]');
-      let reservationLastFocus = null;
-
-      function closeReservationDialog() {
-        if (!reservationDialog) return;
-        if (typeof reservationDialog.close === 'function' && reservationDialog.open) {
-          reservationDialog.close();
-        } else {
-          reservationDialog.removeAttribute('open');
-          document.body.classList.remove('dialog-open');
-        }
-      }
-
-      reservationTriggers.forEach((trigger) => {
-        trigger.addEventListener('click', () => {
-          if (!reservationDialog) return;
-          reservationLastFocus = document.activeElement;
-          if (typeof reservationDialog.showModal === 'function') {
-            reservationDialog.showModal();
-          } else {
-            reservationDialog.setAttribute('open', '');
-            document.body.classList.add('dialog-open');
-          }
-          reservationDialog.querySelector('[data-reservation-primary]')?.focus();
-        });
-      });
-
-      reservationClosers.forEach((closer) => {
-        closer.addEventListener('click', closeReservationDialog);
-      });
-
-      reservationDialog?.addEventListener('close', () => {
-        document.body.classList.remove('dialog-open');
-        if (reservationLastFocus instanceof HTMLElement) {
-          reservationLastFocus.focus();
-        }
-      });
-
       const stage = document.querySelector('[data-hero-video-stage]');
       const cards = Array.from(document.querySelectorAll('[data-hero-video-card]'));
       const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

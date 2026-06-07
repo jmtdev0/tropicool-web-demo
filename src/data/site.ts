@@ -27,8 +27,6 @@ export const site = {
       'El primer restaurante "100% plant based" abierto en un centro comercial de España.',
     intro:
       'Tropicool nace de viajar, probar y mezclar sabores de la franja tropical. Todo es plant based, con alternativas vegetales y una carta pensada para compartir.',
-    reservationText:
-      'Para reservar mesa, llámanos y te confirmamos disponibilidad al momento. Si quieres pedir a domicilio, te llevamos directo a Uber Eats.',
   },
   assets: {
     hero: '/images/assets/site/hero.webp',
@@ -40,7 +38,7 @@ export const site = {
 export const navigation = [
   { key: 'menu', label: 'Carta', href: '#carta' },
   { key: 'gallery', label: 'Galería', href: '/galeria/' },
-  { key: 'reserve', label: 'Reservar', href: '#reservar' },
-  { key: 'order', label: 'Pedir online', href: '#pedidos' },
-  { key: 'contact', label: 'X Madrid', href: '#contacto' },
+  { key: 'reserve', label: 'Reservar', href: site.links.tel },
+  { key: 'order', label: 'Pedir online', href: site.links.order },
+  { key: 'contact', label: '¿Dónde estamos?', href: '#contacto' },
 ];

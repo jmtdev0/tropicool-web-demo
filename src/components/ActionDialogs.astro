@@ -1,0 +1,134 @@
+---
+import { site } from '../data/site';
+---
+
+<dialog class="reservation-dialog" data-reservation-dialog aria-labelledby="reservation-dialog-title">
+  <div class="reservation-dialog__inner">
+    <button
+      type="button"
+      class="reservation-dialog__close"
+      data-reservation-close
+      data-i18n-aria-label="reservation.close"
+      aria-label="Cerrar reserva"
+    >
+      x
+    </button>
+    <p class="eyebrow" data-i18n="booking.card.reserveTag">Reservas</p>
+    <h2 id="reservation-dialog-title" data-i18n="reservation.title">Reserva por teléfono</h2>
+    <p data-i18n="reservation.text">
+      Para reservar mesa en Tropicool, llámanos y te confirmamos disponibilidad al momento.
+    </p>
+
+    <div class="reservation-dialog__hours" aria-labelledby="reservation-hours-title">
+      <h3 id="reservation-hours-title" data-i18n="reservation.hoursTitle">Horario</h3>
+      <dl>
+        <div>
+          <dt data-i18n="reservation.hours.mon">Lunes</dt>
+          <dd data-i18n="reservation.hours.monTime">13:00-16:30 y 20:00-23:30</dd>
+        </div>
+        <div>
+          <dt data-i18n="reservation.hours.tueWed">Martes y miércoles</dt>
+          <dd data-i18n="reservation.hours.tueWedTime">13:30-16:30 y 20:00-23:30</dd>
+        </div>
+        <div>
+          <dt data-i18n="reservation.hours.thu">Jueves</dt>
+          <dd data-i18n="reservation.hours.thuTime">13:30-23:30</dd>
+        </div>
+        <div>
+          <dt data-i18n="reservation.hours.friSat">Viernes y sábado</dt>
+          <dd data-i18n="reservation.hours.friSatTime">13:30-00:00</dd>
+        </div>
+        <div>
+          <dt data-i18n="reservation.hours.sun">Domingo</dt>
+          <dd data-i18n="reservation.hours.sunTime">13:30-23:00</dd>
+        </div>
+      </dl>
+    </div>
+
+    <a class="reservation-dialog__phone" href={site.links.tel}>{site.phone}</a>
+    <div class="reservation-dialog__actions">
+      <a class="button-neon px-5 py-3" href={site.links.tel} data-reservation-primary data-i18n="cta.callNow">Llamar ahora</a>
+      <button type="button" class="button-ghost px-5 py-3" data-reservation-close data-i18n="reservation.later">Ahora no</button>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="reservation-dialog" data-order-dialog aria-labelledby="order-dialog-title">
+  <div class="reservation-dialog__inner">
+    <button
+      type="button"
+      class="reservation-dialog__close"
+      data-order-close
+      data-i18n-aria-label="order.close"
+      aria-label="Cerrar pedido online"
+    >
+      x
+    </button>
+    <p class="eyebrow" data-i18n="booking.card.deliveryTag">Delivery</p>
+    <h2 id="order-dialog-title" data-i18n="order.title">Pedir en Uber Eats</h2>
+    <p data-i18n="order.text">
+      Vas a salir de esta web y abrir Uber Eats para completar el pedido.
+    </p>
+    <div class="reservation-dialog__actions">
+      <a
+        class="button-neon px-5 py-3"
+        href={site.links.order}
+        target="_blank"
+        rel="noreferrer"
+        data-order-primary
+        data-i18n="order.continue"
+      >
+        Continuar a Uber Eats
+      </a>
+      <button type="button" class="button-ghost px-5 py-3" data-order-close data-i18n="order.cancel">Ahora no</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  function setupActionDialog(dialogSelector, triggerSelector, closeSelector, primarySelector) {
+    const dialog = document.querySelector(dialogSelector);
+    const triggers = document.querySelectorAll(triggerSelector);
+    const closers = document.querySelectorAll(closeSelector);
+    let lastFocus = null;
+
+    function closeDialog() {
+      if (!dialog) return;
+      if (typeof dialog.close === 'function' && dialog.open) {
+        dialog.close();
+      } else {
+        dialog.removeAttribute('open');
+        document.body.classList.remove('dialog-open');
+      }
+    }
+
+    triggers.forEach((trigger) => {
+      trigger.addEventListener('click', (event) => {
+        event.preventDefault();
+        if (!dialog) return;
+        lastFocus = document.activeElement;
+        if (typeof dialog.showModal === 'function') {
+          dialog.showModal();
+        } else {
+          dialog.setAttribute('open', '');
+          document.body.classList.add('dialog-open');
+        }
+        dialog.querySelector(primarySelector)?.focus();
+      });
+    });
+
+    closers.forEach((closer) => {
+      closer.addEventListener('click', closeDialog);
+    });
+
+    dialog?.addEventListener('close', () => {
+      document.body.classList.remove('dialog-open');
+      if (lastFocus instanceof HTMLElement) {
+        lastFocus.focus();
+      }
+    });
+  }
+
+  setupActionDialog('[data-reservation-dialog]', '[data-reservation-trigger]', '[data-reservation-close]', '[data-reservation-primary]');
+  setupActionDialog('[data-order-dialog]', '[data-order-trigger]', '[data-order-close]', '[data-order-primary]');
+</script>

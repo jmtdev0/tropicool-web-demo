@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import ActionDialogs from '../components/ActionDialogs.astro';
 import GalleryLightbox from '../components/GalleryLightbox.svelte';
 import LanguageToggle from '../components/LanguageToggle.svelte';
 import TranslationRuntime from '../components/TranslationRuntime.svelte';
@@ -43,13 +44,23 @@ import { site, navigation } from '../data/site';
         </a>
         <div class="hidden items-center gap-6 text-sm font-bold text-[rgba(255,249,223,.82)] md:flex">
           {navigation.map((item) => (
-            <a
-              class="hover:text-[var(--tc-lime)]"
-              href={item.href.startsWith('#') ? `/${item.href}` : item.href}
-              data-i18n={`nav.${item.key}`}
-            >
-              {item.label}
-            </a>
+            item.key === 'reserve' ? (
+              <a class="nav-action-link hover:text-[var(--tc-lime)]" href={site.links.tel} data-reservation-trigger data-i18n={`nav.${item.key}`}>
+                {item.label}
+              </a>
+            ) : item.key === 'order' ? (
+              <a class="nav-action-link hover:text-[var(--tc-lime)]" href={site.links.order} target="_blank" rel="noreferrer" data-order-trigger data-i18n={`nav.${item.key}`}>
+                {item.label}
+              </a>
+            ) : (
+              <a
+                class="hover:text-[var(--tc-lime)]"
+                href={item.href.startsWith('#') ? `/${item.href}` : item.href}
+                data-i18n={`nav.${item.key}`}
+              >
+                {item.label}
+              </a>
+            )
           ))}
         </div>
         <div class="flex items-center gap-3">
@@ -120,5 +131,7 @@ import { site, navigation } from '../data/site';
         </div>
       </div>
     </footer>
+
+    <ActionDialogs />
   </body>
 </html>
