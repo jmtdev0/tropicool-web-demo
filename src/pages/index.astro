@@ -3,6 +3,7 @@ import '../styles/global.css';
 import LanguageToggle from '../components/LanguageToggle.svelte';
 import MenuExplorer from '../components/MenuExplorer.svelte';
 import MotionBoot from '../components/MotionBoot.svelte';
+import MusicRuntime from '../components/MusicRuntime.svelte';
 import TranslationRuntime from '../components/TranslationRuntime.svelte';
 import ActionDialogs from '../components/ActionDialogs.astro';
 import { site, navigation } from '../data/site';
@@ -36,6 +37,202 @@ const jsonLd = {
     },
   },
 };
+
+const menuDoodles = [
+  ['/images/assets/menu/doodles/tropical-drink.png', 3, 2, 1, -12],
+  ['/images/assets/menu/doodles/palm-leaf.png', 75, 1, 0.9, 17],
+  ['/images/assets/menu/doodles/monstera.png', 50, 8, 0.78, -7],
+  ['/images/assets/menu/doodles/flamingo.png', 8, 22, 0.78, 9],
+  ['/images/assets/menu/doodles/pineapple.png', 82, 28, 0.82, -10],
+  ['/images/assets/menu/doodles/surfboard.png', 1, 45, 0.72, -13],
+  ['/images/assets/menu/doodles/sunglasses.png', 68, 48, 0.7, 13],
+  ['/images/assets/menu/doodles/wave.png', 29, 57, 0.72, 8],
+  ['/images/assets/menu/doodles/tropical-sun.png', 5, 73, 0.7, 14],
+  ['/images/assets/menu/doodles/nachos.png', 73, 74, 0.76, -11],
+  ['/images/assets/menu/doodles/burger.png', 43, 3, 0.52, -31],
+  ['/images/assets/menu/doodles/taquitos.png', 31, 19, 0.58, 16],
+  ['/images/assets/menu/doodles/palm-leaf.png', 88, 58, 0.55, -18],
+  ['/images/assets/menu/doodles/tropical-drink.png', 14, 91, 0.6, -9],
+  ['/images/assets/menu/doodles/monstera.png', 47, 88, 0.64, 12],
+  ['/images/assets/menu/doodles/flamingo.png', 63, 18, 0.5, -6],
+  ['/images/assets/menu/doodles/pineapple.png', 18, 39, 0.52, 8],
+  ['/images/assets/menu/doodles/surfboard.png', 56, 36, 0.5, 20],
+  ['/images/assets/menu/doodles/wave.png', 84, 90, 0.58, -10],
+].map(([src, x, y, s, r]) => ({ src, x, y, s, r }));
+
+const mainDoodleClearanceZones = menuDoodles.map((doodle) => ({
+  cx: doodle.x + 8 * doodle.s,
+  cy: doodle.y + 8 * doodle.s,
+  rx: 5.5 * doodle.s + 2.4,
+  ry: 9 * doodle.s + 2.8,
+}));
+
+const menuContentClearanceZones = [];
+
+const isAwayFromMainDoodles = ([, x, y, s]) => {
+  const cx = x + s;
+  const cy = y + s;
+
+  const avoidsMainDoodles = mainDoodleClearanceZones.every((zone) => (
+    Math.abs(cx - zone.cx) > zone.rx + s * 2 || Math.abs(cy - zone.cy) > zone.ry + s * 2
+  ));
+  const avoidsContent = menuContentClearanceZones.every((zone) => (
+    cx < zone.x1 || cx > zone.x2 || cy < zone.y1 || cy > zone.y2
+  ));
+
+  return avoidsMainDoodles && avoidsContent;
+};
+
+const isAwayFromOtherSprinkles = (sprinkle, selectedSprinkles) => {
+  const [, x, y, s] = sprinkle;
+  const cx = x + s;
+  const cy = y + s;
+
+  return selectedSprinkles.every((selected) => {
+    const [, selectedX, selectedY, selectedS] = selected;
+    const selectedCx = selectedX + selectedS;
+    const selectedCy = selectedY + selectedS;
+    const distance = Math.hypot(cx - selectedCx, (cy - selectedCy) * 0.72);
+
+    return distance > 2.9 + (s + selectedS) * 1.15;
+  });
+};
+
+const handPlacedMenuSprinkles = [
+  ['sparkle', 4, 4, 1.05, -8, 'gold'],
+  ['ring', 10, 2, 0.55, 12, 'lime'],
+  ['mini-star', 14, 8, 0.7, -18, 'pink'],
+  ['dot', 22, 4, 0.5, 0, 'gold'],
+  ['dash', 34, 7, 0.7, -22, 'lime'],
+  ['sun', 92, 4, 0.9, 10, 'gold'],
+  ['wave-mini', 88, 8, 0.65, -8, 'lime'],
+  ['confetti', 96, 10, 0.7, 18, 'pink'],
+  ['asterisk', 7, 14, 0.72, 12, 'lime'],
+  ['squiggle', 17, 17, 0.62, -12, 'gold'],
+  ['bubbles', 26, 15, 0.7, 0, 'pink'],
+  ['spark', 41, 16, 0.7, 14, 'gold'],
+  ['seed', 57, 14, 0.6, -20, 'lime'],
+  ['heart', 68, 16, 0.58, 10, 'pink'],
+  ['cross', 84, 18, 0.58, -14, 'gold'],
+  ['dash', 97, 20, 0.65, -24, 'lime'],
+  ['spray', 2, 28, 0.8, 24, 'gold'],
+  ['mini-leaf', 14, 27, 0.7, -18, 'lime'],
+  ['dot', 23, 30, 0.46, 0, 'pink'],
+  ['ring', 34, 30, 0.58, 0, 'gold'],
+  ['sparkle', 46, 28, 0.62, -10, 'lime'],
+  ['squiggle', 61, 31, 0.58, 18, 'pink'],
+  ['bubbles', 76, 29, 0.72, 12, 'gold'],
+  ['asterisk', 91, 30, 0.78, -12, 'lime'],
+  ['confetti', 98, 32, 0.75, 8, 'pink'],
+  ['wave-mini', 4, 42, 0.72, -16, 'lime'],
+  ['dash', 15, 40, 0.58, 20, 'gold'],
+  ['drop', 27, 43, 0.55, -8, 'pink'],
+  ['sun', 39, 42, 0.62, 6, 'gold'],
+  ['spark', 52, 41, 0.62, -14, 'pink'],
+  ['seed', 67, 43, 0.56, 20, 'lime'],
+  ['cross', 82, 42, 0.58, 16, 'pink'],
+  ['ring', 94, 41, 0.52, 0, 'gold'],
+  ['mini-star', 7, 55, 0.68, -16, 'gold'],
+  ['bubbles', 18, 54, 0.62, 0, 'lime'],
+  ['confetti', 30, 56, 0.7, 14, 'pink'],
+  ['sparkle', 45, 54, 0.58, 8, 'gold'],
+  ['wave-mini', 58, 55, 0.64, -10, 'lime'],
+  ['heart', 72, 56, 0.52, -18, 'pink'],
+  ['dash', 86, 54, 0.6, 22, 'gold'],
+  ['squiggle', 97, 57, 0.58, -12, 'lime'],
+  ['asterisk', 3, 68, 0.75, 8, 'pink'],
+  ['mini-leaf', 13, 70, 0.64, 20, 'lime'],
+  ['dot', 25, 67, 0.45, 0, 'gold'],
+  ['ring', 38, 70, 0.6, 0, 'lime'],
+  ['spark', 51, 68, 0.66, -20, 'pink'],
+  ['spray', 63, 70, 0.7, 18, 'gold'],
+  ['wave-mini', 74, 69, 0.74, -6, 'lime'],
+  ['cross', 89, 69, 0.54, 12, 'pink'],
+  ['sun', 97, 70, 0.58, -6, 'gold'],
+  ['bubbles', 6, 83, 0.7, 0, 'lime'],
+  ['dash', 16, 82, 0.6, -20, 'gold'],
+  ['squiggle', 27, 85, 0.58, 14, 'pink'],
+  ['sparkle', 39, 84, 0.64, -12, 'lime'],
+  ['ring', 51, 82, 0.54, 0, 'gold'],
+  ['mini-star', 63, 84, 0.62, 8, 'pink'],
+  ['estela', 76, 83, 0.68, -18, 'lime'],
+  ['seed', 87, 85, 0.52, 18, 'gold'],
+  ['dot', 96, 83, 0.48, 0, 'pink'],
+  ['confetti', 9, 94, 0.68, -10, 'gold'],
+  ['wave-mini', 24, 93, 0.7, 8, 'lime'],
+  ['asterisk', 42, 94, 0.6, 0, 'gold'],
+  ['bubbles', 57, 92, 0.58, 0, 'pink'],
+  ['mini-leaf', 71, 94, 0.62, -20, 'lime'],
+  ['spark', 83, 93, 0.58, 12, 'gold'],
+  ['ring', 95, 94, 0.58, 0, 'pink'],
+];
+
+const sprinkleTypes = [
+  'sparkle',
+  'ring',
+  'mini-star',
+  'dot',
+  'dash',
+  'wave-mini',
+  'confetti',
+  'asterisk',
+  'squiggle',
+  'bubbles',
+  'spark',
+  'seed',
+  'cross',
+  'spray',
+  'mini-leaf',
+  'drop',
+  'estela',
+];
+
+const sprinkleTones = ['gold', 'lime', 'pink'];
+
+const seededNoise = (index, salt) => {
+  const value = Math.sin((index + 1) * 12.9898 + salt * 78.233) * 43758.5453;
+
+  return value - Math.floor(value);
+};
+
+const generatedMenuSprinkles = Array.from({ length: 4000 }, (_, index) => {
+  const bandSeed = seededNoise(index, 1);
+  const band = bandSeed < 0.34 ? 0 : bandSeed < 0.68 ? 1 : 2;
+  const x =
+    band === 0
+      ? 1.5 + seededNoise(index, 2) * 22
+      : band === 1
+        ? 76 + seededNoise(index, 3) * 22
+        : 24 + seededNoise(index, 6) * 52;
+  const y = 2 + seededNoise(index, 4) * 94;
+  const type = sprinkleTypes[index % sprinkleTypes.length];
+  const tone = sprinkleTones[(index + band) % sprinkleTones.length];
+  const s = 0.42 + seededNoise(index, 5) * 0.5;
+  const r = -32 + ((index * 17) % 65);
+
+  return [type, Number(x.toFixed(1)), Number(y.toFixed(1)), Number(s.toFixed(2)), r, tone];
+});
+
+const menuSprinkles = [...handPlacedMenuSprinkles, ...generatedMenuSprinkles]
+  .reduce((selectedSprinkles, sprinkle) => {
+    if (
+      selectedSprinkles.length < 120 &&
+      isAwayFromMainDoodles(sprinkle) &&
+      isAwayFromOtherSprinkles(sprinkle, selectedSprinkles)
+    ) {
+      selectedSprinkles.push(sprinkle);
+    }
+
+    return selectedSprinkles;
+  }, [])
+  .map(([type, x, y, s, r, tone]) => ({
+    type,
+    x,
+    y,
+    s,
+    r,
+    tone,
+  }));
 ---
 
 <!doctype html>
@@ -59,6 +256,7 @@ const jsonLd = {
   </head>
   <body>
     <MotionBoot client:load />
+    <MusicRuntime client:load />
     <TranslationRuntime client:load />
 
     <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#041607]/78 backdrop-blur-xl">
@@ -208,21 +406,19 @@ const jsonLd = {
 
       <section id="carta" class="menu-doodle-section section-band scroll-mt-20 py-12 md:py-20" data-animate>
         <div class="menu-doodle-layer" aria-hidden="true">
-          <img src="/images/assets/menu/doodles/tropical-drink.png" alt="" style="--x: 3%; --y: 2%; --s: 1; --r: -12deg;" />
-          <img src="/images/assets/menu/doodles/palm-leaf.png" alt="" style="--x: 75%; --y: 1%; --s: 0.9; --r: 17deg;" />
-          <img src="/images/assets/menu/doodles/nachos.png" alt="" style="--x: 53%; --y: 10%; --s: 0.78; --r: -7deg;" />
-          <img src="/images/assets/menu/doodles/taquitos.png" alt="" style="--x: 8%; --y: 22%; --s: 0.82; --r: 9deg;" />
-          <img src="/images/assets/menu/doodles/burger.png" alt="" style="--x: 82%; --y: 29%; --s: 0.82; --r: -10deg;" />
-          <img src="/images/assets/menu/doodles/palm-leaf.png" alt="" style="--x: 1%; --y: 46%; --s: 0.74; --r: -24deg;" />
-          <img src="/images/assets/menu/doodles/tropical-drink.png" alt="" style="--x: 68%; --y: 48%; --s: 0.68; --r: 13deg;" />
-          <img src="/images/assets/menu/doodles/nachos.png" alt="" style="--x: 29%; --y: 57%; --s: 0.72; --r: 8deg;" />
-          <img src="/images/assets/menu/doodles/burger.png" alt="" style="--x: 5%; --y: 73%; --s: 0.7; --r: 14deg;" />
-          <img src="/images/assets/menu/doodles/taquitos.png" alt="" style="--x: 73%; --y: 74%; --s: 0.76; --r: -11deg;" />
-          <img src="/images/assets/menu/doodles/palm-leaf.png" alt="" style="--x: 43%; --y: 3%; --s: 0.52; --r: -31deg;" />
-          <img src="/images/assets/menu/doodles/burger.png" alt="" style="--x: 31%; --y: 19%; --s: 0.58; --r: 16deg;" />
-          <img src="/images/assets/menu/doodles/tropical-drink.png" alt="" style="--x: 88%; --y: 58%; --s: 0.55; --r: -18deg;" />
-          <img src="/images/assets/menu/doodles/nachos.png" alt="" style="--x: 14%; --y: 91%; --s: 0.6; --r: -9deg;" />
-          <img src="/images/assets/menu/doodles/taquitos.png" alt="" style="--x: 47%; --y: 88%; --s: 0.64; --r: 12deg;" />
+          {menuDoodles.map((doodle) => (
+            <img
+              src={doodle.src}
+              alt=""
+              style={`--x: ${doodle.x}%; --y: ${doodle.y}%; --s: ${doodle.s}; --r: ${doodle.r}deg;`}
+            />
+          ))}
+          {menuSprinkles.map((sprinkle) => (
+            <span
+              class={`menu-sprinkle menu-sprinkle--${sprinkle.type} menu-sprinkle--${sprinkle.tone}`}
+              style={`--x: ${sprinkle.x}%; --y: ${sprinkle.y}%; --s: ${sprinkle.s}; --r: ${sprinkle.r}deg;`}
+            ></span>
+          ))}
         </div>
         <div class="container-shell">
           <div class="mb-8 max-w-6xl">

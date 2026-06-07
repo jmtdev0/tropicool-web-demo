@@ -365,17 +365,21 @@ body.dialog-open {
 }
 
 .menu-doodle-layer {
+  --neon-audio: 0;
+  --neon-pulse: 0;
   position: absolute;
   inset: 0;
   z-index: 0;
+  isolation: isolate;
   pointer-events: none;
   user-select: none;
-  opacity: 0.78;
+  opacity: calc(0.76 + (var(--neon-audio) * 0.14));
 }
 
 .menu-doodle-layer::after {
   position: absolute;
   inset: 0;
+  z-index: 1;
   content: "";
   background:
     radial-gradient(circle at 50% 8%, rgba(3, 16, 5, 0.02), rgba(3, 16, 5, 0.36) 66%),
@@ -384,15 +388,284 @@ body.dialog-open {
 
 .menu-doodle-layer img {
   position: absolute;
+  z-index: 2;
   left: var(--x);
   top: var(--y);
   width: clamp(9.5rem, 16vw, 17.5rem);
   height: auto;
-  transform: rotate(var(--r)) scale(var(--s));
+  opacity: calc(0.62 + (var(--neon-audio) * 0.18) + (var(--neon-pulse) * 0.14));
+  transform: rotate(var(--r)) scale(calc(var(--s) * (1 + (var(--neon-audio) * 0.04) + (var(--neon-pulse) * 0.05))));
   transform-origin: center;
   filter:
-    saturate(1.15)
-    drop-shadow(0 0 18px rgba(202, 255, 105, 0.12));
+    brightness(calc(1.08 + (var(--neon-audio) * 0.22) + (var(--neon-pulse) * 0.18)))
+    saturate(calc(1.45 + (var(--neon-audio) * 0.7) + (var(--neon-pulse) * 0.45)))
+    contrast(calc(1.02 + (var(--neon-audio) * 0.08)))
+    drop-shadow(0 0 calc(5px + (var(--neon-audio) * 7px) + (var(--neon-pulse) * 8px)) rgba(255, 249, 223, 0.24))
+    drop-shadow(0 0 calc(12px + (var(--neon-audio) * 20px) + (var(--neon-pulse) * 18px)) rgba(202, 255, 105, 0.26))
+    drop-shadow(0 0 calc(18px + (var(--neon-audio) * 26px) + (var(--neon-pulse) * 22px)) rgba(239, 143, 186, 0.2));
+  mix-blend-mode: screen;
+  transition:
+    filter 90ms linear,
+    opacity 90ms linear,
+    transform 90ms linear;
+}
+
+.menu-sprinkle {
+  --sprinkle-color: var(--tc-lime);
+  position: absolute;
+  z-index: 2;
+  left: var(--x);
+  top: var(--y);
+  display: block;
+  width: calc(1.7rem * var(--s));
+  height: calc(1.7rem * var(--s));
+  color: var(--sprinkle-color);
+  opacity: calc(0.9 + (var(--neon-audio) * 0.1) + (var(--neon-pulse) * 0.1));
+  transform: rotate(var(--r)) scale(calc(1 + (var(--neon-audio) * 0.045) + (var(--neon-pulse) * 0.055)));
+  transform-origin: center;
+  filter:
+    brightness(calc(1.08 + (var(--neon-audio) * 0.18) + (var(--neon-pulse) * 0.14)))
+    saturate(calc(1.35 + (var(--neon-audio) * 0.45) + (var(--neon-pulse) * 0.32)))
+    drop-shadow(0 0 calc(4px + (var(--neon-audio) * 5px) + (var(--neon-pulse) * 5px)) color-mix(in srgb, currentColor 78%, transparent))
+    drop-shadow(0 0 calc(13px + (var(--neon-audio) * 12px) + (var(--neon-pulse) * 10px)) color-mix(in srgb, currentColor 42%, transparent));
+  mix-blend-mode: screen;
+  transition:
+    filter 90ms linear,
+    opacity 90ms linear,
+    transform 90ms linear;
+}
+
+.menu-sprinkle--gold {
+  --sprinkle-color: #ffc342;
+}
+
+.menu-sprinkle--lime {
+  --sprinkle-color: var(--tc-lime);
+}
+
+.menu-sprinkle--pink {
+  --sprinkle-color: var(--tc-pink);
+}
+
+.menu-sprinkle::before,
+.menu-sprinkle::after {
+  position: absolute;
+  inset: 0;
+  display: block;
+  content: "";
+}
+
+.menu-sprinkle--dot::before {
+  inset: 38%;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.menu-sprinkle--ring::before {
+  inset: 25%;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+}
+
+.menu-sprinkle--bubbles::before {
+  width: 0.62rem;
+  height: 0.62rem;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  box-shadow:
+    0.58rem 0.16rem 0 -0.08rem currentColor,
+    0.25rem 0.68rem 0 -0.05rem currentColor;
+}
+
+.menu-sprinkle--sparkle::before {
+  left: 50%;
+  width: 3px;
+  background: currentColor;
+  transform: translateX(-50%);
+}
+
+.menu-sprinkle--sparkle::after {
+  top: 50%;
+  height: 3px;
+  background: currentColor;
+  transform: translateY(-50%);
+  box-shadow:
+    0 0 0 0 currentColor,
+    0 0 0 0 currentColor;
+}
+
+.menu-sprinkle--mini-star::before {
+  left: 50%;
+  width: 3px;
+  background: currentColor;
+  transform: translateX(-50%) rotate(15deg);
+}
+
+.menu-sprinkle--mini-star::after {
+  top: 50%;
+  height: 3px;
+  background: currentColor;
+  transform: translateY(-50%) rotate(-18deg);
+}
+
+.menu-sprinkle--asterisk::before,
+.menu-sprinkle--asterisk::after {
+  top: 50%;
+  height: 3px;
+  background: currentColor;
+}
+
+.menu-sprinkle--asterisk::before {
+  transform: rotate(34deg);
+  box-shadow: 0 0 0 0 currentColor;
+}
+
+.menu-sprinkle--asterisk::after {
+  transform: rotate(-34deg);
+}
+
+.menu-sprinkle--dash::before {
+  top: 22%;
+  left: 8%;
+  width: 82%;
+  height: 3px;
+  background: currentColor;
+  border-radius: 999px;
+  box-shadow:
+    0 0.38rem 0 currentColor,
+    0 0.76rem 0 currentColor;
+}
+
+.menu-sprinkle--confetti::before {
+  top: 10%;
+  left: 44%;
+  width: 3px;
+  height: 72%;
+  border-radius: 999px;
+  background: currentColor;
+  box-shadow:
+    -0.45rem 0.2rem 0 -0.03rem currentColor,
+    0.42rem 0.46rem 0 -0.04rem currentColor,
+    0.05rem 0.86rem 0 -0.05rem currentColor;
+}
+
+.menu-sprinkle--wave-mini::before,
+.menu-sprinkle--squiggle::before,
+.menu-sprinkle--estela::before,
+.menu-sprinkle--estela::after {
+  border: 2px solid currentColor;
+  border-color: currentColor transparent transparent transparent;
+  border-radius: 50%;
+}
+
+.menu-sprinkle--wave-mini::before {
+  inset: 36% 4% 0;
+  transform: rotate(-8deg);
+}
+
+.menu-sprinkle--squiggle::before {
+  inset: 18% 8%;
+  border-color: transparent currentColor currentColor transparent;
+  transform: rotate(18deg);
+}
+
+.menu-sprinkle--estela::before {
+  inset: 18% 4% 20%;
+}
+
+.menu-sprinkle--estela::after {
+  inset: 44% 8% 0;
+}
+
+.menu-sprinkle--spark::before,
+.menu-sprinkle--spark::after {
+  top: 18%;
+  left: 50%;
+  width: 3px;
+  height: 70%;
+  background: currentColor;
+  border-radius: 999px;
+  transform-origin: 50% 100%;
+}
+
+.menu-sprinkle--spark::before {
+  transform: translateX(-50%) rotate(-34deg);
+}
+
+.menu-sprinkle--spark::after {
+  transform: translateX(-50%) rotate(34deg);
+}
+
+.menu-sprinkle--sun::before {
+  inset: 28%;
+  border: 2px solid currentColor;
+  border-radius: 999px;
+  box-shadow:
+    0 -0.56rem 0 -0.1rem currentColor,
+    0 0.56rem 0 -0.1rem currentColor,
+    -0.56rem 0 0 -0.1rem currentColor,
+    0.56rem 0 0 -0.1rem currentColor;
+}
+
+.menu-sprinkle--cross::before,
+.menu-sprinkle--cross::after {
+  top: 48%;
+  height: 3px;
+  background: currentColor;
+  border-radius: 999px;
+}
+
+.menu-sprinkle--cross::before {
+  transform: rotate(42deg);
+}
+
+.menu-sprinkle--cross::after {
+  transform: rotate(-42deg);
+}
+
+.menu-sprinkle--drop::before,
+.menu-sprinkle--seed::before,
+.menu-sprinkle--heart::before,
+.menu-sprinkle--mini-leaf::before {
+  border: 2px solid currentColor;
+}
+
+.menu-sprinkle--drop::before {
+  inset: 20% 30% 18%;
+  border-radius: 55% 55% 58% 8%;
+  transform: rotate(-45deg);
+}
+
+.menu-sprinkle--seed::before {
+  inset: 24% 32%;
+  border-radius: 999px;
+  transform: rotate(28deg);
+}
+
+.menu-sprinkle--heart::before {
+  inset: 24%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+}
+
+.menu-sprinkle--mini-leaf::before {
+  inset: 18% 30%;
+  border-radius: 100% 0 100% 0;
+  transform: rotate(-26deg);
+}
+
+.menu-sprinkle--spray::before {
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 82%;
+  background: currentColor;
+  border-radius: 999px;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    -0.42rem -0.12rem 0 -0.02rem currentColor,
+    0.42rem 0.12rem 0 -0.02rem currentColor;
 }
 
 .menu-title {
@@ -441,7 +714,47 @@ body.dialog-open {
     top: 31%;
   }
 
-  .menu-doodle-layer img:nth-child(n + 10) {
+  .menu-doodle-layer img:nth-child(6) {
+    left: -24%;
+    top: 47%;
+  }
+
+  .menu-doodle-layer img:nth-child(7) {
+    left: 68%;
+    top: 51%;
+  }
+
+  .menu-doodle-layer img:nth-child(8) {
+    left: 27%;
+    top: 62%;
+  }
+
+  .menu-doodle-layer img:nth-child(9) {
+    left: -10%;
+    top: 78%;
+  }
+
+  .menu-doodle-layer img:nth-child(10) {
+    left: 70%;
+    top: 82%;
+  }
+
+  .menu-doodle-layer img:nth-child(11),
+  .menu-doodle-layer img:nth-child(12) {
+    opacity: 0.42;
+  }
+
+  .menu-doodle-layer img:nth-child(n + 13) {
+    display: none;
+  }
+
+  .menu-sprinkle {
+    width: calc(1.3rem * var(--s));
+    height: calc(1.3rem * var(--s));
+    opacity: calc(0.62 + (var(--neon-audio) * 0.14) + (var(--neon-pulse) * 0.14));
+  }
+
+  .menu-sprinkle:nth-of-type(n + 38) {
     display: none;
   }
 }
@@ -528,6 +841,7 @@ body.dialog-open {
   align-items: center;
   gap: 0.55rem;
   border: 1px solid rgba(255, 249, 223, 0.18);
+  border-radius: 999px;
   background: rgba(4, 22, 7, 0.54);
   color: var(--tc-lime);
   font-size: 0.78rem;
@@ -568,6 +882,7 @@ body.dialog-open {
 .hero-story__panel {
   margin-top: 0.8rem;
   border: 1px solid rgba(255, 249, 223, 0.16);
+  border-radius: 1.4rem;
   background:
     linear-gradient(180deg, rgba(255, 249, 223, 0.09), rgba(255, 249, 223, 0.035)),
     rgba(4, 22, 7, 0.76);
@@ -605,10 +920,11 @@ body.dialog-open {
   width: min(78vw, 31rem);
   aspect-ratio: 1;
   isolation: isolate;
-  transform: scale(calc(1 + (var(--neon-audio) * 0.035) + (var(--neon-pulse) * 0.014)));
+  transform: scale(calc(1 + (var(--neon-audio) * 0.04) + (var(--neon-pulse) * 0.05)));
   transform-origin: center;
-  transition: transform 80ms linear;
-  animation: neon-live-current 4.6s ease-in-out infinite;
+  transition:
+    filter 90ms linear,
+    transform 90ms linear;
 }
 
 .hero-neon-logo::before,
@@ -622,18 +938,16 @@ body.dialog-open {
 }
 
 .hero-neon-logo::before {
-  background: rgba(var(--neon-pink), calc(0.055 + (var(--neon-audio) * 0.08) + (var(--neon-pulse) * 0.07)));
-  filter: blur(calc(24px + (var(--neon-audio) * 16px) + (var(--neon-pulse) * 10px)));
-  animation: neon-orb-hum 4.8s ease-in-out infinite;
+  background: rgba(var(--neon-pink), calc(0.06 + (var(--neon-audio) * 0.1) + (var(--neon-pulse) * 0.1)));
+  filter: blur(calc(24px + (var(--neon-audio) * 18px) + (var(--neon-pulse) * 18px)));
 }
 
 .hero-neon-logo::after {
-  border: 1px solid rgba(var(--neon-core), calc(0.18 + (var(--neon-audio) * 0.22) + (var(--neon-pulse) * 0.16)));
+  border: 1px solid rgba(var(--neon-core), calc(0.18 + (var(--neon-audio) * 0.22) + (var(--neon-pulse) * 0.2)));
   box-shadow:
-    0 0 calc(12px + (var(--neon-audio) * 12px) + (var(--neon-pulse) * 10px)) rgba(var(--neon-pink), 0.16),
-    inset 0 0 calc(14px + (var(--neon-audio) * 12px) + (var(--neon-pulse) * 10px)) rgba(var(--neon-pink), 0.1);
-  opacity: 0.34;
-  animation: neon-ring-flicker 7.5s steps(1, end) infinite;
+    0 0 calc(12px + (var(--neon-audio) * 14px) + (var(--neon-pulse) * 16px)) rgba(var(--neon-pink), 0.18),
+    inset 0 0 calc(14px + (var(--neon-audio) * 14px) + (var(--neon-pulse) * 14px)) rgba(var(--neon-pink), 0.12);
+  opacity: calc(0.34 + (var(--neon-audio) * 0.1) + (var(--neon-pulse) * 0.12));
 }
 
 .hero-neon-logo__layer,
@@ -648,37 +962,45 @@ body.dialog-open {
 }
 
 .hero-neon-logo__aura {
-  opacity: calc(0.22 + (var(--neon-audio) * 0.18) + (var(--neon-pulse) * 0.24));
+  opacity: calc(0.24 + (var(--neon-audio) * 0.2) + (var(--neon-pulse) * 0.18));
   filter:
-    brightness(1.24)
-    saturate(1.45)
+    brightness(calc(1.12 + (var(--neon-audio) * 0.22) + (var(--neon-pulse) * 0.18)))
+    saturate(calc(1.45 + (var(--neon-audio) * 0.7) + (var(--neon-pulse) * 0.45)))
     blur(calc(10px + (var(--neon-audio) * 8px) + (var(--neon-pulse) * 8px)));
-  transform: scale(calc(1.045 + (var(--neon-audio) * 0.035) + (var(--neon-pulse) * 0.035)));
+  transform: scale(calc(1.045 + (var(--neon-audio) * 0.04) + (var(--neon-pulse) * 0.05)));
   mix-blend-mode: screen;
-  animation: neon-aura-breathe 5.4s ease-in-out infinite;
+  transition:
+    filter 90ms linear,
+    opacity 90ms linear,
+    transform 90ms linear;
 }
 
 .hero-neon-logo__glow {
-  opacity: calc(0.46 + (var(--neon-audio) * 0.18) + (var(--neon-pulse) * 0.22));
+  opacity: calc(0.48 + (var(--neon-audio) * 0.18) + (var(--neon-pulse) * 0.14));
   filter:
-    brightness(calc(1.18 + (var(--neon-pulse) * 0.22)))
-    saturate(1.55)
+    brightness(calc(1.08 + (var(--neon-audio) * 0.22) + (var(--neon-pulse) * 0.18)))
+    saturate(calc(1.45 + (var(--neon-audio) * 0.7) + (var(--neon-pulse) * 0.45)))
     blur(calc(2px + (var(--neon-audio) * 3px) + (var(--neon-pulse) * 2px)))
-    drop-shadow(0 0 calc(6px + (var(--neon-audio) * 7px) + (var(--neon-pulse) * 7px)) rgba(var(--neon-pink), 0.58));
-  transform: scale(calc(1.01 + (var(--neon-audio) * 0.018) + (var(--neon-pulse) * 0.016)));
+    drop-shadow(0 0 calc(5px + (var(--neon-audio) * 7px) + (var(--neon-pulse) * 8px)) rgba(var(--neon-core), 0.32))
+    drop-shadow(0 0 calc(12px + (var(--neon-audio) * 20px) + (var(--neon-pulse) * 18px)) rgba(var(--neon-pink), 0.34));
+  transform: scale(calc(1.01 + (var(--neon-audio) * 0.04) + (var(--neon-pulse) * 0.05)));
   mix-blend-mode: screen;
-  animation: neon-glow-hum 3.7s ease-in-out infinite;
+  transition:
+    filter 90ms linear,
+    opacity 90ms linear,
+    transform 90ms linear;
 }
 
 .hero-neon-logo__tube {
   position: relative;
   filter:
-    brightness(calc(1.08 + (var(--neon-audio) * 0.16) + (var(--neon-pulse) * 0.2)))
-    saturate(1.35)
+    brightness(calc(1.08 + (var(--neon-audio) * 0.22) + (var(--neon-pulse) * 0.18)))
+    saturate(calc(1.45 + (var(--neon-audio) * 0.7) + (var(--neon-pulse) * 0.45)))
     drop-shadow(0 0 1px rgba(var(--neon-core), 0.78))
-    drop-shadow(0 0 calc(4px + (var(--neon-audio) * 6px) + (var(--neon-pulse) * 4px)) rgba(var(--neon-pink), 0.62))
-    drop-shadow(0 0 calc(14px + (var(--neon-audio) * 16px) + (var(--neon-pulse) * 12px)) rgba(var(--neon-pink), 0.24));
-  animation: neon-tube-flicker 8.2s steps(1, end) infinite;
+    drop-shadow(0 0 calc(5px + (var(--neon-audio) * 7px) + (var(--neon-pulse) * 8px)) rgba(var(--neon-core), 0.3))
+    drop-shadow(0 0 calc(12px + (var(--neon-audio) * 20px) + (var(--neon-pulse) * 18px)) rgba(var(--neon-pink), 0.4))
+    drop-shadow(0 0 calc(18px + (var(--neon-audio) * 26px) + (var(--neon-pulse) * 22px)) rgba(var(--neon-pink), 0.24));
+  transition: filter 90ms linear;
 }
 
 @keyframes neon-live-current {
@@ -1068,6 +1390,10 @@ body.dialog-open {
   .hero-neon-logo__glow,
   .hero-neon-logo__tube {
     animation: none;
+    transition: none;
+  }
+
+  .menu-doodle-layer img {
     transition: none;
   }
 }

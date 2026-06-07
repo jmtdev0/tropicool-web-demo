@@ -13,7 +13,8 @@
     "dev": "astro dev --host 127.0.0.1",
     "build": "astro build",
     "preview": "astro preview --host 127.0.0.1",
-    "scrape:menu": "node scripts/scrape-tropicool-menu.mjs"
+    "scrape:menu": "node scripts/scrape-tropicool-menu.mjs",
+    "test:music": "node scripts/test-music-runtime.mjs"
   },
   "dependencies": {
     "@astrojs/svelte": "^8.1.2",
