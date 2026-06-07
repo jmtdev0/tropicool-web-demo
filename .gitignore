@@ -15,7 +15,9 @@ pnpm-debug.log*
 /*.png
 /lh-*.json
 /test-artifacts/
-/public/music/
+/public/music/*
+!/public/music/tropical tech house mix vol.2/
+!/public/music/tropical tech house mix vol.2/**
 
 .DS_Store
 Thumbs.db
